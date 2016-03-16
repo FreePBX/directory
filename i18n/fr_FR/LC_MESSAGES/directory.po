@@ -1,0 +1,407 @@
+# This file is part of FreePBX.
+#
+# For licensing information, please see the file named LICENSE located in the module directory
+#
+# FreePBX language template for directory
+# Copyright (C) 2008-2016 Sangoma, Inc.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-01-07 17:42-0800\n"
+"PO-Revision-Date: 2016-02-04 23:09+0200\n"
+"Last-Translator: Nicolas Riendeau <freepbx@riendeau.org>\n"
+"Language-Team: French <http://weblate.freepbx.org/projects/freepbx/directory/"
+"fr_FR/>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr_FR\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 2.2-dev\n"
+
+#: functions.inc.php:59 views/form.php:143
+msgid ""
+"ALERT_INFO to be sent when called from this Directory. Can be used for "
+"distinctive ring for SIP devices."
+msgstr ""
+
+#: functions.inc.php:226 views/grid.php:21
+msgid "Actions"
+msgstr "Actions"
+
+#: functions.inc.php:10 views/bootnav.php:2 views/form.php:4 views/grid.php:6
+msgid "Add Directory"
+msgstr "Ajouter un répertoire"
+
+#: functions.inc.php:262
+msgid "Add new entry."
+msgstr "Ajouter une nouvelle entrée."
+
+#: install.php:7
+msgid "Adding directory tables if needed"
+msgstr "Ajout des tables de répertoire si nécessaire"
+
+#: functions.inc.php:59 views/form.php:131
+msgid "Alert Info"
+msgstr "Info d'alerte"
+
+#: functions.inc.php:254
+msgid "All Users"
+msgstr "Tous les utilisateurs"
+
+#: assets/js/directory.js:83
+msgid "An Error occurred trying to contact the server adding a row, no reply."
+msgstr ""
+
+#: functions.inc.php:81 views/form.php:308
+msgid "Announce Extension"
+msgstr "Annoncer le poste"
+
+#: functions.inc.php:75 views/form.php:155
+msgid "Announcement"
+msgstr "Annonce"
+
+#: directory.i18n.php:6 directory.i18n.php:10
+msgid "Applications"
+msgstr "Applications"
+
+#: functions.inc.php:58 views/form.php:107
+msgid "CallerID Name Prefix"
+msgstr "Préfixe de nom d'ID appelant"
+
+#: install.php:37
+msgid "Can not create table: "
+msgstr "Ne peut créer la table : "
+
+#: functions.inc.php:253
+msgid "Choose One"
+msgstr ""
+
+#: functions.inc.php:310
+msgid "Click here to remove this entry"
+msgstr "Cliquer ici pour supprimer cette entrée"
+
+#: functions.inc.php:255
+msgid "Custom"
+msgstr "Personnalisé"
+
+#: functions.inc.php:64 views/form.php:26 views/form.php:33 views/form.php:40
+msgid "Default"
+msgstr "Par défaut"
+
+#: functions.inc.php:504 views/grid.php:20
+msgid "Default Directory"
+msgstr "Répertoire par défaut"
+
+#: functions.inc.php:500
+msgid "Default Group Inclusion"
+msgstr "Inclusion du groupe par défaut"
+
+#: Directory.class.php:138
+msgid "Delete"
+msgstr "Supprimer"
+
+#: functions.inc.php:48
+#, php-format
+msgid "Delete Directory %s"
+msgstr "Supprimer le répertoire %s"
+
+#: functions.inc.php:57 views/form.php:95
+msgid "Description of this directory."
+msgstr "Description de ce répertoire."
+
+#: functions.inc.php:79 views/form.php:269
+msgid "Destination to send the call to after Invalid Recording is played."
+msgstr ""
+
+#: functions.inc.php:226
+msgid "Dial"
+msgstr "Composer"
+
+#: directory.i18n.php:4 directory.i18n.php:8 functions.inc.php:220
+#: page.directory.php:6 views/bootnav.php:14 views/grid.php:19
+msgid "Directory"
+msgstr "Répertoire"
+
+#: functions.inc.php:579
+#, php-format
+msgid "Directory %s: "
+msgstr "Répertoire %s : "
+
+#: functions.inc.php:57 views/form.php:83
+msgid "Directory Description"
+msgstr "Description de ce répertoire"
+
+#: functions.inc.php:54
+msgid "Directory General Options"
+msgstr "Options générales du répertoire"
+
+#: functions.inc.php:56 views/form.php:59
+msgid "Directory Name"
+msgstr "Nom du répertoire"
+
+#: functions.inc.php:61
+msgid "Directory Options (DTMF)"
+msgstr "Options du répertoire (DTMF)"
+
+#: functions.inc.php:86
+msgid "Directory&nbsp;Entries"
+msgstr "Répertoire&nbsp;Entrées"
+
+#: functions.inc.php:609
+#, php-format
+msgid "Directory: %s"
+msgstr "Répertoire : %s"
+
+#: functions.inc.php:554
+#, php-format
+msgid "Directory: %s "
+msgstr "Répertoire : %s "
+
+#: Directory.class.php:167
+msgid "Disabled"
+msgstr "Désactivé"
+
+#: functions.inc.php:305
+#, php-format
+msgid "Edit %s: %s"
+msgstr "Éditer %s : %s"
+
+#: views/form.php:7
+msgid "Edit Directory"
+msgstr "Éditer le répertoire"
+
+#: functions.inc.php:34
+#, php-format
+msgid "Edit Directory: %s"
+msgstr "Éditer le répertoire : %s"
+
+#: Directory.class.php:168
+msgid "Enabled"
+msgstr "Activé"
+
+#: install.php:138
+msgid ""
+"Error migrating to new directory! ERROR: Could not create new Directory."
+msgstr ""
+"Erreur lors de la migration vers le nouveau répertoire ! ERREUR : Le nouveau "
+"répertoire n'a pu être créé."
+
+#: install.php:154
+msgid ""
+"Error migrating to new directory! ERROR: Could not populate new Directory "
+msgstr ""
+"Erreur lors de la migration vers le nouveau répertoire ! ERREUR : Le nouveau "
+"répertoire n'a pu être chargé. "
+
+#: install.php:170
+msgid ""
+"Error migrating to new directory! ERROR: Unable to mark Directory as "
+"migrated. Migration will probably be run again at next install/upgrade of "
+"this module. "
+msgstr ""
+"Erreur lors de la migration vers le nouveau répertoire ! ERREUR : Il n'a pas "
+"été possible de marquer le répertoire comme migré. La migration sera "
+"probablement effectuée de nouveau lors de la prochaine installation/mise à "
+"jour de ce module. "
+
+#: functions.inc.php:481
+msgid "Exclude"
+msgstr "Exclure"
+
+#: functions.inc.php:75 views/form.php:169
+msgid "Greeting to be played on entry to the directory."
+msgstr ""
+
+#: functions.inc.php:482
+msgid "Include"
+msgstr "Inclure"
+
+#: functions.inc.php:79 views/form.php:257
+msgid "Invalid Destination"
+msgstr "Destination invalide"
+
+#: functions.inc.php:78 views/form.php:231
+msgid "Invalid Recording"
+msgstr "Enregistrement invalide"
+
+#: functions.inc.php:76 views/form.php:181
+msgid "Invalid Retries"
+msgstr ""
+
+#: functions.inc.php:77 views/form.php:205
+msgid "Invalid Retry Recording"
+msgstr ""
+
+#: views/bootnav.php:3
+msgid "List Directories"
+msgstr "Liste des répertoires"
+
+#: install.php:128
+msgid "Migrating Directory"
+msgstr "MIgration de répertoire en cours"
+
+#: install.php:172
+msgid "Migration Complete!"
+msgstr "Migration complétée !"
+
+#: functions.inc.php:226
+msgid "Name"
+msgstr "Nom"
+
+#: functions.inc.php:226
+msgid "Name Announcement"
+msgstr "Annonce du nom"
+
+#: views/form.php:71
+msgid "Name of this directory"
+msgstr "Nom de ce répertoire"
+
+#: functions.inc.php:56
+msgid "Name of this directory."
+msgstr "Nom de ce répertoire."
+
+#: views/form.php:288 views/form.php:315
+msgid "No"
+msgstr "Non"
+
+#: functions.inc.php:76 views/form.php:193
+msgid ""
+"Number of times to retry when receiving an invalid/unmatched response from "
+"the caller"
+msgstr ""
+
+#: functions.inc.php:58 views/form.php:119
+msgid "Prefix to be appended to current CallerID Name."
+msgstr ""
+
+#: functions.inc.php:78 views/form.php:245
+msgid ""
+"Prompt to be played before sending the caller to an alternate destination "
+"due to the caller pressing 0 or receiving the maximum amount of invalid/"
+"unmatched responses (as determined by Invalid Retries)"
+msgstr ""
+
+#: functions.inc.php:77 views/form.php:219
+msgid ""
+"Prompt to be played when an invalid/unmatched response is received, before "
+"prompting the caller to try again"
+msgstr ""
+
+#: Directory.class.php:143
+msgid "Reset"
+msgstr "Réinitialiser"
+
+#: functions.inc.php:80 views/form.php:281
+msgid "Return to IVR"
+msgstr "Retourner à l'IVR"
+
+#: assets/js/directory.js:103
+msgid "Select"
+msgstr "Sélectionner"
+
+#: install.php:160
+msgid "Setting migrated directory as default"
+msgstr ""
+
+#: functions.inc.php:295
+msgid "Spell Name"
+msgstr "Épeler le nom"
+
+#: Directory.class.php:148
+msgid "Submit"
+msgstr "Soumettre"
+
+#: functions.inc.php:296
+msgid "System Recordings:"
+msgstr "Enregistrements système :"
+
+#: functions.inc.php:294
+msgid "Text to Speech"
+msgstr "Synthèse vocale"
+
+#: assets/js/directory.js:24
+msgid "This entry has already been added"
+msgstr "Cette entrée à déjà été ajoutée"
+
+#: functions.inc.php:107
+msgid ""
+"Tied to a Directory allowing all entries in that directory to be dialed "
+"directly, as they appear in the directory"
+msgstr ""
+
+#: functions.inc.php:293
+msgid "Voicemail Greeting"
+msgstr ""
+
+#: functions.inc.php:81 views/form.php:323
+msgid ""
+"When checked, the extension number being transferred to will be announced "
+"prior to the transfer"
+msgstr ""
+
+#: functions.inc.php:80 views/form.php:296
+msgid ""
+"When selected, if the call passed through an IVR that had \"Return to IVR\" "
+"selected, the call will be returned there instead of the Invalid destination."
+msgstr ""
+
+#: views/form.php:286 views/form.php:313
+msgid "Yes"
+msgstr "Oui"
+
+#: functions.inc.php:504
+msgid ""
+"You can include or exclude this extension/user from being part of the "
+"default directory when creating or editing."
+msgstr ""
+
+#: functions.inc.php:37
+msgid "[SYSTEM DEFAULT]"
+msgstr ""
+
+#: install.php:46
+msgid "adding say_extension field to directory_details.."
+msgstr ""
+
+#: install.php:81
+msgid "cannot add field e_id to table directory_entries \n"
+msgstr ""
+
+#: install.php:102
+msgid "cannot set e_id for directory_id = "
+msgstr ""
+
+#: uninstall.php:7
+msgid "deleting default_directory and migration tracking keys.."
+msgstr ""
+
+#: uninstall.php:3
+msgid "dropping directory_details, directory_entries.."
+msgstr ""
+
+#: install.php:60
+msgid "dropping valid_details field.."
+msgstr ""
+
+#: install.php:83
+msgid "e_id added to table directory_entries"
+msgstr ""
+
+#: install.php:50
+msgid "fatal error"
+msgstr "erreur fatale"
+
+#: install.php:64
+msgid "no valid_recording field???"
+msgstr ""
+
+#: install.php:53 install.php:66 uninstall.php:5 uninstall.php:10
+msgid "ok"
+msgstr "ok"
+
+#: functions.inc.php:310
+msgid "remove"
+msgstr "supprime"

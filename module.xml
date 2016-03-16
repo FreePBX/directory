@@ -2,7 +2,7 @@
 	<rawname>directory</rawname>
 	<repo>standard</repo>
 	<name>Directory</name>
-	<version>13.0.10</version>
+	<version>13.0.11</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -27,6 +27,7 @@
 		<module>recordings ge 3.3.8</module>
 	</depends>
 	<changelog>
+		*13.0.11* prefer speak over spell by matphillips
 		*13.0.10* Recording dropdowns not reflecting proper values
 		*13.0.9* Support Alert Info drop down
 		*13.0.8* FREEPBX-9951 Japanese language prompts
