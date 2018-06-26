@@ -92,8 +92,6 @@ function directory_configpageload() {
 function directory_configpageinit($pagename) {
 	global $currentcomponent;
 	if ($pagename == 'directory') {
-		//$currentcomponent->addprocessfunc('directory_configprocess');
-		//$currentcomponent->addguifunc('directory_configpageload');
     	return true;
 	}
 	if ($pagename == 'ivr') {
@@ -113,7 +111,7 @@ function directory_configpageinit($pagename) {
 				$currentcomponent->addoptlistitem('directdial', $dir['id'], $name);
 			}
 		}
-    return true;
+        return true;
 	}
 
 	// We only want to hook 'users' or 'extensions' pages.
@@ -174,21 +172,13 @@ function directory_get_config($engine) {
 }
 
 function directory_list() {
-	$sql='SELECT id,dirname FROM directory_details ORDER BY dirname';
-	$results=sql($sql, 'getAll', DB_FETCHMODE_ASSOC);
-	return $results;
+    FreePBX::Modules()->deprecatedFunction();
+    return FreePBX::Directory()->listDirecrories();
 }
 
 function directory_get_dir_entries($id){
-	global $db;
-	if ($id == '') {
-		return array();
-	}
-	$id = $db->escapeSimple($id);
-	$sql = "SELECT a.name, a.type, a.audio, a.dial, a.foreign_id, a.e_id, b.name foreign_name, IF(a.name != \"\",a.name,b.name) realname
-		FROM directory_entries a LEFT JOIN users b ON a.foreign_id = b.extension WHERE id = $id ORDER BY realname";
-	$results = sql($sql,'getAll',DB_FETCHMODE_ASSOC);
-	return $results;
+	FreePBX::Modules()->deprecatedFunction();
+    return FreePBX::Directory()->getEntriesById($id);
 }
 
 function directory_get_dir_details($id){
@@ -381,102 +371,16 @@ function directory_get_default_dir() {
 }
 
 function directory_save_dir_details($vals){
-	global $db, $amp_conf;
-
-	foreach($vals as $key => $value) {
-		$vals[$key] = $db->escapeSimple($value);
-	}
-
-	if ($vals['id']) {
-		$sql = 'REPLACE INTO directory_details (id,dirname,description,announcement,
-				callid_prefix,alert_info,repeat_loops,repeat_recording,
-				invalid_recording,invalid_destination,retivr,say_extension,rvolume)
-				VALUES (:id,:dirname,:description,:announcement,
-				:callid_prefix,:alert_info,:repeat_loops,:repeat_recording,
-				:invalid_recording,:invalid_destination,:retivr,:say_extension,:rvolume)';
-		$foo = $db->query($sql, array(
-			'id' => $vals['id'],
-			'dirname' => $vals['dirname'],
-			'description' => $vals['description'],
-			'announcement' => $vals['announcement'],
-			'callid_prefix' => $vals['callid_prefix'],
-			'alert_info' => $vals['alert_info'],
-			'repeat_loops' => $vals['repeat_loops'],
-			'repeat_recording' => $vals['repeat_recording'],
-			'invalid_recording' => $vals['invalid_recording'],
-			'invalid_destination' => $vals['invalid_destination'],
-			'retivr' => $vals['retivr'],
-			'say_extension' => $vals['say_extension'],
-			'rvolume' => !empty($vals['rvolume']) ? $vals['rvolume'] : ''
-		));
-		if(DB::IsError($foo)) {
-			die_freepbx(print_r($vals,true).' '.$foo->getDebugInfo());
-		}
-	} else {
-		unset($vals['id']);
-		$sql = 'INSERT INTO directory_details (dirname,description,announcement,
-				callid_prefix,alert_info,repeat_loops,repeat_recording,
-				invalid_recording,invalid_destination,retivr,say_extension,rvolume)
-				VALUES (:dirname,:description,:announcement,
-				:callid_prefix,:alert_info,:repeat_loops,:repeat_recording,
-				:invalid_recording,:invalid_destination,:retivr,:say_extension,:rvolume)';
-		$foo = $db->query($sql, array(
-			'dirname' => $vals['dirname'],
-			'description' => $vals['description'],
-			'announcement' => $vals['announcement'],
-			'callid_prefix' => $vals['callid_prefix'],
-			'alert_info' => $vals['alert_info'],
-			'repeat_loops' => $vals['repeat_loops'],
-			'repeat_recording' => $vals['repeat_recording'],
-			'invalid_recording' => $vals['invalid_recording'],
-			'invalid_destination' => $vals['invalid_destination'],
-			'retivr' => $vals['retivr'],
-			'say_extension' => $vals['say_extension'],
-			'rvolume' => !empty($vals['rvolume']) ? $vals['rvolume'] : ''
-		));
-		if(DB::IsError($foo)) {
-			die_freepbx(print_r($vals,true).' '.$foo->getDebugInfo());
-		}
-		$sql = ( ($amp_conf["AMPDBENGINE"]=="sqlite3") ? 'SELECT last_insert_rowid()' : 'SELECT LAST_INSERT_ID()');
-		$vals['id'] = $db->getOne($sql);
-		if (DB::IsError($foo)){
-			die_freepbx($foo->getDebugInfo());
-		}
-	}
-
-	return $vals['id'];
+    FreePBX::Modules()->deprecatedFunction();
+    if ($vals['id']) {
+        return FreePBX::Directory()->updateDirectory($vals);
+    }
+    return FreePBX::Directory()->addDirectory($vals);
 }
 
 function directory_save_dir_entries($id,$entries){
-	global $db;
-	$id = $db->escapeSimple($id);
-	sql("DELETE FROM directory_entries WHERE id = $id");
-
-	//TODO = prepare the data:
-	//       if 'dial' is the same as type_id, then delete the 'dial,' leave as default
-	//       if 'name' is same as default_name, then delete the 'name,' leave as default
-	if($entries){
-		$insert='';
-		// TODO: should we change to perpare/execute ?
-		foreach($entries as $idx => $row){
-			if($row['foreign_id'] == 'custom' && trim($row['name']) == '' || $row['foreign_id']==''){
-				continue;//dont insert a blank row
-			}
-			if ($row['foreign_id'] == 'custom') {
-				$type = 'custom';
-				$foreign_id = '';
-			} else {
-				$type = 'user';
-				$foreign_id = $db->escapeSimple($row['foreign_id']);
-			}
-			$audio = $row['audio'] != '' ? $db->escapeSimple($row['audio']) : ($row['foreign_id'] == 'custom' ? 'tts' : 'vm');
-			if (!empty($insert)) {
-				$insert .= ',';
-			}
-			$insert.='("'.$id.'","'.$idx.'","'.$db->escapeSimple(trim($row['name'])).'","'.$type.'","'.$foreign_id.'","'.$audio.'","'.$db->escapeSimple(trim($row['num'])).'")';
-		}
-		sql('INSERT INTO directory_entries (id, e_id, name,type,foreign_id,audio,dial) VALUES '.$insert);
-	}
+    FreePBX::Modules()->deprecatedFunction();
+    return FreePBX::Directory()->updateEntries($id,$entries);
 }
 
 //----------------------------------------------------------------------------

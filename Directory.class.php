@@ -1,21 +1,27 @@
 <?php
 namespace FreePBX\modules;
 //	License for all code of this FreePBX module can be found in the license file inside the module directory
-//	Copyright 2015 Sangoma Technologies.
+//	Copyright 2015-2018 Sangoma Technologies.
 //
+use BMO;
+use FreePBX_Helpers;
+use PDO;
+use Exception;
+class Directory extends FreePBX_Helpers implements BMO {
 
-class Directory implements \BMO {
-	public function __construct($freepbx = null) {
-		if ($freepbx == null) {
-			throw new Exception("Not given a FreePBX Object");
-		}
-		$this->FreePBX = $freepbx;
-		$this->db = $freepbx->Database;
-	}
-	public function install() {}
+	public function install() {
+        $files = array('cdir-please-enter-first-three.wav', 'cdir-transferring-further-assistance.wav', 'cdir-matching-entries-continue.wav', 'cdir-there-are.wav', 'cdir-welcome.wav', 'cdir-sorry-no-entries.wav', 'cdir-matching-entries-or-pound.wav');
+        $path = $this->FreePBX->Config->Get('ASTVARLIBDIR');
+
+        foreach ($files as $file) {
+            if (is_link($path.'/sounds/fr/'.$file) && !file_exists($path.'/sounds/fr/'.$file)) {
+                unlink($path.'/sounds/fr/'.$file);
+            }
+        }
+    }
+
 	public function uninstall() {}
-	public function backup() {}
-	public function restore($backup) {}
+
 	public function doConfigPageInit($page) {
 		$request = $_REQUEST;
 		$request['action'] = !empty($request['action']) ? $request['action'] : "";
@@ -113,20 +119,123 @@ class Directory implements \BMO {
 		}
 		return $dirs;
 	}
-	public function listDirectories(){
-		$sql='SELECT id,dirname FROM directory_details ORDER BY dirname';
-		$stmt = $this->db->prepare($sql);
+	public function listDirectories($complete = false){
+        $data = $complete?'*':'id,dirname';
+		$sql='SELECT '. $data .' FROM directory_details ORDER BY dirname';
+		$stmt = $this->FreePBX->Database->prepare($sql);
 		$stmt->execute();
-		$results = $stmt->fetchall(\PDO::FETCH_ASSOC);
+		$results = $stmt->fetchall(PDO::FETCH_ASSOC);
 		return $results;
-	}
+    }
+    
 	public function getDefault(){
 		$sql = "SELECT value FROM `admin` WHERE `variable` = 'default_directory'";
-		$stmt = $this->db->prepare($sql);
+		$stmt = $this->FreePBX->Database->prepare($sql);
 		$stmt->execute();
 		$ret = $stmt->fetchColumn();
 		return $ret ? $ret : '';
-	}
+    }
+
+	public function setDefault($id){
+        $sql = "UPDATE admin SET value= :id WHERE `variable` = 'default_directory'";
+        $this->FreePBX->Database->prepare($sql)->execute();
+        return $this;
+    }
+    
+    public function getEntriesById($id){
+        $sql = "SELECT a.name, a.type, a.audio, a.dial, a.foreign_id, a.e_id, b.name foreign_name, IF(a.name != \"\",a.name,b.name) realname
+		FROM directory_entries a LEFT JOIN users b ON a.foreign_id = b.extension WHERE id = :id ORDER BY realname";
+        $stmt = $this->FreePBX->Database->prepare($sql);
+        $stmt->execute([':id' => $id]);
+        return $stmt->fetchall(PDO::FETCH_ASSOC);
+    }
+
+    public function updateDirectory($vals){
+        $sql = 'REPLACE INTO directory_details (id,dirname,description,announcement,
+        callid_prefix,alert_info,repeat_loops,repeat_recording,
+        invalid_recording,invalid_destination,retivr,say_extension,rvolume)
+        VALUES (:id,:dirname,:description,:announcement,
+        :callid_prefix,:alert_info,:repeat_loops,:repeat_recording,
+        :invalid_recording,:invalid_destination,:retivr,:say_extension,:rvolume)';
+        $insert = [
+            'id' => $vals['id'],
+			'dirname' => $vals['dirname'],
+			'description' => $vals['description'],
+			'announcement' => $vals['announcement'],
+			'callid_prefix' => $vals['callid_prefix'],
+			'alert_info' => $vals['alert_info'],
+			'repeat_loops' => $vals['repeat_loops'],
+			'repeat_recording' => $vals['repeat_recording'],
+			'invalid_recording' => $vals['invalid_recording'],
+			'invalid_destination' => $vals['invalid_destination'],
+			'retivr' => $vals['retivr'],
+			'say_extension' => $vals['say_extension'],
+			'rvolume' => !empty($vals['rvolume']) ? $vals['rvolume'] : '',
+        ];
+        $this->FreePBX->Database->prepare($sql)->execute($insert);
+        return $vals['id'];
+    }
+
+    public function addDirectory($vals){
+        $sql = 'INSERT INTO directory_details (dirname,description,announcement,
+        callid_prefix,alert_info,repeat_loops,repeat_recording,
+        invalid_recording,invalid_destination,retivr,say_extension,rvolume)
+        VALUES (:dirname,:description,:announcement,
+        :callid_prefix,:alert_info,:repeat_loops,:repeat_recording,
+        :invalid_recording,:invalid_destination,:retivr,:say_extension,:rvolume)';
+
+        $insert = [
+            'dirname' => $vals['dirname'],
+            'description' => $vals['description'],
+            'announcement' => $vals['announcement'],
+            'callid_prefix' => $vals['callid_prefix'],
+            'alert_info' => $vals['alert_info'],
+            'repeat_loops' => $vals['repeat_loops'],
+            'repeat_recording' => $vals['repeat_recording'],
+            'invalid_recording' => $vals['invalid_recording'],
+            'invalid_destination' => $vals['invalid_destination'],
+            'retivr' => $vals['retivr'],
+            'say_extension' => $vals['say_extension'],
+            'rvolume' => !empty($vals['rvolume']) ? $vals['rvolume'] : '',
+        ];
+        $this->FreePBX->Database->prepare($sql)->execute($insert);
+        return $this->FreePBX->Database->lastinsertid('id');
+    }
+
+    public function deleteEntriesById($id){
+        $sql = "DELETE FROM directory_entries WHERE id = :id";
+        $this->FreePBX->Database->prepare($sql)->execute([':id' => $id]);
+        return $this;
+    }
+
+    public function updateEntries($id,$entries){
+        $this->deleteEntriesById($id);
+        $sql = 'INSERT INTO directory_entries (id, e_id, name,type,foreign_id,audio,dial) VALUES (:id, :e_id, :name, :type, :foriegn_id, :audio,:dial)';
+        $stmt = $this->FreePBX->Database->prepare($sql);
+        foreach($entries as $idx => $row){
+            if ('custom' == $row['foreign_id'] && '' == trim($row['name']) || '' == $row['foreign_id']) {
+                continue; //dont insert a blank row
+            }
+            $type = 'user';
+            $foreign_id = $row['foreign_id'];
+            if ($row['foreign_id'] == 'custom') {
+				$type = 'custom';
+				$foreign_id = '';
+            }
+            $audio = '' != $row['audio'] ? $row['audio'] : ('custom' == $row['foreign_id'] ? 'tts' : 'vm');
+            $stmt->execute([
+                ':id' => $id,
+                ':e_id'=> $row['e_id'],
+                ':name' => $row['name'],
+                ':type' => $type,
+                ':foriegn_id' => $foriegn_id,
+                ':audio' => $audio,
+                ':dial' => $row['dial'],
+            ]);
+        }
+        return $this;
+    }
+
 	public function getActionBar($request) {
 		$buttons = array();
 		switch($request['display']) {
@@ -160,7 +269,7 @@ class Directory implements \BMO {
 	}
 	public function ivrHook($request){
 		if(isset($request['id'])){
-			$ivr = \FreePBX::Ivr()->getDetails($request['id']);
+			$ivr = $this->FreePBX->Ivr->getDetails($request['id']);
 		}
 		$directdial = isset($ivr['directdial'])?$ivr['directdial']:'';
 		$dirs = directory_list();

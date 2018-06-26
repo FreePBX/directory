@@ -2,10 +2,10 @@
 	<rawname>directory</rawname>
 	<repo>standard</repo>
 	<name>Directory</name>
-	<version>13.0.19.5</version>
+	<version>15.0.1</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
-	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
+	<licenselink>https://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<type>setup</type>
 	<category>Applications</category>
 	<menuitems needsenginedb="yes">
@@ -17,48 +17,48 @@
 			<view>form</view>
 		</directory>
  	</popovers>
+    <database>
+        <table name="directory_details">
+            <field name="id" type="integer" primarykey="true" autoincrement="true"/>
+            <field name="dirname" type="string" length="50" notnull="false"/>
+            <field name="description" type="string" length="150" notnull="false"/>
+            <field name="announcement" type="integer" notnull="false"/>
+            <field name="callid_prefix" type="string" length="10" notnull="false"/>
+            <field name="alert_info" type="string" length="50" notnull="false"/>
+            <field name="rvolume" type="string" length="2" default=""/>
+            <field name="repeat_loops" type="string" length="3" notnull="false"/>
+            <field name="repeat_recording" type="integer" notnull="false"/>
+            <field name="invalid_recording" type="integer" notnull="false"/>
+            <field name="invalid_destination" type="string" length="50" notnull="false"/>
+            <field name="retivr" type="string" length="5" notnull="false"/>
+            <field name="say_extension" type="string" length="5" notnull="false"/>
+        </table>
+        <table name="directory_entries">
+            <field name="id" type="integer"/>
+            <field name="e_id" type="integer" notnull="false"/>
+            <field name="name" type="string" length="50" notnull="false"/>
+            <field name="type" type="string" length="25" notnull="false"/>
+            <field name="foreign_id" type="string" length="25" notnull="false"/>
+            <field name="audio" type="string" length="50" notnull="false"/>
+            <field name="dial" type="string" length="50" default="" notnull="false"/>
+        </table>
+    </database>
 	<hooks>
-  <ivr namespace="FreePBX\modules" class="Ivr">
-    <method namespace="FreePBX\Modules" class="Directory" callingMethod="pageHook">ivrHook</method>
-  </ivr>
-</hooks>
+        <ivr namespace="FreePBX\modules" class="Ivr">
+            <method namespace="FreePBX\Modules" class="Directory" callingMethod="pageHook">ivrHook</method>
+        </ivr>
+    </hooks>
 	<depends>
 		<version>13.0.42</version>
 		<module>recordings ge 3.3.8</module>
 	</depends>
 	<changelog>
-		*13.0.19.5* FREEPBX-15945 Allow digits to be captured during the "Welcome to the directory" message.
-		*13.0.19.4* FREEPBX-15502 Directory does not populate DIR_DIAL under certain conditions
-		*13.0.19.2* FREEPBX-14811 Able to set negative values for Invalid Retries under Directory
-		*13.0.19.1* FREEPBX-14767 The invalid retries setting under Directory module is not working
-		*13.0.19* FREEPBX-12690 add view for destinations usage
-		*13.0.18.1* FREEPBX-14262 option for Terminate call not visible for french language
-		*13.0.18* FREEI-337 Fix an issue with missing volume parameter
-		*13.0.17* FREEPBX-13364 Ability to set ringer volume
-		*13.0.16* Cleanup missing links
-		*13.0.15* Add sound languages: it,fr,en_GB
-		*13.0.14* FREEPBX-12368 fix install
-		*13.0.13* FREEPBX-9167 allow combined recordings, fix bugs, upgrade class to php5
-		*13.0.12* FREEPBX-11894 Fix readContact tts.stream_file should not have extension. by Douglas Hammond
-		*13.0.11* prefer speak over spell by matphillips
-		*13.0.10* Recording dropdowns not reflecting proper values
-		*13.0.9* Support Alert Info drop down
-		*13.0.8* FREEPBX-9951 Japanese language prompts
-		*13.0.7* FREEPBX-10119 Fix recording prompts.
-		*13.0.6* FREEPBX-10118 Spelling
-		*13.0.5* FREEPBX-10121 Fix custom entries
-		*13.0.4* FREEPBX-9821 Fix validations on adding custom entries, also spruce up visuals
-		*13.0.3* FREEPBX-9609 Option to Limit IVR Direct Dialing to a Directory
-		*13.0.2* Version bump Beta
-		*13.0.1alpha3* Add Spanish prompts
-		*13.0.1alpha2* Fix popover resolves FREEPBX-8993 for directory
+		*15.0.1* Backup 15
 	</changelog>
 	<depends>
 		<version>13.0.191.12</version>
 	</depends>
 	<supported>
-		<version>13.0</version>
+		<version>15.0</version>
 	</supported>
-	<location>release/2.11/directory-2.11.0.2.tgz</location>
-	<md5sum>29c493148b5a23e216eab918ed33e213</md5sum>
 </module>
