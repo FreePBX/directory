@@ -173,7 +173,7 @@ function directory_get_config($engine) {
 
 function directory_list() {
     FreePBX::Modules()->deprecatedFunction();
-    return FreePBX::Directory()->listDirecrories();
+    return FreePBX::Directory()->listDirectories();
 }
 
 function directory_get_dir_entries($id){
