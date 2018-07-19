@@ -3,7 +3,7 @@ namespace FreePBX\modules\Directory;
 use FreePBX\modules\Backup as Base;
 class Restore Extends Base\RestoreBase{
   public function runRestore($jobid){
-    $configs = $this->getConfigs();
+    $configs = reset($this->getConfigs());
     foreach($configs['directories'] as $dir){
         $this->FreePBX->Directory->updateDirectory($dir);
     }
