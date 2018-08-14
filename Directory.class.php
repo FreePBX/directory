@@ -21,6 +21,14 @@ class Directory extends FreePBX_Helpers implements BMO {
     }
 
 	public function uninstall() {}
+	
+	public function setDatabase($pdo){
+		$this->Database = $pdo;
+		return $this;
+	}
+	public function resetDatabase(){
+		$this->Database = $this->FreePBX->Database;
+	}
 
 	public function doConfigPageInit($page) {
 		$request = $_REQUEST;
@@ -122,7 +130,7 @@ class Directory extends FreePBX_Helpers implements BMO {
 	public function listDirectories($complete = false){
         $data = $complete?'*':'id,dirname';
 		$sql='SELECT '. $data .' FROM directory_details ORDER BY dirname';
-		$stmt = $this->FreePBX->Database->prepare($sql);
+		$stmt = $this->Database->prepare($sql);
 		$stmt->execute();
 		$results = $stmt->fetchall(PDO::FETCH_ASSOC);
 		return $results;
@@ -130,7 +138,7 @@ class Directory extends FreePBX_Helpers implements BMO {
     
 	public function getDefault(){
 		$sql = "SELECT value FROM `admin` WHERE `variable` = 'default_directory'";
-		$stmt = $this->FreePBX->Database->prepare($sql);
+		$stmt = $this->Database->prepare($sql);
 		$stmt->execute();
 		$ret = $stmt->fetchColumn();
 		return $ret ? $ret : '';
@@ -138,14 +146,14 @@ class Directory extends FreePBX_Helpers implements BMO {
 
 	public function setDefault($id){
         $sql = "UPDATE admin SET value= :id WHERE `variable` = 'default_directory'";
-        $this->FreePBX->Database->prepare($sql)->execute([':id' => $id]);
+        $this->Database->prepare($sql)->execute([':id' => $id]);
         return $this;
     }
     
     public function getEntriesById($id){
         $sql = "SELECT a.name, a.type, a.audio, a.dial, a.foreign_id, a.e_id, b.name foreign_name, IF(a.name != \"\",a.name,b.name) realname
 		FROM directory_entries a LEFT JOIN users b ON a.foreign_id = b.extension WHERE id = :id ORDER BY realname";
-        $stmt = $this->FreePBX->Database->prepare($sql);
+        $stmt = $this->Database->prepare($sql);
         $stmt->execute([':id' => $id]);
         return $stmt->fetchall(PDO::FETCH_ASSOC);
     }
@@ -172,7 +180,7 @@ class Directory extends FreePBX_Helpers implements BMO {
 			'say_extension' => $vals['say_extension'],
 			'rvolume' => !empty($vals['rvolume']) ? $vals['rvolume'] : '',
         ];
-        $this->FreePBX->Database->prepare($sql)->execute($insert);
+        $this->Database->prepare($sql)->execute($insert);
         return $vals['id'];
     }
 
@@ -198,20 +206,20 @@ class Directory extends FreePBX_Helpers implements BMO {
             'say_extension' => $vals['say_extension'],
             'rvolume' => !empty($vals['rvolume']) ? $vals['rvolume'] : '',
         ];
-        $this->FreePBX->Database->prepare($sql)->execute($insert);
-        return $this->FreePBX->Database->lastinsertid('id');
+        $this->Database->prepare($sql)->execute($insert);
+        return $this->Database->lastinsertid('id');
     }
 
     public function deleteEntriesById($id){
         $sql = "DELETE FROM directory_entries WHERE id = :id";
-        $this->FreePBX->Database->prepare($sql)->execute([':id' => $id]);
+        $this->Database->prepare($sql)->execute([':id' => $id]);
         return $this;
     }
 
     public function updateEntries($id,$entries){
         $this->deleteEntriesById($id);
         $sql = 'INSERT INTO directory_entries (id, e_id, name,type,foreign_id,audio,dial) VALUES (:id, :e_id, :name, :type, :foriegn_id, :audio,:dial)';
-        $stmt = $this->FreePBX->Database->prepare($sql);
+        $stmt = $this->Database->prepare($sql);
         foreach($entries as $idx => $row){
             if ('custom' == $row['foreign_id'] && '' == trim($row['name']) || '' == $row['foreign_id']) {
                 continue; //dont insert a blank row
