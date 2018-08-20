@@ -10,16 +10,15 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-23 16:49-0400\n"
-"PO-Revision-Date: 2016-12-11 04:04+0200\n"
-"Last-Translator: Ernesto <ecasas@sangoma.com>\n"
-"Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/"
-"directory/es_ES/>\n"
+"PO-Revision-Date: 2018-07-18 19:18+0000\n"
+"Last-Translator: Elvita Crespo <ecrespo@sangoma.com>\n"
+"Language-Team: Spanish <http://*/projects/freepbx/directory/es/>\n"
+"Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: es_ES\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.4\n"
+"X-Generator: Weblate 2.19.1\n"
 
 #: functions.inc.php:59 views/form.php:127
 msgid ""
@@ -296,7 +295,7 @@ msgstr "Decir Nombre"
 
 #: Directory.class.php:148
 msgid "Submit"
-msgstr "Aplicar"
+msgstr "Enviar"
 
 #: functions.inc.php:304
 msgid "System Recordings:"
