@@ -27,7 +27,7 @@ class Restore Extends Base\RestoreBase{
     }
     $configs = [
       'directories' => $directories,
-      'default' => $  $bmo->getDefault(),
+      'default' => $bmo->getDefault(),
       'entries' => $entries,
     ];
     $bmo->resetDatabase();
