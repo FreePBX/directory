@@ -5,35 +5,38 @@ class Restore Extends Base\RestoreBase{
   public function runRestore($jobid){
     $configs = reset($this->getConfigs());
     foreach($configs['directories'] as $dir){
-        $cb->updateDirectory($dir);
+        $this->FreePBX->Directory->updateDirectory($dir);
     }
     foreach ($configs['entries'] as $key => $value) {
-        $cb->updateEntries($key,$value);
+      $this->FreePBX->Directory->updateEntries($key,$value);
     }
-    $cb->setDefault($configs['default']);
+    $this->FreePBX->Directory->setDefault($configs['default']);
   }
   public function processLegacy($pdo, $data, $tables, $unknownTables, $tmpfiledir){
     $tables = array_flip($tables + $unknownTables);
     if (!isset($tables['directory_entries'])) {
       return $this;
     }
-    $cb = $this->FreePBX->Directory();
-    $cb->setDatabase($pdo);
-    $data = $cb->listCallbacks();
-    $directories = $cb->listDirectories();
+    $bmo = $this->FreePBX->Directory();
+    $bmo->setDatabase($pdo);
+    $directories = $bmo->listDirectories();
     $entries = [];
     foreach ($directories as $dir) {
-      $entries[$dir['id']] = $cb->getEntriesById($dir['id']);
+      $entries[$dir['id']] = $bmo->getEntriesById($dir['id']);
     }
     $configs = [
       'directories' => $directories,
-      'default' => $cb->getDefault(),
+      'default' => $  $bmo->getDefault(),
       'entries' => $entries,
     ];
-    $cb->resetDatabase();
-    foreach ($data as $callback) {
-      $cb->upsert($callback['callback_id'], $callback['description'], $callback['callbacknum'], $callback['destination'], $callback['sleep'], $callback['deptname']);
+    $bmo->resetDatabase();
+    foreach ($configs['directories'] as $dir) {
+      $bmo->updateDirectory($dir);
     }
+    foreach ($configs['entries'] as $key => $value) {
+      $bmo->updateEntries($key, $value);
+    }
+    $bmo->setDefault($configs['default']);
     return $this;
   }
 }
