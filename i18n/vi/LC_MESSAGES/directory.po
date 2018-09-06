@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-20 12:46-0400\n"
+"POT-Creation-Date: 2018-09-06 18:51-0400\n"
 "PO-Revision-Date: 2017-07-20 13:04+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese <http://weblate.freepbx.org/projects/freepbx/"
@@ -94,7 +94,7 @@ msgstr "Mặc định Danh mục  web"
 msgid "Default Group Inclusion"
 msgstr "Mặc định Group Inclusion"
 
-#: Directory.class.php:255
+#: Directory.class.php:254
 msgid "Delete"
 msgstr "Xóa"
 
@@ -157,7 +157,7 @@ msgstr "Danh mục  web: %s"
 msgid "Directory: %s "
 msgstr "Danh mục  web: %s "
 
-#: Directory.class.php:284
+#: Directory.class.php:283
 msgid "Disabled"
 msgstr "Bị vô hiệu"
 
@@ -175,7 +175,7 @@ msgstr "Chỉnh sửa Danh mục web"
 msgid "Edit Directory: %s"
 msgstr "Chỉnh sửa danh mục  web: %s"
 
-#: Directory.class.php:285
+#: Directory.class.php:284
 msgid "Enabled"
 msgstr "Đã kích hoạt"
 
@@ -273,7 +273,7 @@ msgstr ""
 "Nhắc nhở được phát khi nhận được một trả lời khôn hợp lê/ không khớp, "
 "trwuowcs khi nhắc nhở người gọi thử lại lần nữa"
 
-#: Directory.class.php:260
+#: Directory.class.php:259
 msgid "Reset"
 msgstr "Cài đặt lại"
 
@@ -293,7 +293,7 @@ msgstr "Chọn"
 msgid "Spell Name"
 msgstr "Đánh vần tên"
 
-#: Directory.class.php:265
+#: Directory.class.php:264
 msgid "Submit"
 msgstr "Gửi đi"
 

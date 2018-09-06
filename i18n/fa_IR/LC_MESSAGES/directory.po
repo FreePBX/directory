@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-20 12:46-0400\n"
+"POT-Creation-Date: 2018-09-06 18:51-0400\n"
 "PO-Revision-Date: 2016-04-02 20:25+0200\n"
 "Last-Translator: Media <mousavi.media@gmail.com>\n"
 "Language-Team: Persian <http://weblate.freepbx.org/projects/freepbx/"
@@ -93,7 +93,7 @@ msgstr "دایرکتوری پیشفرض"
 msgid "Default Group Inclusion"
 msgstr "گنجایش پیشفرض گروه"
 
-#: Directory.class.php:255
+#: Directory.class.php:254
 msgid "Delete"
 msgstr "حذف"
 
@@ -154,7 +154,7 @@ msgstr "دایرکتوری %s"
 msgid "Directory: %s "
 msgstr "دایرکتوری :%s "
 
-#: Directory.class.php:284
+#: Directory.class.php:283
 msgid "Disabled"
 msgstr "غیر فعال"
 
@@ -172,7 +172,7 @@ msgstr "ویرایش دایرکتوری"
 msgid "Edit Directory: %s"
 msgstr "ویرایش دایرکتوری :%s"
 
-#: Directory.class.php:285
+#: Directory.class.php:284
 msgid "Enabled"
 msgstr "فعال"
 
@@ -269,7 +269,7 @@ msgstr ""
 "Prompt to be played when an invalid/unmatched  response is received, before "
 "prompting the caller to try again"
 
-#: Directory.class.php:260
+#: Directory.class.php:259
 msgid "Reset"
 msgstr "بازنشانی"
 
@@ -289,7 +289,7 @@ msgstr "انتخاب"
 msgid "Spell Name"
 msgstr "نهجی نام"
 
-#: Directory.class.php:265
+#: Directory.class.php:264
 msgid "Submit"
 msgstr "ارسال"
 

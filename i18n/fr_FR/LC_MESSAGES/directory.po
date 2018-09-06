@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-20 12:46-0400\n"
+"POT-Creation-Date: 2018-09-06 18:51-0400\n"
 "PO-Revision-Date: 2016-02-04 23:09+0200\n"
 "Last-Translator: Nicolas Riendeau <freepbx@riendeau.org>\n"
 "Language-Team: French <http://weblate.freepbx.org/projects/freepbx/directory/"
@@ -91,7 +91,7 @@ msgstr "Répertoire par défaut"
 msgid "Default Group Inclusion"
 msgstr "Inclusion du groupe par défaut"
 
-#: Directory.class.php:255
+#: Directory.class.php:254
 msgid "Delete"
 msgstr "Supprimer"
 
@@ -152,7 +152,7 @@ msgstr "Répertoire : %s"
 msgid "Directory: %s "
 msgstr "Répertoire : %s "
 
-#: Directory.class.php:284
+#: Directory.class.php:283
 msgid "Disabled"
 msgstr "Désactivé"
 
@@ -170,7 +170,7 @@ msgstr "Éditer le répertoire"
 msgid "Edit Directory: %s"
 msgstr "Éditer le répertoire : %s"
 
-#: Directory.class.php:285
+#: Directory.class.php:284
 msgid "Enabled"
 msgstr "Activé"
 
@@ -260,7 +260,7 @@ msgid ""
 "prompting the caller to try again"
 msgstr ""
 
-#: Directory.class.php:260
+#: Directory.class.php:259
 msgid "Reset"
 msgstr "Réinitialiser"
 
@@ -280,7 +280,7 @@ msgstr "Sélectionner"
 msgid "Spell Name"
 msgstr "Épeler le nom"
 
-#: Directory.class.php:265
+#: Directory.class.php:264
 msgid "Submit"
 msgstr "Soumettre"
 
