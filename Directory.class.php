@@ -84,8 +84,7 @@ class Directory extends FreePBX_Helpers implements BMO {
 				$vars[$var] = isset($_REQUEST[$var]) 	? $_REQUEST[$var]		: null;
 			}
 			$action		= isset($_REQUEST['action'])	? $_REQUEST['action']	: null;
-			$entries	= isset($_REQUEST['entries'])	? $_REQUEST['entries']	: null;
-			//$entries=(($entries)?array_values($entries):'');//reset keys
+			$entries	= isset($_REQUEST['entries'])	? $_REQUEST['entries']	: [];
 			switch($action){
 				case 'edit':
 					//get real dest
