@@ -2,7 +2,7 @@
 	<rawname>directory</rawname>
 	<repo>standard</repo>
 	<name>Directory</name>
-	<version>15.0.3</version>
+	<version>15.0.4</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>https://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -53,6 +53,7 @@
 		<module>recordings ge 3.3.8</module>
 	</depends>
 	<changelog>
+		*15.0.4* Fixing FREEPBX-18621 Reset button under Directories not working 
 		*15.0.3* FREEPBX-18134 Fix default parameter for entries 
 		*15.0.2* Packaging of ver 15.0.2
 		*15.0.1* Backup 15
