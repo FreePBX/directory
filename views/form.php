@@ -31,7 +31,7 @@ if(function_exists('recordings_list')){
 }
 ?>
 <h2><?php echo $subhead ?></h2>
-<form action="" method="post" class="fpbx-submit" id="dirform" data-fpbx-delete="?display=directory&amp;action=delete&amp;id=<?php echo $id?>">
+<form action="" method="post" name="frm_dirform" class="fpbx-submit" id="dirform" data-fpbx-delete="?display=directory&amp;action=delete&amp;id=<?php echo $id?>">
 
 <!--Directory Name-->
 <div class="element-container">
