@@ -15,7 +15,11 @@ $(document).ready(function(){
 		});
 		return false;
 	});
-
+	$('form[name=frm_dirform]')[0].onsubmit = function() {
+		if (dirnames.indexOf($("#dirname").val()) >= 0) {
+			return warnInvalid($("#dirname"),_("Directory Name Already Exist"));
+		}
+	}
 	//add row button
 	$('#addrow').change(function(){
     var val = $('#addusersel').val().trim();

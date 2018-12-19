@@ -342,3 +342,6 @@ if(function_exists('recordings_list')){
 <input type='hidden' name="display" value="directory">
 <input type='hidden' name="view" value="form">
 </form>
+<script>
+var dirnames = <?php print json_encode(\FreePBX::Directory()->getallnames($id)); ?>;
+</script>

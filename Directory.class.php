@@ -135,6 +135,17 @@ class Directory extends FreePBX_Helpers implements BMO {
 		return $results;
     }
     
+	public function getallnames($id) {
+		$sql = 'SELECT `dirname` FROM directory_details';
+		if ($id) {
+			$sql .= ' where  id != :id ';
+		}
+		$stmt = $this->Database->prepare($sql);
+		$stmt->execute(array(':id' => $id));
+		$ret = $stmt->fetchAll(\PDO::FETCH_COLUMN, 0);
+		$results = $ret?$ret:array();
+		return $results;
+	}
 	public function getDefault(){
 		$sql = "SELECT value FROM `admin` WHERE `variable` = 'default_directory'";
 		$stmt = $this->Database->prepare($sql);
