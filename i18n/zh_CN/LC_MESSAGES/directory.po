@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-31 11:50+0530\n"
+"POT-Creation-Date: 2018-12-31 12:04+0530\n"
 "PO-Revision-Date: 2015-02-20 19:22-0500\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -88,7 +88,7 @@ msgstr "默认目录"
 msgid "Default Group Inclusion"
 msgstr "默认组"
 
-#: Directory.class.php:276
+#: Directory.class.php:266
 msgid "Delete"
 msgstr ""
 
@@ -153,7 +153,7 @@ msgstr ""
 msgid "Directory: %s "
 msgstr "目录: %s"
 
-#: Directory.class.php:305
+#: Directory.class.php:295
 msgid "Disabled"
 msgstr ""
 
@@ -171,7 +171,7 @@ msgstr ""
 msgid "Edit Directory: %s"
 msgstr "编辑目录: %s"
 
-#: Directory.class.php:306
+#: Directory.class.php:296
 msgid "Enabled"
 msgstr ""
 
@@ -261,7 +261,7 @@ msgid ""
 "prompting the caller to try again"
 msgstr ""
 
-#: Directory.class.php:281
+#: Directory.class.php:271
 msgid "Reset"
 msgstr ""
 
@@ -281,7 +281,7 @@ msgstr ""
 msgid "Spell Name"
 msgstr "拼写名称"
 
-#: Directory.class.php:286
+#: Directory.class.php:276
 msgid "Submit"
 msgstr "提交"
 

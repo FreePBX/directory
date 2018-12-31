@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-31 11:50+0530\n"
+"POT-Creation-Date: 2018-12-31 12:04+0530\n"
 "PO-Revision-Date: 2018-07-18 19:18+0000\n"
 "Last-Translator: Elvita Crespo <ecrespo@sangoma.com>\n"
 "Language-Team: Spanish <http://*/projects/freepbx/directory/es/>\n"
@@ -94,7 +94,7 @@ msgstr "Directorio Por Defecto"
 msgid "Default Group Inclusion"
 msgstr "Grupo Inclusión por defecto"
 
-#: Directory.class.php:276
+#: Directory.class.php:266
 msgid "Delete"
 msgstr "Borrar"
 
@@ -159,7 +159,7 @@ msgstr "Directorio: %s"
 msgid "Directory: %s "
 msgstr "Directorio: %s "
 
-#: Directory.class.php:305
+#: Directory.class.php:295
 msgid "Disabled"
 msgstr "Deshabilitado"
 
@@ -177,7 +177,7 @@ msgstr "Editar Directorio"
 msgid "Edit Directory: %s"
 msgstr "Editar Directorio: %s"
 
-#: Directory.class.php:306
+#: Directory.class.php:296
 msgid "Enabled"
 msgstr "Habilitado"
 
@@ -277,7 +277,7 @@ msgstr ""
 "Mensaje que se reproduce cuando una respuesta inválida/no coincidente se "
 "recibe, antes de que la persona que llama vuelva a intentarlo"
 
-#: Directory.class.php:281
+#: Directory.class.php:271
 msgid "Reset"
 msgstr "Reiniciar"
 
@@ -297,7 +297,7 @@ msgstr "Seleccionar"
 msgid "Spell Name"
 msgstr "Decir Nombre"
 
-#: Directory.class.php:286
+#: Directory.class.php:276
 msgid "Submit"
 msgstr "Enviar"
 

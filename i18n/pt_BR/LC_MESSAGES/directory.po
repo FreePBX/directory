@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-31 11:50+0530\n"
+"POT-Creation-Date: 2018-12-31 12:04+0530\n"
 "PO-Revision-Date: 2016-12-12 22:05+0200\n"
 "Last-Translator: Alexander <alexander.schley@paranagua.pr.gov.br>\n"
 "Language-Team: Portuguese (Brazil) <http://weblate.freepbx.org/projects/"
@@ -95,7 +95,7 @@ msgstr "Diretório Padrão"
 msgid "Default Group Inclusion"
 msgstr "Inclusão de Grupo Padrão"
 
-#: Directory.class.php:276
+#: Directory.class.php:266
 msgid "Delete"
 msgstr "Apagar"
 
@@ -161,7 +161,7 @@ msgstr "Diretório: %s"
 msgid "Directory: %s "
 msgstr "Diretório: %s "
 
-#: Directory.class.php:305
+#: Directory.class.php:295
 msgid "Disabled"
 msgstr "Desabilitado"
 
@@ -179,7 +179,7 @@ msgstr "Editar Diretório"
 msgid "Edit Directory: %s"
 msgstr "Editar Diretório: %s"
 
-#: Directory.class.php:306
+#: Directory.class.php:296
 msgid "Enabled"
 msgstr "Habilitado"
 
@@ -279,7 +279,7 @@ msgstr ""
 "Aviso a ser reproduzido quando uma resposta inválida/incompatível for "
 "recebida, antes de solicitar que o usuário chamador tente novamente"
 
-#: Directory.class.php:281
+#: Directory.class.php:271
 msgid "Reset"
 msgstr "Reiniciar"
 
@@ -299,7 +299,7 @@ msgstr "Selecionar"
 msgid "Spell Name"
 msgstr "Dizer Nome"
 
-#: Directory.class.php:286
+#: Directory.class.php:276
 msgid "Submit"
 msgstr "Enviar"
 
