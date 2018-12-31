@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-06 18:51-0400\n"
+"POT-Creation-Date: 2018-12-31 11:50+0530\n"
 "PO-Revision-Date: 2015-02-20 19:22-0500\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -44,7 +44,7 @@ msgstr "告警信息"
 msgid "All Users"
 msgstr "所有用户"
 
-#: assets/js/directory.js:83
+#: assets/js/directory.js:87
 msgid "An Error occurred trying to contact the server adding a row, no reply."
 msgstr ""
 
@@ -88,7 +88,7 @@ msgstr "默认目录"
 msgid "Default Group Inclusion"
 msgstr "默认组"
 
-#: Directory.class.php:254
+#: Directory.class.php:276
 msgid "Delete"
 msgstr ""
 
@@ -131,6 +131,10 @@ msgstr "目录标准选项"
 msgid "Directory Name"
 msgstr "目录名称"
 
+#: assets/js/directory.js:20
+msgid "Directory Name Already Exist"
+msgstr ""
+
 #: functions.inc.php:61
 msgid "Directory Options (DTMF)"
 msgstr "目录可选DTMF"
@@ -149,7 +153,7 @@ msgstr ""
 msgid "Directory: %s "
 msgstr "目录: %s"
 
-#: Directory.class.php:283
+#: Directory.class.php:305
 msgid "Disabled"
 msgstr ""
 
@@ -167,7 +171,7 @@ msgstr ""
 msgid "Edit Directory: %s"
 msgstr "编辑目录: %s"
 
-#: Directory.class.php:284
+#: Directory.class.php:306
 msgid "Enabled"
 msgstr ""
 
@@ -257,7 +261,7 @@ msgid ""
 "prompting the caller to try again"
 msgstr ""
 
-#: Directory.class.php:259
+#: Directory.class.php:281
 msgid "Reset"
 msgstr ""
 
@@ -269,7 +273,7 @@ msgstr "返回IVR"
 msgid "Ringer Volume Override"
 msgstr ""
 
-#: assets/js/directory.js:103
+#: assets/js/directory.js:107
 msgid "Select"
 msgstr ""
 
@@ -277,7 +281,7 @@ msgstr ""
 msgid "Spell Name"
 msgstr "拼写名称"
 
-#: Directory.class.php:264
+#: Directory.class.php:286
 msgid "Submit"
 msgstr "提交"
 
@@ -289,7 +293,7 @@ msgstr "系统录音"
 msgid "Text to Speech"
 msgstr "语音识别"
 
-#: assets/js/directory.js:24
+#: assets/js/directory.js:28
 msgid "This entry has already been added"
 msgstr ""
 

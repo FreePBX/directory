@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-06 18:51-0400\n"
+"POT-Creation-Date: 2018-12-31 11:50+0530\n"
 "PO-Revision-Date: 2014-04-17 09:53+0200\n"
 "Last-Translator: Kevin <kevin@qloog.com>\n"
 "Language-Team: Japanese <http://git.freepbx.org/projects/freepbx/directory/"
@@ -78,7 +78,7 @@ msgstr "アラート情報"
 msgid "All Users"
 msgstr "全てのユーザー"
 
-#: assets/js/directory.js:83
+#: assets/js/directory.js:87
 msgid "An Error occurred trying to contact the server adding a row, no reply."
 msgstr ""
 
@@ -122,7 +122,7 @@ msgstr "デフォルトディレクトリ"
 msgid "Default Group Inclusion"
 msgstr "デフォルトグループに含まれる"
 
-#: Directory.class.php:254
+#: Directory.class.php:276
 msgid "Delete"
 msgstr ""
 
@@ -165,6 +165,10 @@ msgstr "ディレクトリ一般オプション"
 msgid "Directory Name"
 msgstr "ディレクトリ名"
 
+#: assets/js/directory.js:20
+msgid "Directory Name Already Exist"
+msgstr ""
+
 #: functions.inc.php:61
 msgid "Directory Options (DTMF)"
 msgstr "ディレクトリオプション(DTMF)"
@@ -183,7 +187,7 @@ msgstr "ディレクトリ： %s"
 msgid "Directory: %s "
 msgstr "ディレクトリ： %s "
 
-#: Directory.class.php:283
+#: Directory.class.php:305
 msgid "Disabled"
 msgstr ""
 
@@ -201,7 +205,7 @@ msgstr ""
 msgid "Edit Directory: %s"
 msgstr "ディレクトリを編集： %s"
 
-#: Directory.class.php:284
+#: Directory.class.php:306
 msgid "Enabled"
 msgstr ""
 
@@ -295,7 +299,7 @@ msgstr ""
 "無効な/合致しない応答を受信したときに、発信者に再試行を促す前に再生されるプロ"
 "ンプト。"
 
-#: Directory.class.php:259
+#: Directory.class.php:281
 msgid "Reset"
 msgstr ""
 
@@ -307,7 +311,7 @@ msgstr "IVRに戻る"
 msgid "Ringer Volume Override"
 msgstr ""
 
-#: assets/js/directory.js:103
+#: assets/js/directory.js:107
 msgid "Select"
 msgstr ""
 
@@ -315,7 +319,7 @@ msgstr ""
 msgid "Spell Name"
 msgstr "名前のスペル"
 
-#: Directory.class.php:264
+#: Directory.class.php:286
 msgid "Submit"
 msgstr "送信"
 
@@ -327,7 +331,7 @@ msgstr "システム録音:"
 msgid "Text to Speech"
 msgstr "テキスト to スピーチ(テキスト合成音声)"
 
-#: assets/js/directory.js:24
+#: assets/js/directory.js:28
 msgid "This entry has already been added"
 msgstr ""
 

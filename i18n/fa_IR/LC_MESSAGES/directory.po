@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-06 18:51-0400\n"
+"POT-Creation-Date: 2018-12-31 11:50+0530\n"
 "PO-Revision-Date: 2016-04-02 20:25+0200\n"
 "Last-Translator: Media <mousavi.media@gmail.com>\n"
 "Language-Team: Persian <http://weblate.freepbx.org/projects/freepbx/"
@@ -49,7 +49,7 @@ msgstr "اطلاعات هشدار"
 msgid "All Users"
 msgstr "تمام کاربران"
 
-#: assets/js/directory.js:83
+#: assets/js/directory.js:87
 msgid "An Error occurred trying to contact the server adding a row, no reply."
 msgstr "در هنگام افزودن ردیف به سرور خطایی رخ داد،بدون پاسخ."
 
@@ -93,7 +93,7 @@ msgstr "دایرکتوری پیشفرض"
 msgid "Default Group Inclusion"
 msgstr "گنجایش پیشفرض گروه"
 
-#: Directory.class.php:254
+#: Directory.class.php:276
 msgid "Delete"
 msgstr "حذف"
 
@@ -136,6 +136,10 @@ msgstr "گزینه های عمومی دایرکتوری"
 msgid "Directory Name"
 msgstr "نام دایرکتوری"
 
+#: assets/js/directory.js:20
+msgid "Directory Name Already Exist"
+msgstr ""
+
 #: functions.inc.php:61
 msgid "Directory Options (DTMF)"
 msgstr "گزینه های دایرکتوری (DTMF)"
@@ -154,7 +158,7 @@ msgstr "دایرکتوری %s"
 msgid "Directory: %s "
 msgstr "دایرکتوری :%s "
 
-#: Directory.class.php:283
+#: Directory.class.php:305
 msgid "Disabled"
 msgstr "غیر فعال"
 
@@ -172,7 +176,7 @@ msgstr "ویرایش دایرکتوری"
 msgid "Edit Directory: %s"
 msgstr "ویرایش دایرکتوری :%s"
 
-#: Directory.class.php:284
+#: Directory.class.php:306
 msgid "Enabled"
 msgstr "فعال"
 
@@ -269,7 +273,7 @@ msgstr ""
 "Prompt to be played when an invalid/unmatched  response is received, before "
 "prompting the caller to try again"
 
-#: Directory.class.php:259
+#: Directory.class.php:281
 msgid "Reset"
 msgstr "بازنشانی"
 
@@ -281,7 +285,7 @@ msgstr "بازگشت به منو صوتی"
 msgid "Ringer Volume Override"
 msgstr ""
 
-#: assets/js/directory.js:103
+#: assets/js/directory.js:107
 msgid "Select"
 msgstr "انتخاب"
 
@@ -289,7 +293,7 @@ msgstr "انتخاب"
 msgid "Spell Name"
 msgstr "نهجی نام"
 
-#: Directory.class.php:264
+#: Directory.class.php:286
 msgid "Submit"
 msgstr "ارسال"
 
@@ -301,7 +305,7 @@ msgstr "ضبط سیستمی："
 msgid "Text to Speech"
 msgstr "متن به گفتار"
 
-#: assets/js/directory.js:24
+#: assets/js/directory.js:28
 msgid "This entry has already been added"
 msgstr "این ورودی اضافه شده"
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-06 18:51-0400\n"
+"POT-Creation-Date: 2018-12-31 11:50+0530\n"
 "PO-Revision-Date: 2016-12-12 22:05+0200\n"
 "Last-Translator: Alexander <alexander.schley@paranagua.pr.gov.br>\n"
 "Language-Team: Portuguese (Brazil) <http://weblate.freepbx.org/projects/"
@@ -49,7 +49,7 @@ msgstr "Informação de Alerta"
 msgid "All Users"
 msgstr "Todos os Usuários"
 
-#: assets/js/directory.js:83
+#: assets/js/directory.js:87
 msgid "An Error occurred trying to contact the server adding a row, no reply."
 msgstr ""
 "Ocorreu um erro ao tentar entrar em contato com o servidor ao adicionar uma "
@@ -95,7 +95,7 @@ msgstr "Diretório Padrão"
 msgid "Default Group Inclusion"
 msgstr "Inclusão de Grupo Padrão"
 
-#: Directory.class.php:254
+#: Directory.class.php:276
 msgid "Delete"
 msgstr "Apagar"
 
@@ -139,6 +139,10 @@ msgstr "Opções Gerais do Diretório"
 msgid "Directory Name"
 msgstr "Nome do Diretório"
 
+#: assets/js/directory.js:20
+msgid "Directory Name Already Exist"
+msgstr ""
+
 #: functions.inc.php:61
 msgid "Directory Options (DTMF)"
 msgstr "Opções (DTMF) do Diretório"
@@ -157,7 +161,7 @@ msgstr "Diretório: %s"
 msgid "Directory: %s "
 msgstr "Diretório: %s "
 
-#: Directory.class.php:283
+#: Directory.class.php:305
 msgid "Disabled"
 msgstr "Desabilitado"
 
@@ -175,7 +179,7 @@ msgstr "Editar Diretório"
 msgid "Edit Directory: %s"
 msgstr "Editar Diretório: %s"
 
-#: Directory.class.php:284
+#: Directory.class.php:306
 msgid "Enabled"
 msgstr "Habilitado"
 
@@ -275,7 +279,7 @@ msgstr ""
 "Aviso a ser reproduzido quando uma resposta inválida/incompatível for "
 "recebida, antes de solicitar que o usuário chamador tente novamente"
 
-#: Directory.class.php:259
+#: Directory.class.php:281
 msgid "Reset"
 msgstr "Reiniciar"
 
@@ -287,7 +291,7 @@ msgstr "Voltar para a URA"
 msgid "Ringer Volume Override"
 msgstr "Substituição do Volume do Toque"
 
-#: assets/js/directory.js:103
+#: assets/js/directory.js:107
 msgid "Select"
 msgstr "Selecionar"
 
@@ -295,7 +299,7 @@ msgstr "Selecionar"
 msgid "Spell Name"
 msgstr "Dizer Nome"
 
-#: Directory.class.php:264
+#: Directory.class.php:286
 msgid "Submit"
 msgstr "Enviar"
 
@@ -307,7 +311,7 @@ msgstr "Gravações do Sistema:"
 msgid "Text to Speech"
 msgstr "Texto para Falar"
 
-#: assets/js/directory.js:24
+#: assets/js/directory.js:28
 msgid "This entry has already been added"
 msgstr "Este elemento já foi adicionado"
 

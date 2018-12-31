@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-06 18:51-0400\n"
+"POT-Creation-Date: 2018-12-31 11:50+0530\n"
 "PO-Revision-Date: 2017-07-20 13:04+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese <http://weblate.freepbx.org/projects/freepbx/"
@@ -49,7 +49,7 @@ msgstr "Thông tin cảnh báo"
 msgid "All Users"
 msgstr "Tất cả người dùng"
 
-#: assets/js/directory.js:83
+#: assets/js/directory.js:87
 msgid "An Error occurred trying to contact the server adding a row, no reply."
 msgstr ""
 "Xảy ra lỗi khi cố liên lạc với máy chủ khi thêm một hàng, không hồi đáp."
@@ -94,7 +94,7 @@ msgstr "Mặc định Danh mục  web"
 msgid "Default Group Inclusion"
 msgstr "Mặc định Group Inclusion"
 
-#: Directory.class.php:254
+#: Directory.class.php:276
 msgid "Delete"
 msgstr "Xóa"
 
@@ -139,6 +139,10 @@ msgstr "Tùy chọn chung của Danh mục  web"
 msgid "Directory Name"
 msgstr "Tên Danh mục web"
 
+#: assets/js/directory.js:20
+msgid "Directory Name Already Exist"
+msgstr ""
+
 #: functions.inc.php:61
 msgid "Directory Options (DTMF)"
 msgstr "Tùy chọn của Danh mục web (DTMF)"
@@ -157,7 +161,7 @@ msgstr "Danh mục  web: %s"
 msgid "Directory: %s "
 msgstr "Danh mục  web: %s "
 
-#: Directory.class.php:283
+#: Directory.class.php:305
 msgid "Disabled"
 msgstr "Bị vô hiệu"
 
@@ -175,7 +179,7 @@ msgstr "Chỉnh sửa Danh mục web"
 msgid "Edit Directory: %s"
 msgstr "Chỉnh sửa danh mục  web: %s"
 
-#: Directory.class.php:284
+#: Directory.class.php:306
 msgid "Enabled"
 msgstr "Đã kích hoạt"
 
@@ -273,7 +277,7 @@ msgstr ""
 "Nhắc nhở được phát khi nhận được một trả lời khôn hợp lê/ không khớp, "
 "trwuowcs khi nhắc nhở người gọi thử lại lần nữa"
 
-#: Directory.class.php:259
+#: Directory.class.php:281
 msgid "Reset"
 msgstr "Cài đặt lại"
 
@@ -285,7 +289,7 @@ msgstr "Quay lại IVR"
 msgid "Ringer Volume Override"
 msgstr "Ghi đè âm lượng chuông"
 
-#: assets/js/directory.js:103
+#: assets/js/directory.js:107
 msgid "Select"
 msgstr "Chọn"
 
@@ -293,7 +297,7 @@ msgstr "Chọn"
 msgid "Spell Name"
 msgstr "Đánh vần tên"
 
-#: Directory.class.php:264
+#: Directory.class.php:286
 msgid "Submit"
 msgstr "Gửi đi"
 
@@ -305,7 +309,7 @@ msgstr "Các ghi âm hệ thống:"
 msgid "Text to Speech"
 msgstr "Tính năng Text to speech- Phát lại in văn bản dưới dạng lời nói"
 
-#: assets/js/directory.js:24
+#: assets/js/directory.js:28
 msgid "This entry has already been added"
 msgstr "Mục nhập này được thêm"
 

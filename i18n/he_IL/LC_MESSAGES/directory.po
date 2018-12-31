@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-06 18:51-0400\n"
+"POT-Creation-Date: 2018-12-31 11:50+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -55,7 +55,7 @@ msgstr ""
 msgid "All Users"
 msgstr ""
 
-#: assets/js/directory.js:83
+#: assets/js/directory.js:87
 msgid "An Error occurred trying to contact the server adding a row, no reply."
 msgstr ""
 
@@ -99,7 +99,7 @@ msgstr ""
 msgid "Default Group Inclusion"
 msgstr ""
 
-#: Directory.class.php:254
+#: Directory.class.php:276
 msgid "Delete"
 msgstr ""
 
@@ -142,6 +142,10 @@ msgstr ""
 msgid "Directory Name"
 msgstr ""
 
+#: assets/js/directory.js:20
+msgid "Directory Name Already Exist"
+msgstr ""
+
 #: functions.inc.php:61
 msgid "Directory Options (DTMF)"
 msgstr ""
@@ -160,7 +164,7 @@ msgstr ""
 msgid "Directory: %s "
 msgstr ""
 
-#: Directory.class.php:283
+#: Directory.class.php:305
 msgid "Disabled"
 msgstr ""
 
@@ -178,7 +182,7 @@ msgstr ""
 msgid "Edit Directory: %s"
 msgstr ""
 
-#: Directory.class.php:284
+#: Directory.class.php:306
 msgid "Enabled"
 msgstr ""
 
@@ -268,7 +272,7 @@ msgid ""
 "prompting the caller to try again"
 msgstr ""
 
-#: Directory.class.php:259
+#: Directory.class.php:281
 msgid "Reset"
 msgstr ""
 
@@ -280,7 +284,7 @@ msgstr ""
 msgid "Ringer Volume Override"
 msgstr ""
 
-#: assets/js/directory.js:103
+#: assets/js/directory.js:107
 msgid "Select"
 msgstr ""
 
@@ -288,7 +292,7 @@ msgstr ""
 msgid "Spell Name"
 msgstr ""
 
-#: Directory.class.php:264
+#: Directory.class.php:286
 msgid "Submit"
 msgstr ""
 
@@ -300,7 +304,7 @@ msgstr ""
 msgid "Text to Speech"
 msgstr ""
 
-#: assets/js/directory.js:24
+#: assets/js/directory.js:28
 msgid "This entry has already been added"
 msgstr ""
 
