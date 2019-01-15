@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-31 12:04+0530\n"
+"POT-Creation-Date: 2019-01-15 16:50-0500\n"
 "PO-Revision-Date: 2016-04-02 20:25+0200\n"
 "Last-Translator: Media <mousavi.media@gmail.com>\n"
 "Language-Team: Persian <http://weblate.freepbx.org/projects/freepbx/"
@@ -49,7 +49,7 @@ msgstr "اطلاعات هشدار"
 msgid "All Users"
 msgstr "تمام کاربران"
 
-#: assets/js/directory.js:87
+#: assets/js/directory.js:90
 msgid "An Error occurred trying to contact the server adding a row, no reply."
 msgstr "در هنگام افزودن ردیف به سرور خطایی رخ داد،بدون پاسخ."
 
@@ -136,8 +136,12 @@ msgstr "گزینه های عمومی دایرکتوری"
 msgid "Directory Name"
 msgstr "نام دایرکتوری"
 
-#: assets/js/directory.js:20
+#: assets/js/directory.js:23
 msgid "Directory Name Already Exist"
+msgstr ""
+
+#: assets/js/directory.js:20
+msgid "Directory Name Can not be Blank"
 msgstr ""
 
 #: functions.inc.php:61
@@ -285,7 +289,7 @@ msgstr "بازگشت به منو صوتی"
 msgid "Ringer Volume Override"
 msgstr ""
 
-#: assets/js/directory.js:107
+#: assets/js/directory.js:110
 msgid "Select"
 msgstr "انتخاب"
 
@@ -305,7 +309,7 @@ msgstr "ضبط سیستمی："
 msgid "Text to Speech"
 msgstr "متن به گفتار"
 
-#: assets/js/directory.js:28
+#: assets/js/directory.js:31
 msgid "This entry has already been added"
 msgstr "این ورودی اضافه شده"
 
