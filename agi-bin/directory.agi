@@ -63,8 +63,8 @@ while($loopcounter1 <= $dir->dir['repeat_loops']){
 			$validdigits = '1234567890';
 		}
 		$press=$dir->getKeypress($compound, $validdigits, 3000);
-		if(!empty($press['result']) || $press === 0){
-			$search.=$press['result'];
+		if(!empty($press) || $press === 0){
+			$search.=$press;
 			$matches=$dir->search($search,1);
 			if ($matches > 9) {
 				$search = rtrim($search,'#');
@@ -74,7 +74,7 @@ while($loopcounter1 <= $dir->dir['repeat_loops']){
 			$matchesloop++;
 		}
 		// if they timeout and there are 3 or fewer matches then just play them
-		if (empty($press['result']) && $matches <=3) {
+		if (empty($press) && $matches <=3) {
 			break;
 		}
 	}
@@ -92,7 +92,7 @@ while($loopcounter1 <= $dir->dir['repeat_loops']){
 		$matches=$dir->search($search);
 		foreach($matches as $idx => $match){
 			$ret = $dir->getKeypress('for',$validkeys,0);
-			if (trim($ret['result'])) {
+			if (trim($ret)) {
 				break;
 			}
 			$ret = $dir->readContact($matches[$idx],$validkeys,0);
@@ -100,7 +100,7 @@ while($loopcounter1 <= $dir->dir['repeat_loops']){
 				break;
 			}
 			$ret = $dir->getKeypress('press',$validkeys,0);
-			if (trim($ret['result'])) {
+			if (trim($ret)) {
 				break;
 			}
 			$ret = $dir->agi->say_digits($idx+1,$validkeys);
