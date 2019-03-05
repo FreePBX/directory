@@ -2,7 +2,7 @@
 	<rawname>directory</rawname>
 	<repo>standard</repo>
 	<name>Directory</name>
-	<version>15.0.10</version>
+	<version>15.0.11</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>https://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -53,6 +53,7 @@
 		<module>recordings ge 3.3.8</module>
 	</depends>
 	<changelog>
+		*15.0.11* Fixing legacy restore 
 		*15.0.10* Fixing FREEPBX-18337 
 		*15.0.9* FREEPBX-19461 directory - when more than 10 results failing 
 		*15.0.8* backup and restore 

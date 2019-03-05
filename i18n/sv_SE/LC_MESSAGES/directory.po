@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX Directory\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-01 16:59+0530\n"
+"POT-Creation-Date: 2019-03-04 19:13-0500\n"
 "PO-Revision-Date: 2010-06-22 22:30+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team:  <mickecamino@gmail.com>\n"
@@ -104,7 +104,7 @@ msgstr "Standardkatalog"
 msgid "Default Group Inclusion"
 msgstr "Inkludera i standardgrupp"
 
-#: Directory.class.php:267
+#: Directory.class.php:259
 msgid "Delete"
 msgstr ""
 
@@ -174,7 +174,7 @@ msgstr "Katalog: %s"
 msgid "Directory: %s "
 msgstr "Katalog: %s "
 
-#: Directory.class.php:296
+#: Directory.class.php:288
 msgid "Disabled"
 msgstr ""
 
@@ -192,7 +192,7 @@ msgstr ""
 msgid "Edit Directory: %s"
 msgstr ""
 
-#: Directory.class.php:297
+#: Directory.class.php:289
 msgid "Enabled"
 msgstr ""
 
@@ -288,7 +288,7 @@ msgstr ""
 "Meddelande att spela upp vid ogiltigt/icke matchat försök från uppringaren, "
 "spelas upp innan uppringaren ombeds försöka igen"
 
-#: Directory.class.php:272
+#: Directory.class.php:264
 msgid "Reset"
 msgstr ""
 
@@ -308,7 +308,7 @@ msgstr ""
 msgid "Spell Name"
 msgstr "Stava namn"
 
-#: Directory.class.php:277
+#: Directory.class.php:269
 msgid "Submit"
 msgstr "Spara ändringar"
 

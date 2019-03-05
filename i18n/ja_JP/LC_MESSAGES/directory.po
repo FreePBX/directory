@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-01 16:59+0530\n"
+"POT-Creation-Date: 2019-03-04 19:13-0500\n"
 "PO-Revision-Date: 2014-04-17 09:53+0200\n"
 "Last-Translator: Kevin <kevin@qloog.com>\n"
 "Language-Team: Japanese <http://git.freepbx.org/projects/freepbx/directory/"
@@ -122,7 +122,7 @@ msgstr "デフォルトディレクトリ"
 msgid "Default Group Inclusion"
 msgstr "デフォルトグループに含まれる"
 
-#: Directory.class.php:267
+#: Directory.class.php:259
 msgid "Delete"
 msgstr ""
 
@@ -191,7 +191,7 @@ msgstr "ディレクトリ： %s"
 msgid "Directory: %s "
 msgstr "ディレクトリ： %s "
 
-#: Directory.class.php:296
+#: Directory.class.php:288
 msgid "Disabled"
 msgstr ""
 
@@ -209,7 +209,7 @@ msgstr ""
 msgid "Edit Directory: %s"
 msgstr "ディレクトリを編集： %s"
 
-#: Directory.class.php:297
+#: Directory.class.php:289
 msgid "Enabled"
 msgstr ""
 
@@ -303,7 +303,7 @@ msgstr ""
 "無効な/合致しない応答を受信したときに、発信者に再試行を促す前に再生されるプロ"
 "ンプト。"
 
-#: Directory.class.php:272
+#: Directory.class.php:264
 msgid "Reset"
 msgstr ""
 
@@ -323,7 +323,7 @@ msgstr ""
 msgid "Spell Name"
 msgstr "名前のスペル"
 
-#: Directory.class.php:277
+#: Directory.class.php:269
 msgid "Submit"
 msgstr "送信"
 

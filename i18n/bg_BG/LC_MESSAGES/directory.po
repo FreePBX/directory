@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-01 16:59+0530\n"
+"POT-Creation-Date: 2019-03-04 19:13-0500\n"
 "PO-Revision-Date: 2014-07-22 15:33+0200\n"
 "Last-Translator: Chavdar <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://git.freepbx.org/projects/freepbx/directory/"
@@ -102,7 +102,7 @@ msgstr ""
 msgid "Default Group Inclusion"
 msgstr ""
 
-#: Directory.class.php:267
+#: Directory.class.php:259
 msgid "Delete"
 msgstr ""
 
@@ -171,7 +171,7 @@ msgstr ""
 msgid "Directory: %s "
 msgstr ""
 
-#: Directory.class.php:296
+#: Directory.class.php:288
 msgid "Disabled"
 msgstr ""
 
@@ -189,7 +189,7 @@ msgstr ""
 msgid "Edit Directory: %s"
 msgstr ""
 
-#: Directory.class.php:297
+#: Directory.class.php:289
 msgid "Enabled"
 msgstr ""
 
@@ -279,7 +279,7 @@ msgid ""
 "prompting the caller to try again"
 msgstr ""
 
-#: Directory.class.php:272
+#: Directory.class.php:264
 msgid "Reset"
 msgstr ""
 
@@ -299,7 +299,7 @@ msgstr ""
 msgid "Spell Name"
 msgstr ""
 
-#: Directory.class.php:277
+#: Directory.class.php:269
 msgid "Submit"
 msgstr ""
 

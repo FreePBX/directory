@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-01 16:59+0530\n"
+"POT-Creation-Date: 2019-03-04 19:13-0500\n"
 "PO-Revision-Date: 2017-05-17 01:53+0200\n"
 "Last-Translator: Evgeniy <yen81@mail.ru>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/"
@@ -92,7 +92,7 @@ msgstr "Директория по умолчанию"
 msgid "Default Group Inclusion"
 msgstr "Включение в дефолтную группу"
 
-#: Directory.class.php:267
+#: Directory.class.php:259
 msgid "Delete"
 msgstr "Удалить"
 
@@ -163,7 +163,7 @@ msgstr "Директория: %s"
 msgid "Directory: %s "
 msgstr "Директория:  %s "
 
-#: Directory.class.php:296
+#: Directory.class.php:288
 msgid "Disabled"
 msgstr "Выключено"
 
@@ -181,7 +181,7 @@ msgstr "Редактирование каталога"
 msgid "Edit Directory: %s"
 msgstr "Редактировать директорию: %s"
 
-#: Directory.class.php:297
+#: Directory.class.php:289
 msgid "Enabled"
 msgstr "Включено"
 
@@ -280,7 +280,7 @@ msgstr ""
 "Сообщение, воспроизводимое при неверно набранном номере, прежде чем будет "
 "предложено попробовать набрать ещё раз"
 
-#: Directory.class.php:272
+#: Directory.class.php:264
 msgid "Reset"
 msgstr "Сброс"
 
@@ -300,7 +300,7 @@ msgstr "Выбрать"
 msgid "Spell Name"
 msgstr "Имя Spell"
 
-#: Directory.class.php:277
+#: Directory.class.php:269
 msgid "Submit"
 msgstr "Подтвердить"
 
