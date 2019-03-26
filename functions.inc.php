@@ -514,7 +514,7 @@ function directory_getdestinfo($dest) {
 			return array();
 		} else {
 			return array('description' => sprintf(_("Directory %s: "), ($thisdir['dirname'] ? $thisdir['dirname'] : $id)),
-			             'edit_url' => 'config.php?display=directory&id=' . urlencode($id),
+			             'edit_url' => 'config.php?display=directory&view=form&id=' . urlencode($id),
 					);
 		}
 	} else {
