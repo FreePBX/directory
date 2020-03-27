@@ -2,7 +2,7 @@
 	<rawname>directory</rawname>
 	<repo>standard</repo>
 	<name>Directory</name>
-	<version>15.0.15</version>
+	<version>15.0.16</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>https://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -53,6 +53,7 @@
 		<module>recordings ge 3.3.8</module>
 	</depends>
 	<changelog>
+		*15.0.16* FREEPBX-21340 Backup/Restore missing Directory data 
 		*15.0.15* Related to FREEPBX-20414: removed $jobid from runRestore() 
 		*15.0.14* Removing unwanted cache files 
 		*15.0.13* FREEPBX-19758 
