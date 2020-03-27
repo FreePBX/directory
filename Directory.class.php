@@ -149,7 +149,7 @@ class Directory extends FreePBX_Helpers implements BMO {
 	}
 
 	public function setDefault($id){
-		$sql = "UPDATE admin SET value= :id WHERE `variable` = 'default_directory'";
+		$sql = "REPLACE INTO `admin` (`variable`, value) VALUES ('default_directory',:id)";
 		$this->Database->prepare($sql)->execute([':id' => $id]);
 		return $this;
 	}
