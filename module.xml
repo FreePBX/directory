@@ -2,7 +2,7 @@
 	<rawname>directory</rawname>
 	<repo>standard</repo>
 	<name>Directory</name>
-	<version>15.0.17</version>
+	<version>15.0.18</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>https://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -53,9 +53,10 @@
 		<module>recordings ge 3.3.8</module>
 	</depends>
 	<description>The directory module allows you to create directories of users that can be accessed by callers through modules like the IVR.</description>
-	<more-info>https://wiki.freepbx.org/display/F2/Directory+Module</more-info>
+	<more-info>https://wiki.freepbx.org/display/FPG/Directory+Module</more-info>
 
 	<changelog>
+		*15.0.18* Packaging of ver 15.0.18
 		*15.0.17* Packaging of ver 15.0.17
 		*15.0.16* FREEPBX-21340 Backup/Restore missing Directory data 
 		*15.0.15* Related to FREEPBX-20414: removed $jobid from runRestore() 
