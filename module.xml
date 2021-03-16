@@ -2,7 +2,7 @@
 	<rawname>directory</rawname>
 	<repo>standard</repo>
 	<name>Directory</name>
-	<version>15.0.18</version>
+	<version>16.0.1</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>https://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -56,29 +56,12 @@
 	<more-info>https://wiki.freepbx.org/display/FPG/Directory+Module</more-info>
 
 	<changelog>
-		*15.0.18* Packaging of ver 15.0.18
-		*15.0.17* Packaging of ver 15.0.17
-		*15.0.16* FREEPBX-21340 Backup/Restore missing Directory data 
-		*15.0.15* Related to FREEPBX-20414: removed $jobid from runRestore() 
-		*15.0.14* Removing unwanted cache files 
-		*15.0.13* FREEPBX-19758 
-		*15.0.12* Fixing FREEPBX-17867 
-		*15.0.11* Fixing legacy restore 
-		*15.0.10* Fixing FREEPBX-18337 
-		*15.0.9* FREEPBX-19461 directory - when more than 10 results failing 
-		*15.0.8* backup and restore 
-		*15.0.7* FREEPBX-15211 Able to create Empty as well as Multiple Directory with same Name. 
-		*15.0.6* FREEPBX-15211 Able to create Empty as well as Multiple Directory with same Name 
-		*15.0.5* FREEPBX-15211 Able to create Empty as well as Multiple Directory with same Name 
-		*15.0.4* Fixing FREEPBX-18621 Reset button under Directories not working 
-		*15.0.3* FREEPBX-18134 Fix default parameter for entries 
-		*15.0.2* Packaging of ver 15.0.2
-		*15.0.1* Backup 15
+		*16.0.1* 16.0 release 
 	</changelog>
 	<depends>
-		<version>13.0.191.12</version>
+		<version>16.0</version>
 	</depends>
 	<supported>
-		<version>15.0</version>
+		<version>16.0</version>
 	</supported>
 </module>
