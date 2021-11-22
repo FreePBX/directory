@@ -10,15 +10,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-17 02:40+0000\n"
-"PO-Revision-Date: 2018-07-18 19:18+0000\n"
-"Last-Translator: Elvita Crespo <ecrespo@sangoma.com>\n"
-"Language-Team: Spanish <http://*/projects/freepbx/directory/es/>\n"
+"PO-Revision-Date: 2021-11-22 20:51+0000\n"
+"Last-Translator: Javier Pastor <jpastor@cerebelum.net>\n"
+"Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/"
+"directory/es/>\n"
 "Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.19.1\n"
+"X-Generator: Weblate 3.0.1\n"
 
 #: functions.inc.php:59 views/form.php:127
 msgid ""
@@ -139,11 +140,11 @@ msgstr "Nombre Directorio"
 
 #: assets/js/directory.js:23
 msgid "Directory Name Already Exist"
-msgstr ""
+msgstr "El Nombre del Directorio ya Existe"
 
 #: assets/js/directory.js:20
 msgid "Directory Name Can not be Blank"
-msgstr ""
+msgstr "El Nombre del Directorio No Puede Estar en Blanco"
 
 #: functions.inc.php:61
 msgid "Directory Options (DTMF)"
@@ -318,6 +319,8 @@ msgid ""
 "The directory module allows you to create directories of users that can be "
 "accessed by callers through modules like the IVR."
 msgstr ""
+"El módulo de directorio le permite crear directorios de usuarios a los que "
+"las personas que llaman pueden acceder a través de módulos como el IVR."
 
 #: assets/js/directory.js:31
 msgid "This entry has already been added"
@@ -331,6 +334,12 @@ msgid ""
 "enter 227 for BAR. This field should be a name as the search option is based "
 "on Name and not the number."
 msgstr ""
+"Esto debería completarse automáticamente con el nombre descriptivo de la "
+"extensión. Esto es lo que los usuarios buscarán cuando se les pida que "
+"ingresen las primeras 3 letras del nombre de la persona. Por ejemplo, si el "
+"nombre es Bartholomew, la persona que llama ingresaría 227 para BAR. Este "
+"campo debe ser un nombre, ya que la opción de búsqueda se basa en el nombre "
+"y no en el número."
 
 #: functions.inc.php:107
 msgid ""
