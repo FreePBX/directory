@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: 1.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-17 02:40+0000\n"
-"PO-Revision-Date: 2021-12-02 13:00+0000\n"
+"PO-Revision-Date: 2022-02-11 16:11+0000\n"
 "Last-Translator: Dmitriy Q <krotesk@ya.ru>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/"
 "directory/ru/>\n"
@@ -118,50 +118,50 @@ msgstr "Набор"
 #: directory.i18n.php:4 directory.i18n.php:10 page.directory.php:6
 #: views/bootnav.php:14 views/grid.php:19
 msgid "Directory"
-msgstr "Директории"
+msgstr "Каталог"
 
 #: functions.inc.php:612
 #, php-format
 msgid "Directory %s: "
-msgstr "Директория %s: "
+msgstr "Каталог %s: "
 
 #: functions.inc.php:57 views/form.php:67
 msgid "Directory Description"
-msgstr "Описание директории"
+msgstr "Описание каталога"
 
 #: functions.inc.php:54
 msgid "Directory General Options"
-msgstr "Основные свойства директории"
+msgstr "Основные свойства каталога"
 
 #: functions.inc.php:56 views/form.php:43
 msgid "Directory Name"
-msgstr "Название директории"
+msgstr "Название каталога"
 
 #: assets/js/directory.js:23
 msgid "Directory Name Already Exist"
-msgstr ""
+msgstr "Такое имя каталога уже используется"
 
 #: assets/js/directory.js:20
 msgid "Directory Name Can not be Blank"
-msgstr ""
+msgstr "Название каталога не может быть пустым"
 
 #: functions.inc.php:61
 msgid "Directory Options (DTMF)"
-msgstr "Опции директории (DTMF)"
+msgstr "Опции каталога (DTMF)"
 
 #: functions.inc.php:86
 msgid "Directory&nbsp;Entries"
-msgstr "Директория&nbsp;&nbsp;Значение"
+msgstr "Каталог&nbsp;&nbsp;Значение"
 
 #: functions.inc.php:642
 #, php-format
 msgid "Directory: %s"
-msgstr "Директория: %s"
+msgstr "Каталог: %s"
 
 #: functions.inc.php:587
 #, php-format
 msgid "Directory: %s "
-msgstr "Директория:  %s "
+msgstr "Каталог:  %s "
 
 #: Directory.class.php:179
 msgid "Disabled"
