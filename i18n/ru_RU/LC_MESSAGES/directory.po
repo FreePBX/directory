@@ -1,13 +1,9 @@
-# Russian freePBX ver. translation
-# Copyright (c) 2006-2012 PostMet Corporation
-# This file is distributed under the same license as the freePBX package.
-# Alexander Kozyrev <ceo@postmet.com>, Alexander Anikin <may@postmet.com>, 2006-2012.
 msgid ""
 msgstr ""
-"Project-Id-Version: 1.4\n"
+"Project-Id-Version: Russian (FreePBX)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-17 02:40+0000\n"
-"PO-Revision-Date: 2022-02-11 16:11+0000\n"
+"POT-Creation-Date: 2022-04-20 09:35+0000\n"
+"PO-Revision-Date: 2022-04-20 09:41+0000\n"
 "Last-Translator: Dmitriy Q <krotesk@ya.ru>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/"
 "directory/ru/>\n"
@@ -247,7 +243,7 @@ msgid ""
 "the caller"
 msgstr ""
 "Количество неверных попыток, во время которых сообщается о неверно набранном "
-"номере или отсутствии совпадений."
+"номере или отсутствии совпадений"
 
 #: views/form.php:155
 #, php-format
@@ -317,6 +313,8 @@ msgid ""
 "The directory module allows you to create directories of users that can be "
 "accessed by callers through modules like the IVR."
 msgstr ""
+"Модуль Каталог позволяет создавать каталоги пользователей, к которым "
+"абоненты могут получить доступ с помощью таких модулей, как IVR."
 
 #: assets/js/directory.js:31
 msgid "This entry has already been added"
@@ -330,6 +328,11 @@ msgid ""
 "enter 227 for BAR. This field should be a name as the search option is based "
 "on Name and not the number."
 msgstr ""
+"Это должно автоматически заполняться описательным именем внутр.номера. Это "
+"то, по чему пользователи будут искать, когда их попросят ввести первые 3 "
+"буквы имени человека. Например, если имя Анатолий, вызывающий абонент должен "
+"ввести 252 для АНА. Это поле должно быть именем, так как опция поиска "
+"основана на имени, а не на номере."
 
 #: functions.inc.php:107
 msgid ""
