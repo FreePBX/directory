@@ -2,7 +2,7 @@
 	<rawname>directory</rawname>
 	<repo>standard</repo>
 	<name>Directory</name>
-	<version>16.0.1</version>
+	<version>17.0.1</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>https://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -49,19 +49,15 @@
         </ivr>
     </hooks>
 	<depends>
-		<version>13.0.42</version>
-		<module>recordings ge 3.3.8</module>
+		<version>17.0.1</version>
+		<module>recordings ge 17.0.1</module>
 	</depends>
 	<description>The directory module allows you to create directories of users that can be accessed by callers through modules like the IVR.</description>
 	<more-info>https://wiki.freepbx.org/display/FPG/Directory+Module</more-info>
-
 	<changelog>
-		*16.0.1* 16.0 release 
+		*17.0.1* 17.0 release 
 	</changelog>
-	<depends>
-		<version>16.0</version>
-	</depends>
 	<supported>
-		<version>16.0</version>
+		<version>17.0</version>
 	</supported>
 </module>
