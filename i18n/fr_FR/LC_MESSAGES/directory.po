@@ -10,16 +10,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-17 02:40+0000\n"
-"PO-Revision-Date: 2016-02-04 23:09+0200\n"
-"Last-Translator: Nicolas Riendeau <freepbx@riendeau.org>\n"
+"PO-Revision-Date: 2023-01-14 18:00+0000\n"
+"Last-Translator:  peyre <contact@provya.fr>\n"
 "Language-Team: French <http://weblate.freepbx.org/projects/freepbx/directory/"
-"fr_FR/>\n"
+"fr/>\n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 2.2-dev\n"
+"X-Generator: Weblate 3.0.1\n"
 
 #: functions.inc.php:59 views/form.php:127
 msgid ""
@@ -274,7 +274,7 @@ msgstr "Réinitialiser"
 
 #: functions.inc.php:80 views/form.php:292
 msgid "Return to IVR"
-msgstr "Retourner à l'IVR"
+msgstr "Retourner au SVI"
 
 #: views/form.php:138
 msgid "Ringer Volume Override"
