@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-17 02:42+0000\n"
+"POT-Creation-Date: 2023-02-02 09:16+0000\n"
 "PO-Revision-Date: 2014-04-17 09:53+0200\n"
 "Last-Translator: Kevin <kevin@qloog.com>\n"
 "Language-Team: Japanese <http://git.freepbx.org/projects/freepbx/directory/"
@@ -90,10 +90,6 @@ msgstr "内線をアナウンス"
 msgid "Announcement"
 msgstr "アナウンス"
 
-#: directory.i18n.php:6
-msgid "Applications"
-msgstr "アプリケーション"
-
 #: functions.inc.php:58 views/form.php:91
 msgid "CallerID Name Prefix"
 msgstr "発信者ID名前プリフィックス"
@@ -143,8 +139,7 @@ msgstr "無効な録音が再生された場合に、呼が送られる宛先。
 msgid "Dial"
 msgstr "ダイヤル"
 
-#: directory.i18n.php:4 directory.i18n.php:10 page.directory.php:6
-#: views/bootnav.php:14 views/grid.php:19
+#: page.directory.php:6 views/bootnav.php:14 views/grid.php:19
 msgid "Directory"
 msgstr "ディレクトリー"
 
@@ -335,12 +330,6 @@ msgstr "システム録音:"
 msgid "Text to Speech"
 msgstr "テキスト to スピーチ(テキスト合成音声)"
 
-#: directory.i18n.php:8
-msgid ""
-"The directory module allows you to create directories of users that can be "
-"accessed by callers through modules like the IVR."
-msgstr ""
-
 #: assets/js/directory.js:31
 msgid "This entry has already been added"
 msgstr ""
@@ -412,6 +401,9 @@ msgstr "ok"
 #: functions.inc.php:308
 msgid "remove"
 msgstr "削除"
+
+#~ msgid "Applications"
+#~ msgstr "アプリケーション"
 
 #~ msgid "Adding directory tables if needed"
 #~ msgstr "必要に応じてディレクトリテーブルを追加"

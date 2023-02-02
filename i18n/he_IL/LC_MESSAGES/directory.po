@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-17 02:42+0000\n"
+"POT-Creation-Date: 2023-02-02 09:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -65,10 +65,6 @@ msgstr ""
 
 #: functions.inc.php:75 views/form.php:166
 msgid "Announcement"
-msgstr ""
-
-#: directory.i18n.php:6
-msgid "Applications"
 msgstr ""
 
 #: functions.inc.php:58 views/form.php:91
@@ -120,8 +116,7 @@ msgstr ""
 msgid "Dial"
 msgstr ""
 
-#: directory.i18n.php:4 directory.i18n.php:10 page.directory.php:6
-#: views/bootnav.php:14 views/grid.php:19
+#: page.directory.php:6 views/bootnav.php:14 views/grid.php:19
 msgid "Directory"
 msgstr ""
 
@@ -306,12 +301,6 @@ msgstr ""
 
 #: functions.inc.php:292
 msgid "Text to Speech"
-msgstr ""
-
-#: directory.i18n.php:8
-msgid ""
-"The directory module allows you to create directories of users that can be "
-"accessed by callers through modules like the IVR."
 msgstr ""
 
 #: assets/js/directory.js:31

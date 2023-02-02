@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-17 02:42+0000\n"
+"POT-Creation-Date: 2023-02-02 09:16+0000\n"
 "PO-Revision-Date: 2018-07-18 19:18+0000\n"
 "Last-Translator: Elvita Crespo <ecrespo@sangoma.com>\n"
 "Language-Team: Spanish <http://*/projects/freepbx/directory/es/>\n"
@@ -62,10 +62,6 @@ msgstr "Anunciar Extensión"
 msgid "Announcement"
 msgstr "Anuncio"
 
-#: directory.i18n.php:6
-msgid "Applications"
-msgstr "Aplicaciones"
-
 #: functions.inc.php:58 views/form.php:91
 msgid "CallerID Name Prefix"
 msgstr "Nombre prefijo CallerID"
@@ -115,8 +111,7 @@ msgstr "Destino para enviar la llamada después de reproducir Mensaje Inválido.
 msgid "Dial"
 msgstr "Marcar"
 
-#: directory.i18n.php:4 directory.i18n.php:10 page.directory.php:6
-#: views/bootnav.php:14 views/grid.php:19
+#: page.directory.php:6 views/bootnav.php:14 views/grid.php:19
 msgid "Directory"
 msgstr "Directorio"
 
@@ -313,12 +308,6 @@ msgstr "Grabaciones Sistema:"
 msgid "Text to Speech"
 msgstr "Texto a voz"
 
-#: directory.i18n.php:8
-msgid ""
-"The directory module allows you to create directories of users that can be "
-"accessed by callers through modules like the IVR."
-msgstr ""
-
 #: assets/js/directory.js:31
 msgid "This entry has already been added"
 msgstr "Esta entrada ya ha sido añadida"
@@ -392,6 +381,9 @@ msgstr "ok"
 #: functions.inc.php:308
 msgid "remove"
 msgstr "eliminar"
+
+#~ msgid "Applications"
+#~ msgstr "Aplicaciones"
 
 #~ msgid "Adding directory tables if needed"
 #~ msgstr "QAgregando tablas directory si es necesario"
