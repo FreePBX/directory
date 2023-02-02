@@ -300,12 +300,12 @@ class Directory extends FreePBX_Helpers implements BMO {
 		$html .='
 				$(target).html(sel);
 				$("#directdial").find("option").each( function() {
-  				var $this = $(this);
+  					var $this = $(this);
   					if ($this.val() == "'.$directdial.'") {
-	 					$this.attr("selected","selected");
+						$this.prop("selected", true);
 	 					return false;
   					}
-					});
+				});
 			</script>
 		';
 		return $html;
