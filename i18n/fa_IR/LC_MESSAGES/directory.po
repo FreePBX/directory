@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-17 02:42+0000\n"
+"POT-Creation-Date: 2023-02-02 09:16+0000\n"
 "PO-Revision-Date: 2016-04-02 20:25+0200\n"
 "Last-Translator: Media <mousavi.media@gmail.com>\n"
 "Language-Team: Persian <http://weblate.freepbx.org/projects/freepbx/"
@@ -61,10 +61,6 @@ msgstr "اعلام داخلی"
 msgid "Announcement"
 msgstr "اعلان"
 
-#: directory.i18n.php:6
-msgid "Applications"
-msgstr "برنامه‌ ها"
-
 #: functions.inc.php:58 views/form.php:91
 msgid "CallerID Name Prefix"
 msgstr "پیشوند نام شناسه تماس گیرنده"
@@ -114,8 +110,7 @@ msgstr "مقصدی که تماس پس از پخش پیام نادرست به آ�
 msgid "Dial"
 msgstr "شماره گیری"
 
-#: directory.i18n.php:4 directory.i18n.php:10 page.directory.php:6
-#: views/bootnav.php:14 views/grid.php:19
+#: page.directory.php:6 views/bootnav.php:14 views/grid.php:19
 msgid "Directory"
 msgstr "دایرکتوری"
 
@@ -309,12 +304,6 @@ msgstr "ضبط سیستمی："
 msgid "Text to Speech"
 msgstr "متن به گفتار"
 
-#: directory.i18n.php:8
-msgid ""
-"The directory module allows you to create directories of users that can be "
-"accessed by callers through modules like the IVR."
-msgstr ""
-
 #: assets/js/directory.js:31
 msgid "This entry has already been added"
 msgstr "این ورودی اضافه شده"
@@ -388,6 +377,9 @@ msgstr "تایید"
 #: functions.inc.php:308
 msgid "remove"
 msgstr "حذف"
+
+#~ msgid "Applications"
+#~ msgstr "برنامه‌ ها"
 
 #~ msgid "Adding directory tables if needed"
 #~ msgstr "در صورت نیاز جداول دایرکتوری را اضافه کن"

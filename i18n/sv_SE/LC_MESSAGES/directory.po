@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX Directory\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-17 02:42+0000\n"
+"POT-Creation-Date: 2023-02-02 09:16+0000\n"
 "PO-Revision-Date: 2010-06-22 22:30+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team:  <mickecamino@gmail.com>\n"
@@ -72,10 +72,6 @@ msgstr "Meddela anknytning"
 msgid "Announcement"
 msgstr "Välkomsthälsning"
 
-#: directory.i18n.php:6
-msgid "Applications"
-msgstr ""
-
 #: functions.inc.php:58 views/form.php:91
 msgid "CallerID Name Prefix"
 msgstr "Prefix för nummerpresentation"
@@ -126,8 +122,7 @@ msgstr ""
 msgid "Dial"
 msgstr ""
 
-#: directory.i18n.php:4 directory.i18n.php:10 page.directory.php:6
-#: views/bootnav.php:14 views/grid.php:19
+#: page.directory.php:6 views/bootnav.php:14 views/grid.php:19
 msgid "Directory"
 msgstr "Katalog"
 
@@ -319,12 +314,6 @@ msgstr "Systeminspelning:"
 #: functions.inc.php:292
 msgid "Text to Speech"
 msgstr "Text-till-tal"
-
-#: directory.i18n.php:8
-msgid ""
-"The directory module allows you to create directories of users that can be "
-"accessed by callers through modules like the IVR."
-msgstr ""
 
 #: assets/js/directory.js:31
 msgid "This entry has already been added"
