@@ -279,7 +279,7 @@ function directory_draw_entries($id){
 
 //used to add row's the entry table
 
-function directory_draw_entries_tr($id, $realid, $name = '',$foreign_name, $audio = '',$num = '',$e_id = '', $reuse_audio = false, $dataname = null){
+function directory_draw_entries_tr($id, $realid, $name = '',$foreign_name='', $audio = '',$num = '',$e_id = '', $reuse_audio = false, $dataname = null){
 	global $amp_conf,  $directory_draw_recordings_list, $audio_select;
 	if (!$directory_draw_recordings_list) {
 		$directory_draw_recordings_list = recordings_list();
