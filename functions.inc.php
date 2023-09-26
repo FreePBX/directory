@@ -192,7 +192,9 @@ function directory_get_dir_details($id){
 function directory_delete($id){
 	global $db;
 	$id = $db->escapeSimple($id);
-
+	if(!is_numeric($id)) {
+		return;
+	}
 	if (directory_get_default_dir() == $id) {
 		directory_save_default_dir('');
 	}
