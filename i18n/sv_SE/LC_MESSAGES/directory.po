@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX Directory\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-17 02:42+0000\n"
+"POT-Creation-Date: 2023-09-27 10:33+0000\n"
 "PO-Revision-Date: 2010-06-22 22:30+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team:  <mickecamino@gmail.com>\n"
@@ -38,7 +38,7 @@ msgid ""
 "distinctive ring for SIP devices."
 msgstr ""
 
-#: functions.inc.php:216 views/grid.php:21
+#: functions.inc.php:218 views/grid.php:21
 msgid "Actions"
 msgstr ""
 
@@ -46,7 +46,7 @@ msgstr ""
 msgid "Add Directory"
 msgstr "Lägg till katalog"
 
-#: functions.inc.php:260
+#: functions.inc.php:262
 msgid "Add new entry."
 msgstr "Lägg till ny post."
 
@@ -54,7 +54,7 @@ msgstr "Lägg till ny post."
 msgid "Alert Info"
 msgstr "Alert Info"
 
-#: functions.inc.php:252
+#: functions.inc.php:254
 msgid "All Users"
 msgstr "Alla användare"
 
@@ -80,15 +80,15 @@ msgstr ""
 msgid "CallerID Name Prefix"
 msgstr "Prefix för nummerpresentation"
 
-#: functions.inc.php:251
+#: functions.inc.php:253
 msgid "Choose One"
 msgstr "Välj en"
 
-#: functions.inc.php:308
+#: functions.inc.php:310
 msgid "Click here to remove this entry"
 msgstr "Klicka här för att ta bort posten"
 
-#: functions.inc.php:253
+#: functions.inc.php:255
 msgid "Custom"
 msgstr "Anpassad"
 
@@ -96,11 +96,11 @@ msgstr "Anpassad"
 msgid "Default"
 msgstr "Standard"
 
-#: functions.inc.php:441 views/grid.php:20
+#: functions.inc.php:443 views/grid.php:20
 msgid "Default Directory"
 msgstr "Standardkatalog"
 
-#: functions.inc.php:437
+#: functions.inc.php:439
 msgid "Default Group Inclusion"
 msgstr "Inkludera i standardgrupp"
 
@@ -122,7 +122,7 @@ msgid "Destination to send the call to after Invalid Recording is played."
 msgstr ""
 "Destination att skicka samtalet till efter Ogiltigt meddelande spelats upp"
 
-#: functions.inc.php:216
+#: functions.inc.php:218
 msgid "Dial"
 msgstr ""
 
@@ -131,7 +131,7 @@ msgstr ""
 msgid "Directory"
 msgstr "Katalog"
 
-#: functions.inc.php:516
+#: functions.inc.php:518
 #, php-format
 msgid "Directory %s: "
 msgstr "Katalog %s: "
@@ -164,12 +164,12 @@ msgstr ""
 msgid "Directory&nbsp;Entries"
 msgstr "Katalogval"
 
-#: functions.inc.php:546
+#: functions.inc.php:548
 #, php-format
 msgid "Directory: %s"
 msgstr "Katalog: %s"
 
-#: functions.inc.php:491
+#: functions.inc.php:493
 #, php-format
 msgid "Directory: %s "
 msgstr "Katalog: %s "
@@ -178,7 +178,7 @@ msgstr "Katalog: %s "
 msgid "Disabled"
 msgstr ""
 
-#: functions.inc.php:303
+#: functions.inc.php:305
 #, php-format
 msgid "Edit %s: %s"
 msgstr "Redigera %s: %s"
@@ -196,7 +196,7 @@ msgstr ""
 msgid "Enabled"
 msgstr ""
 
-#: functions.inc.php:418
+#: functions.inc.php:420
 msgid "Exclude"
 msgstr "Exkludera"
 
@@ -204,7 +204,7 @@ msgstr "Exkludera"
 msgid "Greeting to be played on entry to the directory."
 msgstr ""
 
-#: functions.inc.php:419
+#: functions.inc.php:421
 msgid "Include"
 msgstr "Inkludera"
 
@@ -228,11 +228,11 @@ msgstr "Meddelande vid ogiltiga försök"
 msgid "List Directories"
 msgstr ""
 
-#: functions.inc.php:216 functions.inc.php:220
+#: functions.inc.php:218 functions.inc.php:222
 msgid "Name"
 msgstr ""
 
-#: functions.inc.php:216
+#: functions.inc.php:218
 msgid "Name Announcement"
 msgstr ""
 
@@ -304,7 +304,7 @@ msgstr ""
 msgid "Select"
 msgstr ""
 
-#: functions.inc.php:293
+#: functions.inc.php:295
 msgid "Spell Name"
 msgstr "Stava namn"
 
@@ -312,11 +312,11 @@ msgstr "Stava namn"
 msgid "Submit"
 msgstr "Spara ändringar"
 
-#: functions.inc.php:294
+#: functions.inc.php:296
 msgid "System Recordings:"
 msgstr "Systeminspelning:"
 
-#: functions.inc.php:292
+#: functions.inc.php:294
 msgid "Text to Speech"
 msgstr "Text-till-tal"
 
@@ -330,7 +330,7 @@ msgstr ""
 msgid "This entry has already been added"
 msgstr ""
 
-#: functions.inc.php:220
+#: functions.inc.php:222
 msgid ""
 "This should auto-populate with the extension's descriptive name. This is "
 "what users will search by when asked to enter the first 3 letters of the "
@@ -345,7 +345,7 @@ msgid ""
 "directly, as they appear in the directory"
 msgstr ""
 
-#: functions.inc.php:291
+#: functions.inc.php:293
 msgid "Voicemail Greeting"
 msgstr "Välkomstmeddelande för röstbrevlåda"
 
@@ -368,7 +368,7 @@ msgstr ""
 msgid "Yes"
 msgstr ""
 
-#: functions.inc.php:441
+#: functions.inc.php:443
 msgid ""
 "You can include or exclude this extension/user from being part of the "
 "default directory when creating or editing."
@@ -392,7 +392,7 @@ msgstr "tar bort tabellerna directory_details, directory_entries.."
 msgid "ok"
 msgstr "ok"
 
-#: functions.inc.php:308
+#: functions.inc.php:310
 msgid "remove"
 msgstr "ta bort"
 

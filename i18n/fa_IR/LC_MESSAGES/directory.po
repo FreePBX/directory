@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-17 02:42+0000\n"
+"POT-Creation-Date: 2023-09-27 10:33+0000\n"
 "PO-Revision-Date: 2016-04-02 20:25+0200\n"
 "Last-Translator: Media <mousavi.media@gmail.com>\n"
 "Language-Team: Persian <http://weblate.freepbx.org/projects/freepbx/"
@@ -29,7 +29,7 @@ msgstr ""
 "ALERT_INFO to be sent when  called from this Directory. Can be used for "
 "distinctive ring for SIP devices."
 
-#: functions.inc.php:216 views/grid.php:21
+#: functions.inc.php:218 views/grid.php:21
 msgid "Actions"
 msgstr "عملیات"
 
@@ -37,7 +37,7 @@ msgstr "عملیات"
 msgid "Add Directory"
 msgstr "افزودن دایرکتوری"
 
-#: functions.inc.php:260
+#: functions.inc.php:262
 msgid "Add new entry."
 msgstr "ورودی جدید."
 
@@ -45,7 +45,7 @@ msgstr "ورودی جدید."
 msgid "Alert Info"
 msgstr "اطلاعات هشدار"
 
-#: functions.inc.php:252
+#: functions.inc.php:254
 msgid "All Users"
 msgstr "تمام کاربران"
 
@@ -69,15 +69,15 @@ msgstr "برنامه‌ ها"
 msgid "CallerID Name Prefix"
 msgstr "پیشوند نام شناسه تماس گیرنده"
 
-#: functions.inc.php:251
+#: functions.inc.php:253
 msgid "Choose One"
 msgstr "انتخاب کنید"
 
-#: functions.inc.php:308
+#: functions.inc.php:310
 msgid "Click here to remove this entry"
 msgstr "برای حذف این ورودی اینجا کلیک کنید"
 
-#: functions.inc.php:253
+#: functions.inc.php:255
 msgid "Custom"
 msgstr "شخصی"
 
@@ -85,11 +85,11 @@ msgstr "شخصی"
 msgid "Default"
 msgstr "پیشفرض"
 
-#: functions.inc.php:441 views/grid.php:20
+#: functions.inc.php:443 views/grid.php:20
 msgid "Default Directory"
 msgstr "دایرکتوری پیشفرض"
 
-#: functions.inc.php:437
+#: functions.inc.php:439
 msgid "Default Group Inclusion"
 msgstr "گنجایش پیشفرض گروه"
 
@@ -110,7 +110,7 @@ msgstr "شرح این دایرکتوری."
 msgid "Destination to send the call to after Invalid Recording is played."
 msgstr "مقصدی که تماس پس از پخش پیام نادرست به آن فرستاده میشود."
 
-#: functions.inc.php:216
+#: functions.inc.php:218
 msgid "Dial"
 msgstr "شماره گیری"
 
@@ -119,7 +119,7 @@ msgstr "شماره گیری"
 msgid "Directory"
 msgstr "دایرکتوری"
 
-#: functions.inc.php:516
+#: functions.inc.php:518
 #, php-format
 msgid "Directory %s: "
 msgstr "دایرکتوری %s: "
@@ -152,12 +152,12 @@ msgstr "گزینه های دایرکتوری (DTMF)"
 msgid "Directory&nbsp;Entries"
 msgstr "دایرکتوری&nbsp;ورودی ها"
 
-#: functions.inc.php:546
+#: functions.inc.php:548
 #, php-format
 msgid "Directory: %s"
 msgstr "دایرکتوری %s"
 
-#: functions.inc.php:491
+#: functions.inc.php:493
 #, php-format
 msgid "Directory: %s "
 msgstr "دایرکتوری :%s "
@@ -166,7 +166,7 @@ msgstr "دایرکتوری :%s "
 msgid "Disabled"
 msgstr "غیر فعال"
 
-#: functions.inc.php:303
+#: functions.inc.php:305
 #, php-format
 msgid "Edit %s: %s"
 msgstr "ویرایش %s:%s"
@@ -184,7 +184,7 @@ msgstr "ویرایش دایرکتوری :%s"
 msgid "Enabled"
 msgstr "فعال"
 
-#: functions.inc.php:418
+#: functions.inc.php:420
 msgid "Exclude"
 msgstr "گنجایش"
 
@@ -192,7 +192,7 @@ msgstr "گنجایش"
 msgid "Greeting to be played on entry to the directory."
 msgstr "خوش آمدگویی که در ورود به دایرکتوری پخش میشود."
 
-#: functions.inc.php:419
+#: functions.inc.php:421
 msgid "Include"
 msgstr "شامل"
 
@@ -216,11 +216,11 @@ msgstr "تلاش مجدد ضبط نامعتبر"
 msgid "List Directories"
 msgstr "فهرست دایرکتوری ها"
 
-#: functions.inc.php:216 functions.inc.php:220
+#: functions.inc.php:218 functions.inc.php:222
 msgid "Name"
 msgstr "نام"
 
-#: functions.inc.php:216
+#: functions.inc.php:218
 msgid "Name Announcement"
 msgstr "نام اعلان"
 
@@ -293,7 +293,7 @@ msgstr ""
 msgid "Select"
 msgstr "انتخاب"
 
-#: functions.inc.php:293
+#: functions.inc.php:295
 msgid "Spell Name"
 msgstr "نهجی نام"
 
@@ -301,11 +301,11 @@ msgstr "نهجی نام"
 msgid "Submit"
 msgstr "ارسال"
 
-#: functions.inc.php:294
+#: functions.inc.php:296
 msgid "System Recordings:"
 msgstr "ضبط سیستمی："
 
-#: functions.inc.php:292
+#: functions.inc.php:294
 msgid "Text to Speech"
 msgstr "متن به گفتار"
 
@@ -319,7 +319,7 @@ msgstr ""
 msgid "This entry has already been added"
 msgstr "این ورودی اضافه شده"
 
-#: functions.inc.php:220
+#: functions.inc.php:222
 msgid ""
 "This should auto-populate with the extension's descriptive name. This is "
 "what users will search by when asked to enter the first 3 letters of the "
@@ -336,7 +336,7 @@ msgstr ""
 "Tied to a Directory allowing all entries in that directory to be dialed  "
 "directly, as they appear in the directory"
 
-#: functions.inc.php:291
+#: functions.inc.php:293
 msgid "Voicemail Greeting"
 msgstr "خوش آمد ایمیل صوتی"
 
@@ -361,7 +361,7 @@ msgstr ""
 msgid "Yes"
 msgstr "بله"
 
-#: functions.inc.php:441
+#: functions.inc.php:443
 msgid ""
 "You can include or exclude this extension/user from being part of the "
 "default directory when creating or editing."
@@ -385,7 +385,7 @@ msgstr "dropping  directory_details, directory_entries.."
 msgid "ok"
 msgstr "تایید"
 
-#: functions.inc.php:308
+#: functions.inc.php:310
 msgid "remove"
 msgstr "حذف"
 
