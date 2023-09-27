@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-02 09:16+0000\n"
+"POT-Creation-Date: 2023-09-27 10:33+0000\n"
 "PO-Revision-Date: 2017-07-20 13:04+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese <http://weblate.freepbx.org/projects/freepbx/"
@@ -29,7 +29,7 @@ msgstr ""
 "Thông tin cảnh báo sẽ được sử khi được gọi từ danh mục web này. Có thể được "
 "sử dụng cho chuông đặc biệt đối với các thiết bị SIP."
 
-#: functions.inc.php:216 views/grid.php:21
+#: functions.inc.php:218 views/grid.php:21
 msgid "Actions"
 msgstr "Các thao tác"
 
@@ -37,7 +37,7 @@ msgstr "Các thao tác"
 msgid "Add Directory"
 msgstr "Thêm Danh mục web"
 
-#: functions.inc.php:260
+#: functions.inc.php:262
 msgid "Add new entry."
 msgstr "Thêm mục nhập mới."
 
@@ -45,7 +45,7 @@ msgstr "Thêm mục nhập mới."
 msgid "Alert Info"
 msgstr "Thông tin cảnh báo"
 
-#: functions.inc.php:252
+#: functions.inc.php:254
 msgid "All Users"
 msgstr "Tất cả người dùng"
 
@@ -66,15 +66,15 @@ msgstr "Thông báo"
 msgid "CallerID Name Prefix"
 msgstr "Hậu tố của tên CallerID"
 
-#: functions.inc.php:251
+#: functions.inc.php:253
 msgid "Choose One"
 msgstr "Chọn một"
 
-#: functions.inc.php:308
+#: functions.inc.php:310
 msgid "Click here to remove this entry"
 msgstr "Kích vào đây để xóa mục nhập này"
 
-#: functions.inc.php:253
+#: functions.inc.php:255
 msgid "Custom"
 msgstr "Tùy chỉnh"
 
@@ -82,11 +82,11 @@ msgstr "Tùy chỉnh"
 msgid "Default"
 msgstr "Mặc định"
 
-#: functions.inc.php:441 views/grid.php:20
+#: functions.inc.php:443 views/grid.php:20
 msgid "Default Directory"
 msgstr "Mặc định Danh mục  web"
 
-#: functions.inc.php:437
+#: functions.inc.php:439
 msgid "Default Group Inclusion"
 msgstr "Mặc định Group Inclusion"
 
@@ -109,7 +109,7 @@ msgstr ""
 "Điểm đích để gửi cuộc gọi đến khi Invalid Recording ( Ghi âm không hợp lệ ) "
 "được phát."
 
-#: functions.inc.php:216
+#: functions.inc.php:218
 msgid "Dial"
 msgstr "Quay số"
 
@@ -117,7 +117,7 @@ msgstr "Quay số"
 msgid "Directory"
 msgstr "Danh mục web"
 
-#: functions.inc.php:516
+#: functions.inc.php:518
 #, php-format
 msgid "Directory %s: "
 msgstr "Danh mục web %s: "
@@ -150,12 +150,12 @@ msgstr "Tùy chọn của Danh mục web (DTMF)"
 msgid "Directory&nbsp;Entries"
 msgstr "Danh mục  web &nbsp;Các mục nhập"
 
-#: functions.inc.php:546
+#: functions.inc.php:548
 #, php-format
 msgid "Directory: %s"
 msgstr "Danh mục  web: %s"
 
-#: functions.inc.php:491
+#: functions.inc.php:493
 #, php-format
 msgid "Directory: %s "
 msgstr "Danh mục  web: %s "
@@ -164,7 +164,7 @@ msgstr "Danh mục  web: %s "
 msgid "Disabled"
 msgstr "Bị vô hiệu"
 
-#: functions.inc.php:303
+#: functions.inc.php:305
 #, php-format
 msgid "Edit %s: %s"
 msgstr "Chỉnh sửa %s: %s"
@@ -182,7 +182,7 @@ msgstr "Chỉnh sửa danh mục  web: %s"
 msgid "Enabled"
 msgstr "Đã kích hoạt"
 
-#: functions.inc.php:418
+#: functions.inc.php:420
 msgid "Exclude"
 msgstr "Không bao gồm"
 
@@ -190,7 +190,7 @@ msgstr "Không bao gồm"
 msgid "Greeting to be played on entry to the directory."
 msgstr "Lời chào trong mục nhập được phát tới Danh mục web."
 
-#: functions.inc.php:419
+#: functions.inc.php:421
 msgid "Include"
 msgstr "Bao gồm"
 
@@ -214,11 +214,11 @@ msgstr "Ghi lại Retry không hợp lệ"
 msgid "List Directories"
 msgstr "Danh sách danh mục"
 
-#: functions.inc.php:216 functions.inc.php:220
+#: functions.inc.php:218 functions.inc.php:222
 msgid "Name"
 msgstr "Tên"
 
-#: functions.inc.php:216
+#: functions.inc.php:218
 msgid "Name Announcement"
 msgstr "Tên thông báo"
 
@@ -292,7 +292,7 @@ msgstr "Ghi đè âm lượng chuông"
 msgid "Select"
 msgstr "Chọn"
 
-#: functions.inc.php:293
+#: functions.inc.php:295
 msgid "Spell Name"
 msgstr "Đánh vần tên"
 
@@ -300,11 +300,11 @@ msgstr "Đánh vần tên"
 msgid "Submit"
 msgstr "Gửi đi"
 
-#: functions.inc.php:294
+#: functions.inc.php:296
 msgid "System Recordings:"
 msgstr "Các ghi âm hệ thống:"
 
-#: functions.inc.php:292
+#: functions.inc.php:294
 msgid "Text to Speech"
 msgstr "Tính năng Text to speech- Phát lại in văn bản dưới dạng lời nói"
 
@@ -312,7 +312,7 @@ msgstr "Tính năng Text to speech- Phát lại in văn bản dưới dạng l�
 msgid "This entry has already been added"
 msgstr "Mục nhập này được thêm"
 
-#: functions.inc.php:220
+#: functions.inc.php:222
 msgid ""
 "This should auto-populate with the extension's descriptive name. This is "
 "what users will search by when asked to enter the first 3 letters of the "
@@ -334,7 +334,7 @@ msgstr ""
 "Liên kết với một danh mục web cho phép tất cả các mục nhập (entry) trong thư "
 "mục đó được quay số trực tiếp, khi chúng xuất hiện trong danh mục"
 
-#: functions.inc.php:291
+#: functions.inc.php:293
 msgid "Voicemail Greeting"
 msgstr "Lời chào thư thoại"
 
@@ -358,7 +358,7 @@ msgstr ""
 msgid "Yes"
 msgstr "Có"
 
-#: functions.inc.php:441
+#: functions.inc.php:443
 msgid ""
 "You can include or exclude this extension/user from being part of the "
 "default directory when creating or editing."
@@ -383,7 +383,7 @@ msgstr ""
 msgid "ok"
 msgstr "Ok"
 
-#: functions.inc.php:308
+#: functions.inc.php:310
 msgid "remove"
 msgstr "Xóa"
 

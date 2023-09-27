@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-02 09:16+0000\n"
+"POT-Creation-Date: 2023-09-27 10:33+0000\n"
 "PO-Revision-Date: 2014-04-17 09:53+0200\n"
 "Last-Translator: Kevin <kevin@qloog.com>\n"
 "Language-Team: Japanese <http://git.freepbx.org/projects/freepbx/directory/"
@@ -58,7 +58,7 @@ msgstr ""
 "音に使用することができます。このディレクトリから呼び出された際に送信されるア"
 "ラート情報。SIPデバイスの着信音に使用することができます。"
 
-#: functions.inc.php:216 views/grid.php:21
+#: functions.inc.php:218 views/grid.php:21
 msgid "Actions"
 msgstr ""
 
@@ -66,7 +66,7 @@ msgstr ""
 msgid "Add Directory"
 msgstr "ディレクトリを追加"
 
-#: functions.inc.php:260
+#: functions.inc.php:262
 msgid "Add new entry."
 msgstr "新規エントリーを追加。"
 
@@ -74,7 +74,7 @@ msgstr "新規エントリーを追加。"
 msgid "Alert Info"
 msgstr "アラート情報"
 
-#: functions.inc.php:252
+#: functions.inc.php:254
 msgid "All Users"
 msgstr "全てのユーザー"
 
@@ -94,15 +94,15 @@ msgstr "アナウンス"
 msgid "CallerID Name Prefix"
 msgstr "発信者ID名前プリフィックス"
 
-#: functions.inc.php:251
+#: functions.inc.php:253
 msgid "Choose One"
 msgstr "一つを選択"
 
-#: functions.inc.php:308
+#: functions.inc.php:310
 msgid "Click here to remove this entry"
 msgstr "このエントリーを削除するにはここをクリック"
 
-#: functions.inc.php:253
+#: functions.inc.php:255
 msgid "Custom"
 msgstr "カスタム"
 
@@ -110,11 +110,11 @@ msgstr "カスタム"
 msgid "Default"
 msgstr "デフォルト"
 
-#: functions.inc.php:441 views/grid.php:20
+#: functions.inc.php:443 views/grid.php:20
 msgid "Default Directory"
 msgstr "デフォルトディレクトリ"
 
-#: functions.inc.php:437
+#: functions.inc.php:439
 msgid "Default Group Inclusion"
 msgstr "デフォルトグループに含まれる"
 
@@ -135,7 +135,7 @@ msgstr "このディレクトリの説明"
 msgid "Destination to send the call to after Invalid Recording is played."
 msgstr "無効な録音が再生された場合に、呼が送られる宛先。"
 
-#: functions.inc.php:216
+#: functions.inc.php:218
 msgid "Dial"
 msgstr "ダイヤル"
 
@@ -143,7 +143,7 @@ msgstr "ダイヤル"
 msgid "Directory"
 msgstr "ディレクトリー"
 
-#: functions.inc.php:516
+#: functions.inc.php:518
 #, php-format
 msgid "Directory %s: "
 msgstr "ディレクトリ： %s"
@@ -176,12 +176,12 @@ msgstr "ディレクトリオプション(DTMF)"
 msgid "Directory&nbsp;Entries"
 msgstr "ディレクトリ&nbsp;エントリー"
 
-#: functions.inc.php:546
+#: functions.inc.php:548
 #, php-format
 msgid "Directory: %s"
 msgstr "ディレクトリ： %s"
 
-#: functions.inc.php:491
+#: functions.inc.php:493
 #, php-format
 msgid "Directory: %s "
 msgstr "ディレクトリ： %s "
@@ -190,7 +190,7 @@ msgstr "ディレクトリ： %s "
 msgid "Disabled"
 msgstr ""
 
-#: functions.inc.php:303
+#: functions.inc.php:305
 #, php-format
 msgid "Edit %s: %s"
 msgstr "%sを編集: %s"
@@ -208,7 +208,7 @@ msgstr "ディレクトリを編集： %s"
 msgid "Enabled"
 msgstr ""
 
-#: functions.inc.php:418
+#: functions.inc.php:420
 msgid "Exclude"
 msgstr "除外"
 
@@ -216,7 +216,7 @@ msgstr "除外"
 msgid "Greeting to be played on entry to the directory."
 msgstr "ディレクトリに入る際に再生される挨拶メッセージ。"
 
-#: functions.inc.php:419
+#: functions.inc.php:421
 msgid "Include"
 msgstr "含む"
 
@@ -240,11 +240,11 @@ msgstr "エラーリトライ音声"
 msgid "List Directories"
 msgstr ""
 
-#: functions.inc.php:216 functions.inc.php:220
+#: functions.inc.php:218 functions.inc.php:222
 msgid "Name"
 msgstr "名前"
 
-#: functions.inc.php:216
+#: functions.inc.php:218
 msgid "Name Announcement"
 msgstr "名前のアナウンス"
 
@@ -314,7 +314,7 @@ msgstr ""
 msgid "Select"
 msgstr ""
 
-#: functions.inc.php:293
+#: functions.inc.php:295
 msgid "Spell Name"
 msgstr "名前のスペル"
 
@@ -322,11 +322,11 @@ msgstr "名前のスペル"
 msgid "Submit"
 msgstr "送信"
 
-#: functions.inc.php:294
+#: functions.inc.php:296
 msgid "System Recordings:"
 msgstr "システム録音:"
 
-#: functions.inc.php:292
+#: functions.inc.php:294
 msgid "Text to Speech"
 msgstr "テキスト to スピーチ(テキスト合成音声)"
 
@@ -334,7 +334,7 @@ msgstr "テキスト to スピーチ(テキスト合成音声)"
 msgid "This entry has already been added"
 msgstr ""
 
-#: functions.inc.php:220
+#: functions.inc.php:222
 msgid ""
 "This should auto-populate with the extension's descriptive name. This is "
 "what users will search by when asked to enter the first 3 letters of the "
@@ -350,7 +350,7 @@ msgid ""
 msgstr ""
 "全てのエントリに直接ダイヤルする許可の権限を持つディレクトリが表示されます"
 
-#: functions.inc.php:291
+#: functions.inc.php:293
 msgid "Voicemail Greeting"
 msgstr "ボイスメール挨拶"
 
@@ -372,7 +372,7 @@ msgstr ""
 msgid "Yes"
 msgstr ""
 
-#: functions.inc.php:441
+#: functions.inc.php:443
 msgid ""
 "You can include or exclude this extension/user from being part of the "
 "default directory when creating or editing."
@@ -398,7 +398,7 @@ msgstr "directory_details, directory_entriesをドロップ中.."
 msgid "ok"
 msgstr "ok"
 
-#: functions.inc.php:308
+#: functions.inc.php:310
 msgid "remove"
 msgstr "削除"
 

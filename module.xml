@@ -2,7 +2,7 @@
 	<rawname>directory</rawname>
 	<repo>standard</repo>
 	<name>Directory</name>
-	<version>16.0.2</version>
+	<version>16.0.3</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>https://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -56,6 +56,7 @@
 	<more-info>https://wiki.freepbx.org/display/FPG/Directory+Module</more-info>
 
 	<changelog>
+		*16.0.3* Packaging of ver 16.0.3
 		*16.0.2* FREEPBX-23963 
 		*16.0.1* 16.0 release
 	</changelog>
