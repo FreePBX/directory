@@ -1,0 +1,405 @@
+# This file is part of FreePBX.
+#
+# For licensing information, please see the file named LICENSE located in the module directory
+#
+# FreePBX language template for directory
+# Copyright (C) 2008-2020 Sangoma Technologies, Inc.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-08-17 02:40+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: functions.inc.php:59
+#: views/form.php:127
+msgid ""
+"ALERT_INFO to be sent when called from this Directory. Can be used for "
+"distinctive ring for SIP devices."
+msgstr ""
+
+#: functions.inc.php:226
+#: views/grid.php:21
+msgid "Actions"
+msgstr ""
+
+#: functions.inc.php:10
+#: views/bootnav.php:2
+#: views/form.php:4
+#: views/grid.php:6
+msgid "Add Directory"
+msgstr ""
+
+#: functions.inc.php:270
+msgid "Add new entry."
+msgstr ""
+
+#: functions.inc.php:59
+#: views/form.php:115
+msgid "Alert Info"
+msgstr ""
+
+#: functions.inc.php:262
+msgid "All Users"
+msgstr ""
+
+#: assets/js/directory.js:90
+msgid "An Error occurred trying to contact the server adding a row, no reply."
+msgstr ""
+
+#: functions.inc.php:81
+#: views/form.php:319
+msgid "Announce Extension"
+msgstr ""
+
+#: functions.inc.php:75
+#: views/form.php:166
+msgid "Announcement"
+msgstr ""
+
+#: directory.i18n.php:6
+msgid "Applications"
+msgstr ""
+
+#: functions.inc.php:58
+#: views/form.php:91
+msgid "CallerID Name Prefix"
+msgstr ""
+
+#: functions.inc.php:261
+msgid "Choose One"
+msgstr ""
+
+#: functions.inc.php:318
+msgid "Click here to remove this entry"
+msgstr ""
+
+#: functions.inc.php:263
+msgid "Custom"
+msgstr ""
+
+#: functions.inc.php:64
+#: views/form.php:11
+#: views/form.php:18
+#: views/form.php:25
+msgid "Default"
+msgstr ""
+
+#: functions.inc.php:537
+#: views/grid.php:20
+msgid "Default Directory"
+msgstr ""
+
+#: functions.inc.php:533
+msgid "Default Group Inclusion"
+msgstr ""
+
+#: Directory.class.php:150
+msgid "Delete"
+msgstr ""
+
+#: functions.inc.php:48
+#, php-format
+msgid "Delete Directory %s"
+msgstr ""
+
+#: functions.inc.php:57
+#: views/form.php:79
+msgid "Description of this directory."
+msgstr ""
+
+#: functions.inc.php:79
+#: views/form.php:280
+msgid "Destination to send the call to after Invalid Recording is played."
+msgstr ""
+
+#: functions.inc.php:226
+msgid "Dial"
+msgstr ""
+
+#: directory.i18n.php:4
+#: directory.i18n.php:10
+#: page.directory.php:6
+#: views/bootnav.php:14
+#: views/grid.php:19
+msgid "Directory"
+msgstr ""
+
+#: functions.inc.php:612
+#, php-format
+msgid "Directory %s: "
+msgstr ""
+
+#: functions.inc.php:57
+#: views/form.php:67
+msgid "Directory Description"
+msgstr ""
+
+#: functions.inc.php:54
+msgid "Directory General Options"
+msgstr ""
+
+#: functions.inc.php:56
+#: views/form.php:43
+msgid "Directory Name"
+msgstr ""
+
+#: assets/js/directory.js:23
+msgid "Directory Name Already Exist"
+msgstr ""
+
+#: assets/js/directory.js:20
+msgid "Directory Name Can not be Blank"
+msgstr ""
+
+#: functions.inc.php:61
+msgid "Directory Options (DTMF)"
+msgstr ""
+
+#: functions.inc.php:86
+msgid "Directory&nbsp;Entries"
+msgstr ""
+
+#: functions.inc.php:642
+#, php-format
+msgid "Directory: %s"
+msgstr ""
+
+#: functions.inc.php:587
+#, php-format
+msgid "Directory: %s "
+msgstr ""
+
+#: Directory.class.php:179
+msgid "Disabled"
+msgstr ""
+
+#: functions.inc.php:313
+#, php-format
+msgid "Edit %s: %s"
+msgstr ""
+
+#: views/form.php:7
+msgid "Edit Directory"
+msgstr ""
+
+#: functions.inc.php:34
+#, php-format
+msgid "Edit Directory: %s"
+msgstr ""
+
+#: Directory.class.php:180
+msgid "Enabled"
+msgstr ""
+
+#: functions.inc.php:514
+msgid "Exclude"
+msgstr ""
+
+#: functions.inc.php:75
+#: views/form.php:180
+msgid "Greeting to be played on entry to the directory."
+msgstr ""
+
+#: functions.inc.php:515
+msgid "Include"
+msgstr ""
+
+#: functions.inc.php:79
+#: views/form.php:268
+msgid "Invalid Destination"
+msgstr ""
+
+#: functions.inc.php:78
+#: views/form.php:242
+msgid "Invalid Recording"
+msgstr ""
+
+#: functions.inc.php:76
+#: views/form.php:192
+msgid "Invalid Retries"
+msgstr ""
+
+#: functions.inc.php:77
+#: views/form.php:216
+msgid "Invalid Retry Recording"
+msgstr ""
+
+#: views/bootnav.php:3
+msgid "List Directories"
+msgstr ""
+
+#: functions.inc.php:226
+#: functions.inc.php:230
+msgid "Name"
+msgstr ""
+
+#: functions.inc.php:226
+msgid "Name Announcement"
+msgstr ""
+
+#: views/form.php:55
+msgid "Name of this directory"
+msgstr ""
+
+#: functions.inc.php:56
+msgid "Name of this directory."
+msgstr ""
+
+#: views/form.php:299
+#: views/form.php:326
+msgid "No"
+msgstr ""
+
+#: views/form.php:143
+msgid "None"
+msgstr ""
+
+#: functions.inc.php:76
+#: views/form.php:204
+msgid ""
+"Number of times to retry when receiving an invalid/unmatched response from "
+"the caller"
+msgstr ""
+
+#: views/form.php:155
+#, php-format
+msgid ""
+"Override the ringer volume. Note: This is only valid for %s phones at this "
+"time"
+msgstr ""
+
+#: functions.inc.php:58
+#: views/form.php:103
+msgid "Prefix to be appended to current CallerID Name."
+msgstr ""
+
+#: functions.inc.php:78
+#: views/form.php:256
+msgid ""
+"Prompt to be played before sending the caller to an alternate destination "
+"due to the caller pressing 0 or receiving the maximum amount of invalid/"
+"unmatched responses (as determined by Invalid Retries)"
+msgstr ""
+
+#: functions.inc.php:77
+#: views/form.php:230
+msgid ""
+"Prompt to be played when an invalid/unmatched response is received, before "
+"prompting the caller to try again"
+msgstr ""
+
+#: Directory.class.php:155
+msgid "Reset"
+msgstr ""
+
+#: functions.inc.php:80
+#: views/form.php:292
+msgid "Return to IVR"
+msgstr ""
+
+#: views/form.php:138
+msgid "Ringer Volume Override"
+msgstr ""
+
+#: assets/js/directory.js:110
+msgid "Select"
+msgstr ""
+
+#: functions.inc.php:303
+msgid "Spell Name"
+msgstr ""
+
+#: Directory.class.php:160
+msgid "Submit"
+msgstr ""
+
+#: functions.inc.php:304
+msgid "System Recordings:"
+msgstr ""
+
+#: functions.inc.php:302
+msgid "Text to Speech"
+msgstr ""
+
+#: directory.i18n.php:8
+msgid ""
+"The directory module allows you to create directories of users that can be "
+"accessed by callers through modules like the IVR."
+msgstr ""
+
+#: assets/js/directory.js:31
+msgid "This entry has already been added"
+msgstr ""
+
+#: functions.inc.php:230
+msgid ""
+"This should auto-populate with the extension's descriptive name. This is "
+"what users will search by when asked to enter the first 3 letters of the "
+"person's name. For example, if the name is Bartholomew, the caller would "
+"enter 227 for BAR. This field should be a name as the search option is based "
+"on Name and not the number."
+msgstr ""
+
+#: functions.inc.php:107
+msgid ""
+"Tied to a Directory allowing all entries in that directory to be dialed "
+"directly, as they appear in the directory"
+msgstr ""
+
+#: functions.inc.php:301
+msgid "Voicemail Greeting"
+msgstr ""
+
+#: functions.inc.php:81
+#: views/form.php:334
+msgid ""
+"When checked, the extension number being transferred to will be announced "
+"prior to the transfer"
+msgstr ""
+
+#: functions.inc.php:80
+#: views/form.php:307
+msgid ""
+"When selected, if the call passed through an IVR that had \"Return to IVR\" "
+"selected, the call will be returned there instead of the Invalid destination."
+msgstr ""
+
+#: views/form.php:297
+#: views/form.php:324
+msgid "Yes"
+msgstr ""
+
+#: functions.inc.php:537
+msgid ""
+"You can include or exclude this extension/user from being part of the "
+"default directory when creating or editing."
+msgstr ""
+
+#: functions.inc.php:37
+msgid "[SYSTEM DEFAULT]"
+msgstr ""
+
+#: uninstall.php:7
+msgid "deleting default_directory and migration tracking keys.."
+msgstr ""
+
+#: uninstall.php:3
+msgid "dropping directory_details, directory_entries.."
+msgstr ""
+
+#: uninstall.php:5
+#: uninstall.php:10
+msgid "ok"
+msgstr ""
+
+#: functions.inc.php:318
+msgid "remove"
+msgstr ""
