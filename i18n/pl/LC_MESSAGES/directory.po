@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-17 02:40+0000\n"
-"PO-Revision-Date: 2023-11-18 16:01+0000\n"
+"PO-Revision-Date: 2023-11-19 10:05+0000\n"
 "Last-Translator: Szymon Wysokinski <szymon.wysokinski@sqspolska.pl>\n"
 "Language-Team: Polish <http://weblate.freepbx.org/projects/freepbx/directory/"
 "pl/>\n"
@@ -28,6 +28,8 @@ msgid ""
 "ALERT_INFO to be sent when called from this Directory. Can be used for "
 "distinctive ring for SIP devices."
 msgstr ""
+"ALERT_INFO ma być wysyłany po wydzwonieniu z tego katalogu. To może być "
+"użyte do rozróżniania dzwonków na urządzeniach SIP."
 
 #: functions.inc.php:226
 #: views/grid.php:21
@@ -39,94 +41,98 @@ msgstr "Działania"
 #: views/form.php:4
 #: views/grid.php:6
 msgid "Add Directory"
-msgstr ""
+msgstr "Dodaj katalog"
 
 #: functions.inc.php:270
 msgid "Add new entry."
-msgstr ""
+msgstr "Dodaj nowy wpis."
 
 #: functions.inc.php:59
 #: views/form.php:115
 msgid "Alert Info"
-msgstr ""
+msgstr "Informacje o alertach"
 
 #: functions.inc.php:262
 msgid "All Users"
-msgstr ""
+msgstr "Wszyscy użytkownicy"
 
 #: assets/js/directory.js:90
 msgid "An Error occurred trying to contact the server adding a row, no reply."
 msgstr ""
+"Dodając wiersz wystąpił błąd podczas próby skontaktowania się z serwerem. "
+"Brak odpowiedzi."
 
 #: functions.inc.php:81
 #: views/form.php:319
 msgid "Announce Extension"
-msgstr ""
+msgstr "Zapowiedź numeru wewnętrznego"
 
 #: functions.inc.php:75
 #: views/form.php:166
 msgid "Announcement"
-msgstr ""
+msgstr "Zapowiedź"
 
 #: directory.i18n.php:6
 msgid "Applications"
-msgstr ""
+msgstr "Aplikacje"
 
 #: functions.inc.php:58
 #: views/form.php:91
 msgid "CallerID Name Prefix"
-msgstr ""
+msgstr "Prefiks nazwy CallerID"
 
 #: functions.inc.php:261
 msgid "Choose One"
-msgstr ""
+msgstr "Wybierz jedną z opcji"
 
 #: functions.inc.php:318
 msgid "Click here to remove this entry"
-msgstr ""
+msgstr "Kliknij tutaj aby usunąć ten wpis"
 
 #: functions.inc.php:263
 msgid "Custom"
-msgstr ""
+msgstr "Niestandardowy"
 
 #: functions.inc.php:64
 #: views/form.php:11
 #: views/form.php:18
 #: views/form.php:25
 msgid "Default"
-msgstr ""
+msgstr "Domyślne"
 
 #: functions.inc.php:537
 #: views/grid.php:20
 msgid "Default Directory"
-msgstr ""
+msgstr "Katalog domyślny"
 
 #: functions.inc.php:533
 msgid "Default Group Inclusion"
-msgstr ""
+msgstr "Domyślna integracja grupy"
 
 #: Directory.class.php:150
 msgid "Delete"
-msgstr ""
+msgstr "Usuń"
 
 #: functions.inc.php:48
 #, php-format
 msgid "Delete Directory %s"
-msgstr ""
+msgstr "Usuń katalog %s"
 
 #: functions.inc.php:57
 #: views/form.php:79
 msgid "Description of this directory."
-msgstr ""
+msgstr "Opis tego katalogu."
 
 #: functions.inc.php:79
 #: views/form.php:280
 msgid "Destination to send the call to after Invalid Recording is played."
 msgstr ""
+"Miejsce docelowe, do którego ma zostać wysłane połączenie po odtworzeniu "
+"nagrania dla nieprawidłowej opcji."
 
 #: functions.inc.php:226
 msgid "Dial"
-msgstr ""
+msgstr "Wydzwoń"
 
 #: directory.i18n.php:4
 #: directory.i18n.php:10
@@ -134,137 +140,137 @@ msgstr ""
 #: views/bootnav.php:14
 #: views/grid.php:19
 msgid "Directory"
-msgstr ""
+msgstr "Książka adresowa"
 
 #: functions.inc.php:612
 #, php-format
 msgid "Directory %s: "
-msgstr ""
+msgstr "Książka adresowa %s: "
 
 #: functions.inc.php:57
 #: views/form.php:67
 msgid "Directory Description"
-msgstr ""
+msgstr "Opis katalogu"
 
 #: functions.inc.php:54
 msgid "Directory General Options"
-msgstr ""
+msgstr "Opcje ogólne katalogu"
 
 #: functions.inc.php:56
 #: views/form.php:43
 msgid "Directory Name"
-msgstr ""
+msgstr "Nazwa katalogu"
 
 #: assets/js/directory.js:23
 msgid "Directory Name Already Exist"
-msgstr ""
+msgstr "Nazwa katalogu już istnieje"
 
 #: assets/js/directory.js:20
 msgid "Directory Name Can not be Blank"
-msgstr ""
+msgstr "Nazwa katalogu nie może być pusta"
 
 #: functions.inc.php:61
 msgid "Directory Options (DTMF)"
-msgstr ""
+msgstr "Opcje książki adresowej (DTMF)"
 
 #: functions.inc.php:86
 msgid "Directory&nbsp;Entries"
-msgstr ""
+msgstr "Książka adresowa&nbsp;Wpisy"
 
 #: functions.inc.php:642
 #, php-format
 msgid "Directory: %s"
-msgstr ""
+msgstr "Książka adresowa: %s"
 
 #: functions.inc.php:587
 #, php-format
 msgid "Directory: %s "
-msgstr ""
+msgstr "Książka adresowa: %s "
 
 #: Directory.class.php:179
 msgid "Disabled"
-msgstr ""
+msgstr "Wyłączony"
 
 #: functions.inc.php:313
 #, php-format
 msgid "Edit %s: %s"
-msgstr ""
+msgstr "Edytuj %s: %s"
 
 #: views/form.php:7
 msgid "Edit Directory"
-msgstr ""
+msgstr "Edytuj książkę adresową"
 
 #: functions.inc.php:34
 #, php-format
 msgid "Edit Directory: %s"
-msgstr ""
+msgstr "Edytuj książkę adresową: %s"
 
 #: Directory.class.php:180
 msgid "Enabled"
-msgstr ""
+msgstr "Włączony"
 
 #: functions.inc.php:514
 msgid "Exclude"
-msgstr ""
+msgstr "Wykluczać"
 
 #: functions.inc.php:75
 #: views/form.php:180
 msgid "Greeting to be played on entry to the directory."
-msgstr ""
+msgstr "Powitanie do odtworzenia przy wejściu do katalogu."
 
 #: functions.inc.php:515
 msgid "Include"
-msgstr ""
+msgstr "Zawierać"
 
 #: functions.inc.php:79
 #: views/form.php:268
 msgid "Invalid Destination"
-msgstr ""
+msgstr "Nieprawidłowe miejsce docelowe"
 
 #: functions.inc.php:78
 #: views/form.php:242
 msgid "Invalid Recording"
-msgstr ""
+msgstr "Nieprawidłowe nagranie"
 
 #: functions.inc.php:76
 #: views/form.php:192
 msgid "Invalid Retries"
-msgstr ""
+msgstr "Nieprawidłowe ponawianie"
 
 #: functions.inc.php:77
 #: views/form.php:216
 msgid "Invalid Retry Recording"
-msgstr ""
+msgstr "Nieprawidłowe nagranie dla ponownej próby"
 
 #: views/bootnav.php:3
 msgid "List Directories"
-msgstr ""
+msgstr "Wykaz książek adresowych"
 
 #: functions.inc.php:226
 #: functions.inc.php:230
 msgid "Name"
-msgstr ""
+msgstr "Nazwa"
 
 #: functions.inc.php:226
 msgid "Name Announcement"
-msgstr ""
+msgstr "Nazwa zapowiedzi"
 
 #: views/form.php:55
 msgid "Name of this directory"
-msgstr ""
+msgstr "Nazwa tej książki adresowej"
 
 #: functions.inc.php:56
 msgid "Name of this directory."
-msgstr ""
+msgstr "Nazwa tej książki adresowej."
 
 #: views/form.php:299
 #: views/form.php:326
 msgid "No"
-msgstr ""
+msgstr "Nie"
 
 #: views/form.php:143
 msgid "None"
-msgstr ""
+msgstr "Żaden"
 
 #: functions.inc.php:76
 #: views/form.php:204
@@ -272,18 +278,20 @@ msgid ""
 "Number of times to retry when receiving an invalid/unmatched response from "
 "the caller"
 msgstr ""
+"Liczba ponownych prób w przypadku otrzymania nieprawidłowej/niepasującej "
+"odpowiedzi od dzwoniącego"
 
 #: views/form.php:155
 #, php-format
 msgid ""
 "Override the ringer volume. Note: This is only valid for %s phones at this "
 "time"
-msgstr ""
+msgstr "Zastąp głośność dzwonka. Uwaga: To obecnie dotyczy tylko telefonów %s"
 
 #: functions.inc.php:58
 #: views/form.php:103
 msgid "Prefix to be appended to current CallerID Name."
-msgstr ""
+msgstr "Prefiks który ma być dołączony do bieżącej nazwy CallerID."
 
 #: functions.inc.php:78
 #: views/form.php:256
@@ -292,6 +300,10 @@ msgid ""
 "due to the caller pressing 0 or receiving the maximum amount of invalid/"
 "unmatched responses (as determined by Invalid Retries)"
 msgstr ""
+"Monituj o odtworzenie przed wysłaniem rozmówcy do alternatywnego miejsca "
+"docelowego z powodu naciśnięcia przez rozmówcę 0 lub otrzymania maksymalnej "
+"liczby nieprawidłowych/niedopasowanych odpowiedzi (określonych jako "
+"nieprawidłowe próby)"
 
 #: functions.inc.php:77
 #: views/form.php:230
@@ -299,49 +311,54 @@ msgid ""
 "Prompt to be played when an invalid/unmatched response is received, before "
 "prompting the caller to try again"
 msgstr ""
+"Zapowiedź odtworzona po odebraniu nieprawidłowej/niedopasowanej odpowiedzi, "
+"zanim poprosisz dzwoniącego o ponowną próbę"
 
 #: Directory.class.php:155
 msgid "Reset"
-msgstr ""
+msgstr "Zresetuj"
 
 #: functions.inc.php:80
 #: views/form.php:292
 msgid "Return to IVR"
-msgstr ""
+msgstr "Zwróć do IVR"
 
 #: views/form.php:138
 msgid "Ringer Volume Override"
-msgstr ""
+msgstr "Nadpisanie głośności dzwonka"
 
 #: assets/js/directory.js:110
 msgid "Select"
-msgstr ""
+msgstr "Wybierz"
 
 #: functions.inc.php:303
 msgid "Spell Name"
-msgstr ""
+msgstr "Wymowa nazwy"
 
 #: Directory.class.php:160
 msgid "Submit"
-msgstr ""
+msgstr "Wyślij"
 
 #: functions.inc.php:304
 msgid "System Recordings:"
-msgstr ""
+msgstr "Nagrania systemowe:"
 
 #: functions.inc.php:302
 msgid "Text to Speech"
-msgstr ""
+msgstr "Zamiana tekstu na mowę"
 
 #: directory.i18n.php:8
 msgid ""
 "The directory module allows you to create directories of users that can be "
 "accessed by callers through modules like the IVR."
 msgstr ""
+"Moduł książki adresowej umożliwia tworzenie książek adresowych użytkowników, "
+"do których dzwoniący mogą uzyskać dostęp za pośrednictwem modułów takich jak "
+"IVR."
 
 #: assets/js/directory.js:31
 msgid "This entry has already been added"
-msgstr ""
+msgstr "Ten wpis został już dodany"
 
 #: functions.inc.php:230
 msgid ""
@@ -351,16 +368,24 @@ msgid ""
 "enter 227 for BAR. This field should be a name as the search option is based "
 "on Name and not the number."
 msgstr ""
+"To powinno automatycznie wypełnić opisową nazwą numeru wewnętrznego. To jest "
+"parametr według którego użytkownicy będą wyszukiwać gdy zostaną poproszeni o "
+"wpisanie pierwszych 3 liter imienia i nazwiska wyszukiwanej osoby. Na "
+"przykład, jeśli imię to Bartłomiej, wywołujący wprowadzi 227 dla BAR. To "
+"pole powinno być nazwą, ponieważ opcja wyszukiwania jest oparta na nazwie, a "
+"nie na liczbie."
 
 #: functions.inc.php:107
 msgid ""
 "Tied to a Directory allowing all entries in that directory to be dialed "
 "directly, as they appear in the directory"
 msgstr ""
+"Powiązanie z książką adresową umożliwia bezpośrednie wybieranie wszystkich "
+"wpisów z tej książki adresowej, według wyświetlania w książce adresowej"
 
 #: functions.inc.php:301
 msgid "Voicemail Greeting"
-msgstr ""
+msgstr "Powitanie w poczcie głosowej"
 
 #: functions.inc.php:81
 #: views/form.php:334
@@ -368,6 +393,8 @@ msgid ""
 "When checked, the extension number being transferred to will be announced "
 "prior to the transfer"
 msgstr ""
+"Po zaznaczeniu tej opcji numer wewnętrzny, na który ma zostać wykonany "
+"transfer, zostanie zapowiedziany przed tym transferem"
 
 #: functions.inc.php:80
 #: views/form.php:307
@@ -375,35 +402,40 @@ msgid ""
 "When selected, if the call passed through an IVR that had \"Return to IVR\" "
 "selected, the call will be returned there instead of the Invalid destination."
 msgstr ""
+"Po wybraniu tej opcji, jeśli połączenie przeszło przez IVR, który miał "
+"wybraną opcję \"Wróć do IVR\", połączenie zostanie zwrócone tam, a nie do "
+"nieprawidłowego odbiorcy."
 
 #: views/form.php:297
 #: views/form.php:324
 msgid "Yes"
-msgstr ""
+msgstr "Tak"
 
 #: functions.inc.php:537
 msgid ""
 "You can include or exclude this extension/user from being part of the "
 "default directory when creating or editing."
 msgstr ""
+"Możesz dołączyć lub wykluczyć ten numer wewnętrzny/użytkownika z domyślnej "
+"książki adresowej podczas tworzenia lub edytowania."
 
 #: functions.inc.php:37
 msgid "[SYSTEM DEFAULT]"
-msgstr ""
+msgstr "[SYSTEM DEFAULT]"
 
 #: uninstall.php:7
 msgid "deleting default_directory and migration tracking keys.."
-msgstr ""
+msgstr "Usuwanie default_directory oraz kluczy śledzenia migracji."
 
 #: uninstall.php:3
 msgid "dropping directory_details, directory_entries.."
-msgstr ""
+msgstr "porzuć directory_details, directory_entries.."
 
 #: uninstall.php:5
 #: uninstall.php:10
 msgid "ok"
-msgstr ""
+msgstr "ok"
 
 #: functions.inc.php:318
 msgid "remove"
-msgstr ""
+msgstr "usuń"
