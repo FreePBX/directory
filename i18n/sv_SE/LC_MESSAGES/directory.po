@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX Directory\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-02 09:16+0000\n"
+"POT-Creation-Date: 2024-03-22 05:53-0400\n"
 "PO-Revision-Date: 2010-06-22 22:30+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team:  <mickecamino@gmail.com>\n"
@@ -32,29 +32,29 @@ msgstr ""
 "X-Poedit-Country: SWEDEN\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: functions.inc.php:59 views/form.php:127
+#: functions.inc.php:51 views/form.php:150
 msgid ""
 "ALERT_INFO to be sent when called from this Directory. Can be used for "
 "distinctive ring for SIP devices."
 msgstr ""
 
-#: functions.inc.php:216 views/grid.php:21
+#: functions.inc.php:208 views/grid.php:21
 msgid "Actions"
 msgstr ""
 
-#: functions.inc.php:10 views/bootnav.php:2 views/form.php:4 views/grid.php:6
+#: functions.inc.php:12 views/bootnav.php:2 views/form.php:5 views/grid.php:6
 msgid "Add Directory"
 msgstr "Lägg till katalog"
 
-#: functions.inc.php:260
+#: functions.inc.php:252
 msgid "Add new entry."
 msgstr "Lägg till ny post."
 
-#: functions.inc.php:59 views/form.php:115
+#: functions.inc.php:51 views/form.php:136
 msgid "Alert Info"
 msgstr "Alert Info"
 
-#: functions.inc.php:252
+#: functions.inc.php:244
 msgid "All Users"
 msgstr "Alla användare"
 
@@ -64,82 +64,87 @@ msgstr ""
 "Ett fel uppstod när servern kontaktades för att lägga till ny post, inget "
 "svar."
 
-#: functions.inc.php:81 views/form.php:319
+#: functions.inc.php:73 views/form.php:379
 msgid "Announce Extension"
 msgstr "Meddela anknytning"
 
-#: functions.inc.php:75 views/form.php:166
+#: functions.inc.php:67 views/form.php:197
 msgid "Announcement"
 msgstr "Välkomsthälsning"
 
-#: functions.inc.php:58 views/form.php:91
+#: directory.i18n.php:6
+msgid "Applications"
+msgstr ""
+
+#: functions.inc.php:50 views/form.php:107
 msgid "CallerID Name Prefix"
 msgstr "Prefix för nummerpresentation"
 
-#: functions.inc.php:251
+#: functions.inc.php:243
 msgid "Choose One"
 msgstr "Välj en"
 
-#: functions.inc.php:308
+#: functions.inc.php:303
 msgid "Click here to remove this entry"
 msgstr "Klicka här för att ta bort posten"
 
-#: functions.inc.php:253
+#: functions.inc.php:245
 msgid "Custom"
 msgstr "Anpassad"
 
-#: functions.inc.php:64 views/form.php:11 views/form.php:18 views/form.php:25
+#: functions.inc.php:56 views/form.php:13 views/form.php:20 views/form.php:27
 msgid "Default"
 msgstr "Standard"
 
-#: functions.inc.php:441 views/grid.php:20
+#: functions.inc.php:440 views/grid.php:20
 msgid "Default Directory"
 msgstr "Standardkatalog"
 
-#: functions.inc.php:437
+#: functions.inc.php:436
 msgid "Default Group Inclusion"
 msgstr "Inkludera i standardgrupp"
 
-#: Directory.class.php:259
+#: Directory.class.php:254
 msgid "Delete"
 msgstr ""
 
-#: functions.inc.php:48
+#: functions.inc.php:40
 #, php-format
 msgid "Delete Directory %s"
 msgstr "Ta bort katalog %s"
 
-#: functions.inc.php:57 views/form.php:79
+#: functions.inc.php:49 views/form.php:93
 msgid "Description of this directory."
 msgstr "Ge en meningsfull beskrivning för denna katalog"
 
-#: functions.inc.php:79 views/form.php:280
+#: functions.inc.php:71 views/form.php:330
 msgid "Destination to send the call to after Invalid Recording is played."
 msgstr ""
 "Destination att skicka samtalet till efter Ogiltigt meddelande spelats upp"
 
-#: functions.inc.php:216
+#: functions.inc.php:208
 msgid "Dial"
 msgstr ""
 
-#: page.directory.php:6 views/bootnav.php:14 views/grid.php:19
+#: directory.i18n.php:4 directory.i18n.php:10 page.directory.php:8
+#: views/bootnav.php:14 views/grid.php:19
 msgid "Directory"
 msgstr "Katalog"
 
-#: functions.inc.php:516
+#: functions.inc.php:513
 #, php-format
 msgid "Directory %s: "
 msgstr "Katalog %s: "
 
-#: functions.inc.php:57 views/form.php:67
+#: functions.inc.php:49 views/form.php:78
 msgid "Directory Description"
 msgstr "Beskrivning"
 
-#: functions.inc.php:54
+#: functions.inc.php:46
 msgid "Directory General Options"
 msgstr ""
 
-#: functions.inc.php:56 views/form.php:43
+#: functions.inc.php:48 views/form.php:49
 msgid "Directory Name"
 msgstr "Katalognamn"
 
@@ -151,71 +156,71 @@ msgstr ""
 msgid "Directory Name Can not be Blank"
 msgstr ""
 
-#: functions.inc.php:61
+#: functions.inc.php:53
 msgid "Directory Options (DTMF)"
 msgstr ""
 
-#: functions.inc.php:86
+#: functions.inc.php:78
 msgid "Directory&nbsp;Entries"
 msgstr "Katalogval"
 
-#: functions.inc.php:546
+#: functions.inc.php:542
 #, php-format
 msgid "Directory: %s"
 msgstr "Katalog: %s"
 
-#: functions.inc.php:491
+#: functions.inc.php:489
 #, php-format
 msgid "Directory: %s "
 msgstr "Katalog: %s "
 
-#: Directory.class.php:288
+#: Directory.class.php:272
 msgid "Disabled"
 msgstr ""
 
-#: functions.inc.php:303
+#: functions.inc.php:297
 #, php-format
 msgid "Edit %s: %s"
 msgstr "Redigera %s: %s"
 
-#: views/form.php:7
+#: views/form.php:9
 msgid "Edit Directory"
 msgstr ""
 
-#: functions.inc.php:34
+#: functions.inc.php:26
 #, php-format
 msgid "Edit Directory: %s"
 msgstr ""
 
-#: Directory.class.php:289
+#: Directory.class.php:273
 msgid "Enabled"
 msgstr ""
 
-#: functions.inc.php:418
+#: functions.inc.php:417
 msgid "Exclude"
 msgstr "Exkludera"
 
-#: functions.inc.php:75 views/form.php:180
+#: functions.inc.php:67 views/form.php:213
 msgid "Greeting to be played on entry to the directory."
 msgstr ""
 
-#: functions.inc.php:419
+#: functions.inc.php:418
 msgid "Include"
 msgstr "Inkludera"
 
-#: functions.inc.php:79 views/form.php:268
+#: functions.inc.php:71 views/form.php:316
 msgid "Invalid Destination"
 msgstr "Destination för ogiltigt svar"
 
-#: functions.inc.php:78 views/form.php:242
+#: functions.inc.php:70 views/form.php:286
 msgid "Invalid Recording"
 msgstr "Ogiltigt meddelande"
 
-#: functions.inc.php:76 views/form.php:192
+#: functions.inc.php:68 views/form.php:227
 msgid "Invalid Retries"
 msgstr "Ogiltiga försök"
 
-#: functions.inc.php:77 views/form.php:216
+#: functions.inc.php:69 views/form.php:256
 msgid "Invalid Retry Recording"
 msgstr "Meddelande vid ogiltiga försök"
 
@@ -223,49 +228,49 @@ msgstr "Meddelande vid ogiltiga försök"
 msgid "List Directories"
 msgstr ""
 
-#: functions.inc.php:216 functions.inc.php:220
+#: functions.inc.php:208 functions.inc.php:211
 msgid "Name"
 msgstr ""
 
-#: functions.inc.php:216
+#: functions.inc.php:208
 msgid "Name Announcement"
 msgstr ""
 
-#: views/form.php:55
+#: views/form.php:64
 msgid "Name of this directory"
 msgstr ""
 
-#: functions.inc.php:56
+#: functions.inc.php:48
 msgid "Name of this directory."
 msgstr "Ge denna katalog ett beskrivande namn"
 
-#: views/form.php:299 views/form.php:326
+#: views/form.php:355 views/form.php:390
 msgid "No"
 msgstr ""
 
-#: views/form.php:143
+#: views/form.php:170
 msgid "None"
 msgstr ""
 
-#: functions.inc.php:76 views/form.php:204
+#: functions.inc.php:68 views/form.php:242
 msgid ""
 "Number of times to retry when receiving an invalid/unmatched response from "
 "the caller"
 msgstr ""
 "Antal gånger att försöka vid ogiltigt/icke matchat försök från uppringaren"
 
-#: views/form.php:155
+#: views/form.php:184
 #, php-format
 msgid ""
 "Override the ringer volume. Note: This is only valid for %s phones at this "
 "time"
 msgstr ""
 
-#: functions.inc.php:58 views/form.php:103
+#: functions.inc.php:50 views/form.php:122
 msgid "Prefix to be appended to current CallerID Name."
 msgstr "Skriv in ett prefix att lägga till befintlig nummerpresentation"
 
-#: functions.inc.php:78 views/form.php:256
+#: functions.inc.php:70 views/form.php:302
 msgid ""
 "Prompt to be played before sending the caller to an alternate destination "
 "due to the caller pressing 0 or receiving the maximum amount of invalid/"
@@ -275,7 +280,7 @@ msgstr ""
 "alternativ destination då uppringaren slagit 0 eller det maximala antalet "
 "ogiltiga försök (angivet i fältet Ogiltiga försök)"
 
-#: functions.inc.php:77 views/form.php:230
+#: functions.inc.php:69 views/form.php:272
 msgid ""
 "Prompt to be played when an invalid/unmatched response is received, before "
 "prompting the caller to try again"
@@ -283,15 +288,15 @@ msgstr ""
 "Meddelande att spela upp vid ogiltigt/icke matchat försök från uppringaren, "
 "spelas upp innan uppringaren ombeds försöka igen"
 
-#: Directory.class.php:264
+#: Directory.class.php:254
 msgid "Reset"
 msgstr ""
 
-#: functions.inc.php:80 views/form.php:292
+#: functions.inc.php:72 views/form.php:344
 msgid "Return to IVR"
 msgstr "Återgå till IVR"
 
-#: views/form.php:138
+#: views/form.php:163
 msgid "Ringer Volume Override"
 msgstr ""
 
@@ -299,27 +304,33 @@ msgstr ""
 msgid "Select"
 msgstr ""
 
-#: functions.inc.php:293
+#: functions.inc.php:287
 msgid "Spell Name"
 msgstr "Stava namn"
 
-#: Directory.class.php:269
+#: Directory.class.php:254
 msgid "Submit"
 msgstr "Spara ändringar"
 
-#: functions.inc.php:294
+#: functions.inc.php:288
 msgid "System Recordings:"
 msgstr "Systeminspelning:"
 
-#: functions.inc.php:292
+#: functions.inc.php:286
 msgid "Text to Speech"
 msgstr "Text-till-tal"
+
+#: directory.i18n.php:8
+msgid ""
+"The directory module allows you to create directories of users that can be "
+"accessed by callers through modules like the IVR."
+msgstr ""
 
 #: assets/js/directory.js:31
 msgid "This entry has already been added"
 msgstr ""
 
-#: functions.inc.php:220
+#: functions.inc.php:211
 msgid ""
 "This should auto-populate with the extension's descriptive name. This is "
 "what users will search by when asked to enter the first 3 letters of the "
@@ -328,23 +339,23 @@ msgid ""
 "on Name and not the number."
 msgstr ""
 
-#: functions.inc.php:105
+#: functions.inc.php:95
 msgid ""
 "Tied to a Directory allowing all entries in that directory to be dialed "
 "directly, as they appear in the directory"
 msgstr ""
 
-#: functions.inc.php:291
+#: functions.inc.php:285
 msgid "Voicemail Greeting"
 msgstr "Välkomstmeddelande för röstbrevlåda"
 
-#: functions.inc.php:81 views/form.php:334
+#: functions.inc.php:73 views/form.php:400
 msgid ""
 "When checked, the extension number being transferred to will be announced "
 "prior to the transfer"
 msgstr ""
 
-#: functions.inc.php:80 views/form.php:307
+#: functions.inc.php:72 views/form.php:365
 msgid ""
 "When selected, if the call passed through an IVR that had \"Return to IVR\" "
 "selected, the call will be returned there instead of the Invalid destination."
@@ -353,11 +364,11 @@ msgstr ""
 "IVR som har \"Återgå till IVR\" valt, att returneras dit i stället för "
 "Destination vid ogiltigt svar."
 
-#: views/form.php:297 views/form.php:324
+#: views/form.php:351 views/form.php:386
 msgid "Yes"
 msgstr ""
 
-#: functions.inc.php:441
+#: functions.inc.php:440
 msgid ""
 "You can include or exclude this extension/user from being part of the "
 "default directory when creating or editing."
@@ -365,7 +376,7 @@ msgstr ""
 "Du kan inkludera eller exkludera denna anknytning/användare från att vara "
 "med i standardkatalogen."
 
-#: functions.inc.php:37
+#: functions.inc.php:29
 msgid "[SYSTEM DEFAULT]"
 msgstr ""
 
@@ -381,7 +392,7 @@ msgstr "tar bort tabellerna directory_details, directory_entries.."
 msgid "ok"
 msgstr "ok"
 
-#: functions.inc.php:308
+#: functions.inc.php:303
 msgid "remove"
 msgstr "ta bort"
 

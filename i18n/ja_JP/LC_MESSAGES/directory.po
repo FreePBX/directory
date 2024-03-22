@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-02 09:16+0000\n"
+"POT-Creation-Date: 2024-03-22 05:53-0400\n"
 "PO-Revision-Date: 2014-04-17 09:53+0200\n"
 "Last-Translator: Kevin <kevin@qloog.com>\n"
 "Language-Team: Japanese <http://git.freepbx.org/projects/freepbx/directory/"
@@ -49,7 +49,7 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 1.9-dev\n"
 
-#: functions.inc.php:59 views/form.php:127
+#: functions.inc.php:51 views/form.php:150
 msgid ""
 "ALERT_INFO to be sent when called from this Directory. Can be used for "
 "distinctive ring for SIP devices."
@@ -58,23 +58,23 @@ msgstr ""
 "音に使用することができます。このディレクトリから呼び出された際に送信されるア"
 "ラート情報。SIPデバイスの着信音に使用することができます。"
 
-#: functions.inc.php:216 views/grid.php:21
+#: functions.inc.php:208 views/grid.php:21
 msgid "Actions"
 msgstr ""
 
-#: functions.inc.php:10 views/bootnav.php:2 views/form.php:4 views/grid.php:6
+#: functions.inc.php:12 views/bootnav.php:2 views/form.php:5 views/grid.php:6
 msgid "Add Directory"
 msgstr "ディレクトリを追加"
 
-#: functions.inc.php:260
+#: functions.inc.php:252
 msgid "Add new entry."
 msgstr "新規エントリーを追加。"
 
-#: functions.inc.php:59 views/form.php:115
+#: functions.inc.php:51 views/form.php:136
 msgid "Alert Info"
 msgstr "アラート情報"
 
-#: functions.inc.php:252
+#: functions.inc.php:244
 msgid "All Users"
 msgstr "全てのユーザー"
 
@@ -82,81 +82,86 @@ msgstr "全てのユーザー"
 msgid "An Error occurred trying to contact the server adding a row, no reply."
 msgstr ""
 
-#: functions.inc.php:81 views/form.php:319
+#: functions.inc.php:73 views/form.php:379
 msgid "Announce Extension"
 msgstr "内線をアナウンス"
 
-#: functions.inc.php:75 views/form.php:166
+#: functions.inc.php:67 views/form.php:197
 msgid "Announcement"
 msgstr "アナウンス"
 
-#: functions.inc.php:58 views/form.php:91
+#: directory.i18n.php:6
+msgid "Applications"
+msgstr "アプリケーション"
+
+#: functions.inc.php:50 views/form.php:107
 msgid "CallerID Name Prefix"
 msgstr "発信者ID名前プリフィックス"
 
-#: functions.inc.php:251
+#: functions.inc.php:243
 msgid "Choose One"
 msgstr "一つを選択"
 
-#: functions.inc.php:308
+#: functions.inc.php:303
 msgid "Click here to remove this entry"
 msgstr "このエントリーを削除するにはここをクリック"
 
-#: functions.inc.php:253
+#: functions.inc.php:245
 msgid "Custom"
 msgstr "カスタム"
 
-#: functions.inc.php:64 views/form.php:11 views/form.php:18 views/form.php:25
+#: functions.inc.php:56 views/form.php:13 views/form.php:20 views/form.php:27
 msgid "Default"
 msgstr "デフォルト"
 
-#: functions.inc.php:441 views/grid.php:20
+#: functions.inc.php:440 views/grid.php:20
 msgid "Default Directory"
 msgstr "デフォルトディレクトリ"
 
-#: functions.inc.php:437
+#: functions.inc.php:436
 msgid "Default Group Inclusion"
 msgstr "デフォルトグループに含まれる"
 
-#: Directory.class.php:259
+#: Directory.class.php:254
 msgid "Delete"
 msgstr ""
 
-#: functions.inc.php:48
+#: functions.inc.php:40
 #, php-format
 msgid "Delete Directory %s"
 msgstr "ディレクトリを削除 %s"
 
-#: functions.inc.php:57 views/form.php:79
+#: functions.inc.php:49 views/form.php:93
 msgid "Description of this directory."
 msgstr "このディレクトリの説明"
 
-#: functions.inc.php:79 views/form.php:280
+#: functions.inc.php:71 views/form.php:330
 msgid "Destination to send the call to after Invalid Recording is played."
 msgstr "無効な録音が再生された場合に、呼が送られる宛先。"
 
-#: functions.inc.php:216
+#: functions.inc.php:208
 msgid "Dial"
 msgstr "ダイヤル"
 
-#: page.directory.php:6 views/bootnav.php:14 views/grid.php:19
+#: directory.i18n.php:4 directory.i18n.php:10 page.directory.php:8
+#: views/bootnav.php:14 views/grid.php:19
 msgid "Directory"
 msgstr "ディレクトリー"
 
-#: functions.inc.php:516
+#: functions.inc.php:513
 #, php-format
 msgid "Directory %s: "
 msgstr "ディレクトリ： %s"
 
-#: functions.inc.php:57 views/form.php:67
+#: functions.inc.php:49 views/form.php:78
 msgid "Directory Description"
 msgstr "ディレクトリ説明"
 
-#: functions.inc.php:54
+#: functions.inc.php:46
 msgid "Directory General Options"
 msgstr "ディレクトリ一般オプション"
 
-#: functions.inc.php:56 views/form.php:43
+#: functions.inc.php:48 views/form.php:49
 msgid "Directory Name"
 msgstr "ディレクトリ名"
 
@@ -168,71 +173,71 @@ msgstr ""
 msgid "Directory Name Can not be Blank"
 msgstr ""
 
-#: functions.inc.php:61
+#: functions.inc.php:53
 msgid "Directory Options (DTMF)"
 msgstr "ディレクトリオプション(DTMF)"
 
-#: functions.inc.php:86
+#: functions.inc.php:78
 msgid "Directory&nbsp;Entries"
 msgstr "ディレクトリ&nbsp;エントリー"
 
-#: functions.inc.php:546
+#: functions.inc.php:542
 #, php-format
 msgid "Directory: %s"
 msgstr "ディレクトリ： %s"
 
-#: functions.inc.php:491
+#: functions.inc.php:489
 #, php-format
 msgid "Directory: %s "
 msgstr "ディレクトリ： %s "
 
-#: Directory.class.php:288
+#: Directory.class.php:272
 msgid "Disabled"
 msgstr ""
 
-#: functions.inc.php:303
+#: functions.inc.php:297
 #, php-format
 msgid "Edit %s: %s"
 msgstr "%sを編集: %s"
 
-#: views/form.php:7
+#: views/form.php:9
 msgid "Edit Directory"
 msgstr ""
 
-#: functions.inc.php:34
+#: functions.inc.php:26
 #, php-format
 msgid "Edit Directory: %s"
 msgstr "ディレクトリを編集： %s"
 
-#: Directory.class.php:289
+#: Directory.class.php:273
 msgid "Enabled"
 msgstr ""
 
-#: functions.inc.php:418
+#: functions.inc.php:417
 msgid "Exclude"
 msgstr "除外"
 
-#: functions.inc.php:75 views/form.php:180
+#: functions.inc.php:67 views/form.php:213
 msgid "Greeting to be played on entry to the directory."
 msgstr "ディレクトリに入る際に再生される挨拶メッセージ。"
 
-#: functions.inc.php:419
+#: functions.inc.php:418
 msgid "Include"
 msgstr "含む"
 
-#: functions.inc.php:79 views/form.php:268
+#: functions.inc.php:71 views/form.php:316
 msgid "Invalid Destination"
 msgstr "エラー宛先"
 
-#: functions.inc.php:78 views/form.php:242
+#: functions.inc.php:70 views/form.php:286
 msgid "Invalid Recording"
 msgstr "エラー音声"
 
-#: functions.inc.php:76 views/form.php:192
+#: functions.inc.php:68 views/form.php:227
 msgid "Invalid Retries"
 msgstr "不正リトライ数"
 
-#: functions.inc.php:77 views/form.php:216
+#: functions.inc.php:69 views/form.php:256
 msgid "Invalid Retry Recording"
 msgstr "エラーリトライ音声"
 
@@ -240,48 +245,48 @@ msgstr "エラーリトライ音声"
 msgid "List Directories"
 msgstr ""
 
-#: functions.inc.php:216 functions.inc.php:220
+#: functions.inc.php:208 functions.inc.php:211
 msgid "Name"
 msgstr "名前"
 
-#: functions.inc.php:216
+#: functions.inc.php:208
 msgid "Name Announcement"
 msgstr "名前のアナウンス"
 
-#: views/form.php:55
+#: views/form.php:64
 msgid "Name of this directory"
 msgstr ""
 
-#: functions.inc.php:56
+#: functions.inc.php:48
 msgid "Name of this directory."
 msgstr "このディレクトリの名前。"
 
-#: views/form.php:299 views/form.php:326
+#: views/form.php:355 views/form.php:390
 msgid "No"
 msgstr ""
 
-#: views/form.php:143
+#: views/form.php:170
 msgid "None"
 msgstr ""
 
-#: functions.inc.php:76 views/form.php:204
+#: functions.inc.php:68 views/form.php:242
 msgid ""
 "Number of times to retry when receiving an invalid/unmatched response from "
 "the caller"
 msgstr "発信者からの無効な/合致しない応答を受信したときに再試行する回数"
 
-#: views/form.php:155
+#: views/form.php:184
 #, php-format
 msgid ""
 "Override the ringer volume. Note: This is only valid for %s phones at this "
 "time"
 msgstr ""
 
-#: functions.inc.php:58 views/form.php:103
+#: functions.inc.php:50 views/form.php:122
 msgid "Prefix to be appended to current CallerID Name."
 msgstr "現在の発信者ID名に追加されるプリフィックス"
 
-#: functions.inc.php:78 views/form.php:256
+#: functions.inc.php:70 views/form.php:302
 msgid ""
 "Prompt to be played before sending the caller to an alternate destination "
 "due to the caller pressing 0 or receiving the maximum amount of invalid/"
@@ -290,7 +295,7 @@ msgstr ""
 "発信者は0を押している、または無効な／マッチしない返答が上限に達した時に発信者"
 "を代わりの宛先に送る前に再生されるプロンプト"
 
-#: functions.inc.php:77 views/form.php:230
+#: functions.inc.php:69 views/form.php:272
 msgid ""
 "Prompt to be played when an invalid/unmatched response is received, before "
 "prompting the caller to try again"
@@ -298,15 +303,15 @@ msgstr ""
 "無効な/合致しない応答を受信したときに、発信者に再試行を促す前に再生されるプロ"
 "ンプト。"
 
-#: Directory.class.php:264
+#: Directory.class.php:254
 msgid "Reset"
 msgstr ""
 
-#: functions.inc.php:80 views/form.php:292
+#: functions.inc.php:72 views/form.php:344
 msgid "Return to IVR"
 msgstr "IVRに戻る"
 
-#: views/form.php:138
+#: views/form.php:163
 msgid "Ringer Volume Override"
 msgstr ""
 
@@ -314,27 +319,33 @@ msgstr ""
 msgid "Select"
 msgstr ""
 
-#: functions.inc.php:293
+#: functions.inc.php:287
 msgid "Spell Name"
 msgstr "名前のスペル"
 
-#: Directory.class.php:269
+#: Directory.class.php:254
 msgid "Submit"
 msgstr "送信"
 
-#: functions.inc.php:294
+#: functions.inc.php:288
 msgid "System Recordings:"
 msgstr "システム録音:"
 
-#: functions.inc.php:292
+#: functions.inc.php:286
 msgid "Text to Speech"
 msgstr "テキスト to スピーチ(テキスト合成音声)"
+
+#: directory.i18n.php:8
+msgid ""
+"The directory module allows you to create directories of users that can be "
+"accessed by callers through modules like the IVR."
+msgstr ""
 
 #: assets/js/directory.js:31
 msgid "This entry has already been added"
 msgstr ""
 
-#: functions.inc.php:220
+#: functions.inc.php:211
 msgid ""
 "This should auto-populate with the extension's descriptive name. This is "
 "what users will search by when asked to enter the first 3 letters of the "
@@ -343,24 +354,24 @@ msgid ""
 "on Name and not the number."
 msgstr ""
 
-#: functions.inc.php:105
+#: functions.inc.php:95
 msgid ""
 "Tied to a Directory allowing all entries in that directory to be dialed "
 "directly, as they appear in the directory"
 msgstr ""
 "全てのエントリに直接ダイヤルする許可の権限を持つディレクトリが表示されます"
 
-#: functions.inc.php:291
+#: functions.inc.php:285
 msgid "Voicemail Greeting"
 msgstr "ボイスメール挨拶"
 
-#: functions.inc.php:81 views/form.php:334
+#: functions.inc.php:73 views/form.php:400
 msgid ""
 "When checked, the extension number being transferred to will be announced "
 "prior to the transfer"
 msgstr "チェックされた場合、転送される内線番号が転送前にアナウンスされます。"
 
-#: functions.inc.php:80 views/form.php:307
+#: functions.inc.php:72 views/form.php:365
 msgid ""
 "When selected, if the call passed through an IVR that had \"Return to IVR\" "
 "selected, the call will be returned there instead of the Invalid destination."
@@ -368,11 +379,11 @@ msgstr ""
 "選択された場合、コールが、\"IVRに戻る\"が選択されたIVRを通過する場合は、コー"
 "ルは無効にならずにそこに戻ります。"
 
-#: views/form.php:297 views/form.php:324
+#: views/form.php:351 views/form.php:386
 msgid "Yes"
 msgstr ""
 
-#: functions.inc.php:441
+#: functions.inc.php:440
 msgid ""
 "You can include or exclude this extension/user from being part of the "
 "default directory when creating or editing."
@@ -380,7 +391,7 @@ msgstr ""
 "作成または編集時に、この内線/ユーザーをデフォルトディレクトリの一部に含む/除"
 "外することができます。"
 
-#: functions.inc.php:37
+#: functions.inc.php:29
 msgid "[SYSTEM DEFAULT]"
 msgstr "[システムデフォルト]"
 
@@ -398,12 +409,9 @@ msgstr "directory_details, directory_entriesをドロップ中.."
 msgid "ok"
 msgstr "ok"
 
-#: functions.inc.php:308
+#: functions.inc.php:303
 msgid "remove"
 msgstr "削除"
-
-#~ msgid "Applications"
-#~ msgstr "アプリケーション"
 
 #~ msgid "Adding directory tables if needed"
 #~ msgstr "必要に応じてディレクトリテーブルを追加"
