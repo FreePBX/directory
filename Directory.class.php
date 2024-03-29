@@ -237,11 +237,11 @@ class Directory extends FreePBX_Helpers implements BMO {
 			$stmt->execute([
 				':id'         => $id,
 				':e_id'       => $idx,
-				':name'       => $row['name'],
+				':name'       => ($row['name'] ?? ''),
 				':type'       => $type,
 				':foriegn_id' => $foreign_id,
 				':audio'      => $audio,
-				':dial'       => $row['num'],
+				':dial'       => ($row['num'] ?? ''),
 			]);
 		}
 		return $this;
