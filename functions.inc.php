@@ -428,14 +428,21 @@ function directory_configpageload_exten() {
 	// Init vars from $_REQUEST[]
 	$action     = $_REQUEST['action'] ?? null;
 	$extdisplay = $_REQUEST['extdisplay'] ?? null;
-
 	// Don't display this stuff it it's on a 'This xtn has been deleted' page.
 	if ($action != 'del') {
-
 		$default_directory_id = directory_get_default_dir();
 		$section              = _("Default Group Inclusion");
 		if ($default_directory_id != "") {
 			$in_default_directory = directory_check_default($extdisplay);
+			if(empty($extdisplay)){
+				$sql ="Select * from admin where variable='default_directory'";
+				$row      = sql($sql, 'getRow', DB_FETCHMODE_ASSOC);
+				if(isset($row['value']) && $row['value'] >= 1){
+					$in_default_directory = 1;
+				}else{
+					$in_default_directory = 0;
+				}
+			}
 			$category             = "advanced";
 			$currentcomponent->addguielem($section, new gui_selectbox('in_default_directory', $currentcomponent->getoptlist('directory_group'), $in_default_directory, _('Default Directory'), _('You can include or exclude this extension/user from being part of the default directory when creating or editing.'), false), $category);
 		}
