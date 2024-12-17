@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-22 05:53-0400\n"
+"POT-Creation-Date: 2024-12-17 05:31-0500\n"
 "PO-Revision-Date: 2018-07-27 13:00+0000\n"
 "Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
 "Language-Team: German <http://*/projects/freepbx/directory/de/>\n"
@@ -84,11 +84,11 @@ msgstr "Benutzerdefiniert"
 msgid "Default"
 msgstr "Standard"
 
-#: functions.inc.php:440 views/grid.php:20
+#: functions.inc.php:447 views/grid.php:20
 msgid "Default Directory"
 msgstr "Standardverzeichnis"
 
-#: functions.inc.php:436
+#: functions.inc.php:434
 msgid "Default Group Inclusion"
 msgstr ""
 
@@ -120,7 +120,7 @@ msgstr "Wählen"
 msgid "Directory"
 msgstr "Verzeichnis"
 
-#: functions.inc.php:513
+#: functions.inc.php:520
 #, php-format
 msgid "Directory %s: "
 msgstr "Verezeichnis %s: "
@@ -153,12 +153,12 @@ msgstr "Verzeichnisoptionen (DTMF)"
 msgid "Directory&nbsp;Entries"
 msgstr "Verzeichniseinträge"
 
-#: functions.inc.php:542
+#: functions.inc.php:549
 #, php-format
 msgid "Directory: %s"
 msgstr "Verzeichnis: %s"
 
-#: functions.inc.php:489
+#: functions.inc.php:496
 #, php-format
 msgid "Directory: %s "
 msgstr "Verzeichnis: %s "
@@ -352,7 +352,7 @@ msgstr ""
 msgid "Yes"
 msgstr "Ja"
 
-#: functions.inc.php:440
+#: functions.inc.php:447
 msgid ""
 "You can include or exclude this extension/user from being part of the "
 "default directory when creating or editing."

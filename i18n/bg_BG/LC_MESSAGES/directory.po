@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-22 05:53-0400\n"
+"POT-Creation-Date: 2024-12-17 05:31-0500\n"
 "PO-Revision-Date: 2014-07-22 15:33+0200\n"
 "Last-Translator: Chavdar <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://git.freepbx.org/projects/freepbx/directory/"
@@ -94,11 +94,11 @@ msgstr ""
 msgid "Default"
 msgstr ""
 
-#: functions.inc.php:440 views/grid.php:20
+#: functions.inc.php:447 views/grid.php:20
 msgid "Default Directory"
 msgstr ""
 
-#: functions.inc.php:436
+#: functions.inc.php:434
 msgid "Default Group Inclusion"
 msgstr ""
 
@@ -128,7 +128,7 @@ msgstr ""
 msgid "Directory"
 msgstr "Директория"
 
-#: functions.inc.php:513
+#: functions.inc.php:520
 #, php-format
 msgid "Directory %s: "
 msgstr ""
@@ -161,12 +161,12 @@ msgstr ""
 msgid "Directory&nbsp;Entries"
 msgstr ""
 
-#: functions.inc.php:542
+#: functions.inc.php:549
 #, php-format
 msgid "Directory: %s"
 msgstr ""
 
-#: functions.inc.php:489
+#: functions.inc.php:496
 #, php-format
 msgid "Directory: %s "
 msgstr ""
@@ -356,7 +356,7 @@ msgstr ""
 msgid "Yes"
 msgstr ""
 
-#: functions.inc.php:440
+#: functions.inc.php:447
 msgid ""
 "You can include or exclude this extension/user from being part of the "
 "default directory when creating or editing."

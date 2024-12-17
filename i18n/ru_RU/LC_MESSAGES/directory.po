@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-22 05:53-0400\n"
+"POT-Creation-Date: 2024-12-17 05:31-0500\n"
 "PO-Revision-Date: 2017-05-17 01:53+0200\n"
 "Last-Translator: Evgeniy <yen81@mail.ru>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/"
@@ -84,11 +84,11 @@ msgstr "Особое"
 msgid "Default"
 msgstr "По умолчанию"
 
-#: functions.inc.php:440 views/grid.php:20
+#: functions.inc.php:447 views/grid.php:20
 msgid "Default Directory"
 msgstr "Директория по умолчанию"
 
-#: functions.inc.php:436
+#: functions.inc.php:434
 msgid "Default Group Inclusion"
 msgstr "Включение в дефолтную группу"
 
@@ -120,7 +120,7 @@ msgstr "Набор"
 msgid "Directory"
 msgstr "Директории"
 
-#: functions.inc.php:513
+#: functions.inc.php:520
 #, php-format
 msgid "Directory %s: "
 msgstr "Директория %s: "
@@ -153,12 +153,12 @@ msgstr "Опции директории (DTMF)"
 msgid "Directory&nbsp;Entries"
 msgstr "Директория&nbsp;&nbsp;Значение"
 
-#: functions.inc.php:542
+#: functions.inc.php:549
 #, php-format
 msgid "Directory: %s"
 msgstr "Директория: %s"
 
-#: functions.inc.php:489
+#: functions.inc.php:496
 #, php-format
 msgid "Directory: %s "
 msgstr "Директория:  %s "
@@ -362,7 +362,7 @@ msgstr ""
 msgid "Yes"
 msgstr "Да"
 
-#: functions.inc.php:440
+#: functions.inc.php:447
 msgid ""
 "You can include or exclude this extension/user from being part of the "
 "default directory when creating or editing."

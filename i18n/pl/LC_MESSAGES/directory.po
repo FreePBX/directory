@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-22 05:53-0400\n"
+"POT-Creation-Date: 2024-12-17 05:31-0500\n"
 "PO-Revision-Date: 2023-11-19 10:05+0000\n"
 "Last-Translator: Szymon Wysokinski <szymon.wysokinski@sqspolska.pl>\n"
 "Language-Team: Polish <http://weblate.freepbx.org/projects/freepbx/directory/"
@@ -88,11 +88,11 @@ msgstr "Niestandardowy"
 msgid "Default"
 msgstr "Domyślne"
 
-#: functions.inc.php:440 views/grid.php:20
+#: functions.inc.php:447 views/grid.php:20
 msgid "Default Directory"
 msgstr "Katalog domyślny"
 
-#: functions.inc.php:436
+#: functions.inc.php:434
 msgid "Default Group Inclusion"
 msgstr "Domyślna integracja grupy"
 
@@ -124,7 +124,7 @@ msgstr "Wydzwoń"
 msgid "Directory"
 msgstr "Książka adresowa"
 
-#: functions.inc.php:513
+#: functions.inc.php:520
 #, php-format
 msgid "Directory %s: "
 msgstr "Książka adresowa %s: "
@@ -157,12 +157,12 @@ msgstr "Opcje książki adresowej (DTMF)"
 msgid "Directory&nbsp;Entries"
 msgstr "Książka adresowa&nbsp;Wpisy"
 
-#: functions.inc.php:542
+#: functions.inc.php:549
 #, php-format
 msgid "Directory: %s"
 msgstr "Książka adresowa: %s"
 
-#: functions.inc.php:489
+#: functions.inc.php:496
 #, php-format
 msgid "Directory: %s "
 msgstr "Książka adresowa: %s "
@@ -376,7 +376,7 @@ msgstr ""
 msgid "Yes"
 msgstr "Tak"
 
-#: functions.inc.php:440
+#: functions.inc.php:447
 msgid ""
 "You can include or exclude this extension/user from being part of the "
 "default directory when creating or editing."
