@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-22 05:53-0400\n"
+"POT-Creation-Date: 2024-12-17 05:31-0500\n"
 "PO-Revision-Date: 2014-04-17 09:53+0200\n"
 "Last-Translator: Kevin <kevin@qloog.com>\n"
 "Language-Team: Japanese <http://git.freepbx.org/projects/freepbx/directory/"
@@ -114,11 +114,11 @@ msgstr "カスタム"
 msgid "Default"
 msgstr "デフォルト"
 
-#: functions.inc.php:440 views/grid.php:20
+#: functions.inc.php:447 views/grid.php:20
 msgid "Default Directory"
 msgstr "デフォルトディレクトリ"
 
-#: functions.inc.php:436
+#: functions.inc.php:434
 msgid "Default Group Inclusion"
 msgstr "デフォルトグループに含まれる"
 
@@ -148,7 +148,7 @@ msgstr "ダイヤル"
 msgid "Directory"
 msgstr "ディレクトリー"
 
-#: functions.inc.php:513
+#: functions.inc.php:520
 #, php-format
 msgid "Directory %s: "
 msgstr "ディレクトリ： %s"
@@ -181,12 +181,12 @@ msgstr "ディレクトリオプション(DTMF)"
 msgid "Directory&nbsp;Entries"
 msgstr "ディレクトリ&nbsp;エントリー"
 
-#: functions.inc.php:542
+#: functions.inc.php:549
 #, php-format
 msgid "Directory: %s"
 msgstr "ディレクトリ： %s"
 
-#: functions.inc.php:489
+#: functions.inc.php:496
 #, php-format
 msgid "Directory: %s "
 msgstr "ディレクトリ： %s "
@@ -383,7 +383,7 @@ msgstr ""
 msgid "Yes"
 msgstr ""
 
-#: functions.inc.php:440
+#: functions.inc.php:447
 msgid ""
 "You can include or exclude this extension/user from being part of the "
 "default directory when creating or editing."
