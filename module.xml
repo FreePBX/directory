@@ -53,7 +53,7 @@
 		<module>recordings ge 17.0.1</module>
 	</depends>
 	<description>The directory module allows you to create directories of users that can be accessed by callers through modules like the IVR.</description>
-	<more-info>https://wiki.freepbx.org/display/FPG/Directory+Module</more-info>
+	<more-info>https://sangomakb.atlassian.net/wiki/spaces/PG/pages/22446252/PBX+GUI+-+Directory+Module</more-info>
 	<changelog>
 		*17.0.1.2* #584 Set the Default Directory Option to Include as the Default for New Extensions 
 		*17.0.1* 17.0 release
