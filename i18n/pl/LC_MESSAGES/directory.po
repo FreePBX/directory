@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-17 05:31-0500\n"
+"POT-Creation-Date: 2026-02-26 05:53-0500\n"
 "PO-Revision-Date: 2023-11-19 10:05+0000\n"
 "Last-Translator: Szymon Wysokinski <szymon.wysokinski@sqspolska.pl>\n"
 "Language-Team: Polish <http://weblate.freepbx.org/projects/freepbx/directory/"
@@ -30,7 +30,7 @@ msgstr ""
 "ALERT_INFO ma być wysyłany po wydzwonieniu z tego katalogu. To może być "
 "użyte do rozróżniania dzwonków na urządzeniach SIP."
 
-#: functions.inc.php:208 views/grid.php:21
+#: functions.inc.php:218 views/grid.php:21
 msgid "Actions"
 msgstr "Działania"
 
@@ -38,7 +38,7 @@ msgstr "Działania"
 msgid "Add Directory"
 msgstr "Dodaj katalog"
 
-#: functions.inc.php:252
+#: functions.inc.php:262
 msgid "Add new entry."
 msgstr "Dodaj nowy wpis."
 
@@ -46,7 +46,7 @@ msgstr "Dodaj nowy wpis."
 msgid "Alert Info"
 msgstr "Informacje o alertach"
 
-#: functions.inc.php:244
+#: functions.inc.php:254
 msgid "All Users"
 msgstr "Wszyscy użytkownicy"
 
@@ -72,15 +72,15 @@ msgstr "Aplikacje"
 msgid "CallerID Name Prefix"
 msgstr "Prefiks nazwy CallerID"
 
-#: functions.inc.php:243
+#: functions.inc.php:253
 msgid "Choose One"
 msgstr "Wybierz jedną z opcji"
 
-#: functions.inc.php:303
+#: functions.inc.php:313
 msgid "Click here to remove this entry"
 msgstr "Kliknij tutaj aby usunąć ten wpis"
 
-#: functions.inc.php:245
+#: functions.inc.php:255
 msgid "Custom"
 msgstr "Niestandardowy"
 
@@ -88,11 +88,11 @@ msgstr "Niestandardowy"
 msgid "Default"
 msgstr "Domyślne"
 
-#: functions.inc.php:447 views/grid.php:20
+#: functions.inc.php:457 views/grid.php:20
 msgid "Default Directory"
 msgstr "Katalog domyślny"
 
-#: functions.inc.php:434
+#: functions.inc.php:444
 msgid "Default Group Inclusion"
 msgstr "Domyślna integracja grupy"
 
@@ -115,7 +115,7 @@ msgstr ""
 "Miejsce docelowe, do którego ma zostać wysłane połączenie po odtworzeniu "
 "nagrania dla nieprawidłowej opcji."
 
-#: functions.inc.php:208
+#: functions.inc.php:218
 msgid "Dial"
 msgstr "Wydzwoń"
 
@@ -124,7 +124,7 @@ msgstr "Wydzwoń"
 msgid "Directory"
 msgstr "Książka adresowa"
 
-#: functions.inc.php:520
+#: functions.inc.php:530
 #, php-format
 msgid "Directory %s: "
 msgstr "Książka adresowa %s: "
@@ -157,12 +157,12 @@ msgstr "Opcje książki adresowej (DTMF)"
 msgid "Directory&nbsp;Entries"
 msgstr "Książka adresowa&nbsp;Wpisy"
 
-#: functions.inc.php:549
+#: functions.inc.php:559
 #, php-format
 msgid "Directory: %s"
 msgstr "Książka adresowa: %s"
 
-#: functions.inc.php:496
+#: functions.inc.php:506
 #, php-format
 msgid "Directory: %s "
 msgstr "Książka adresowa: %s "
@@ -171,7 +171,7 @@ msgstr "Książka adresowa: %s "
 msgid "Disabled"
 msgstr "Wyłączony"
 
-#: functions.inc.php:297
+#: functions.inc.php:307
 #, php-format
 msgid "Edit %s: %s"
 msgstr "Edytuj %s: %s"
@@ -189,7 +189,7 @@ msgstr "Edytuj książkę adresową: %s"
 msgid "Enabled"
 msgstr "Włączony"
 
-#: functions.inc.php:417
+#: functions.inc.php:427
 msgid "Exclude"
 msgstr "Wykluczać"
 
@@ -197,7 +197,7 @@ msgstr "Wykluczać"
 msgid "Greeting to be played on entry to the directory."
 msgstr "Powitanie do odtworzenia przy wejściu do katalogu."
 
-#: functions.inc.php:418
+#: functions.inc.php:428
 msgid "Include"
 msgstr "Zawierać"
 
@@ -221,11 +221,11 @@ msgstr "Nieprawidłowe nagranie dla ponownej próby"
 msgid "List Directories"
 msgstr "Wykaz książek adresowych"
 
-#: functions.inc.php:208 functions.inc.php:211
+#: functions.inc.php:218 functions.inc.php:221
 msgid "Name"
 msgstr "Nazwa"
 
-#: functions.inc.php:208
+#: functions.inc.php:218
 msgid "Name Announcement"
 msgstr "Nazwa zapowiedzi"
 
@@ -299,7 +299,7 @@ msgstr "Nadpisanie głośności dzwonka"
 msgid "Select"
 msgstr "Wybierz"
 
-#: functions.inc.php:287
+#: functions.inc.php:297
 msgid "Spell Name"
 msgstr "Wymowa nazwy"
 
@@ -307,11 +307,11 @@ msgstr "Wymowa nazwy"
 msgid "Submit"
 msgstr "Wyślij"
 
-#: functions.inc.php:288
+#: functions.inc.php:298
 msgid "System Recordings:"
 msgstr "Nagrania systemowe:"
 
-#: functions.inc.php:286
+#: functions.inc.php:296
 msgid "Text to Speech"
 msgstr "Zamiana tekstu na mowę"
 
@@ -328,7 +328,7 @@ msgstr ""
 msgid "This entry has already been added"
 msgstr "Ten wpis został już dodany"
 
-#: functions.inc.php:211
+#: functions.inc.php:221
 msgid ""
 "This should auto-populate with the extension's descriptive name. This is "
 "what users will search by when asked to enter the first 3 letters of the "
@@ -351,7 +351,7 @@ msgstr ""
 "Powiązanie z książką adresową umożliwia bezpośrednie wybieranie wszystkich "
 "wpisów z tej książki adresowej, według wyświetlania w książce adresowej"
 
-#: functions.inc.php:285
+#: functions.inc.php:295
 msgid "Voicemail Greeting"
 msgstr "Powitanie w poczcie głosowej"
 
@@ -376,7 +376,7 @@ msgstr ""
 msgid "Yes"
 msgstr "Tak"
 
-#: functions.inc.php:447
+#: functions.inc.php:457
 msgid ""
 "You can include or exclude this extension/user from being part of the "
 "default directory when creating or editing."
@@ -400,6 +400,6 @@ msgstr "porzuć directory_details, directory_entries.."
 msgid "ok"
 msgstr "ok"
 
-#: functions.inc.php:303
+#: functions.inc.php:313
 msgid "remove"
 msgstr "usuń"

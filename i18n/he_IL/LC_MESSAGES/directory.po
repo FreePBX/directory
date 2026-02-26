@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-17 05:31-0500\n"
+"POT-Creation-Date: 2026-02-26 05:53-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,7 +35,7 @@ msgid ""
 "distinctive ring for SIP devices."
 msgstr ""
 
-#: functions.inc.php:208 views/grid.php:21
+#: functions.inc.php:218 views/grid.php:21
 msgid "Actions"
 msgstr ""
 
@@ -43,7 +43,7 @@ msgstr ""
 msgid "Add Directory"
 msgstr ""
 
-#: functions.inc.php:252
+#: functions.inc.php:262
 msgid "Add new entry."
 msgstr ""
 
@@ -51,7 +51,7 @@ msgstr ""
 msgid "Alert Info"
 msgstr ""
 
-#: functions.inc.php:244
+#: functions.inc.php:254
 msgid "All Users"
 msgstr ""
 
@@ -75,15 +75,15 @@ msgstr ""
 msgid "CallerID Name Prefix"
 msgstr ""
 
-#: functions.inc.php:243
+#: functions.inc.php:253
 msgid "Choose One"
 msgstr ""
 
-#: functions.inc.php:303
+#: functions.inc.php:313
 msgid "Click here to remove this entry"
 msgstr ""
 
-#: functions.inc.php:245
+#: functions.inc.php:255
 msgid "Custom"
 msgstr ""
 
@@ -91,11 +91,11 @@ msgstr ""
 msgid "Default"
 msgstr ""
 
-#: functions.inc.php:447 views/grid.php:20
+#: functions.inc.php:457 views/grid.php:20
 msgid "Default Directory"
 msgstr ""
 
-#: functions.inc.php:434
+#: functions.inc.php:444
 msgid "Default Group Inclusion"
 msgstr ""
 
@@ -116,7 +116,7 @@ msgstr ""
 msgid "Destination to send the call to after Invalid Recording is played."
 msgstr ""
 
-#: functions.inc.php:208
+#: functions.inc.php:218
 msgid "Dial"
 msgstr ""
 
@@ -125,7 +125,7 @@ msgstr ""
 msgid "Directory"
 msgstr ""
 
-#: functions.inc.php:520
+#: functions.inc.php:530
 #, php-format
 msgid "Directory %s: "
 msgstr ""
@@ -158,12 +158,12 @@ msgstr ""
 msgid "Directory&nbsp;Entries"
 msgstr ""
 
-#: functions.inc.php:549
+#: functions.inc.php:559
 #, php-format
 msgid "Directory: %s"
 msgstr ""
 
-#: functions.inc.php:496
+#: functions.inc.php:506
 #, php-format
 msgid "Directory: %s "
 msgstr ""
@@ -172,7 +172,7 @@ msgstr ""
 msgid "Disabled"
 msgstr ""
 
-#: functions.inc.php:297
+#: functions.inc.php:307
 #, php-format
 msgid "Edit %s: %s"
 msgstr ""
@@ -190,7 +190,7 @@ msgstr ""
 msgid "Enabled"
 msgstr ""
 
-#: functions.inc.php:417
+#: functions.inc.php:427
 msgid "Exclude"
 msgstr ""
 
@@ -198,7 +198,7 @@ msgstr ""
 msgid "Greeting to be played on entry to the directory."
 msgstr ""
 
-#: functions.inc.php:418
+#: functions.inc.php:428
 msgid "Include"
 msgstr ""
 
@@ -222,11 +222,11 @@ msgstr ""
 msgid "List Directories"
 msgstr ""
 
-#: functions.inc.php:208 functions.inc.php:211
+#: functions.inc.php:218 functions.inc.php:221
 msgid "Name"
 msgstr ""
 
-#: functions.inc.php:208
+#: functions.inc.php:218
 msgid "Name Announcement"
 msgstr ""
 
@@ -292,7 +292,7 @@ msgstr ""
 msgid "Select"
 msgstr ""
 
-#: functions.inc.php:287
+#: functions.inc.php:297
 msgid "Spell Name"
 msgstr ""
 
@@ -300,11 +300,11 @@ msgstr ""
 msgid "Submit"
 msgstr ""
 
-#: functions.inc.php:288
+#: functions.inc.php:298
 msgid "System Recordings:"
 msgstr ""
 
-#: functions.inc.php:286
+#: functions.inc.php:296
 msgid "Text to Speech"
 msgstr ""
 
@@ -318,7 +318,7 @@ msgstr ""
 msgid "This entry has already been added"
 msgstr ""
 
-#: functions.inc.php:211
+#: functions.inc.php:221
 msgid ""
 "This should auto-populate with the extension's descriptive name. This is "
 "what users will search by when asked to enter the first 3 letters of the "
@@ -333,7 +333,7 @@ msgid ""
 "directly, as they appear in the directory"
 msgstr ""
 
-#: functions.inc.php:285
+#: functions.inc.php:295
 msgid "Voicemail Greeting"
 msgstr ""
 
@@ -353,7 +353,7 @@ msgstr ""
 msgid "Yes"
 msgstr ""
 
-#: functions.inc.php:447
+#: functions.inc.php:457
 msgid ""
 "You can include or exclude this extension/user from being part of the "
 "default directory when creating or editing."
@@ -375,6 +375,6 @@ msgstr ""
 msgid "ok"
 msgstr ""
 
-#: functions.inc.php:303
+#: functions.inc.php:313
 msgid "remove"
 msgstr ""
