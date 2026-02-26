@@ -2,7 +2,7 @@
 	<rawname>directory</rawname>
 	<repo>standard</repo>
 	<name>Directory</name>
-	<version>17.0.1.2</version>
+	<version>17.0.2</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>https://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -55,6 +55,7 @@
 	<description>The directory module allows you to create directories of users that can be accessed by callers through modules like the IVR.</description>
 	<more-info>https://sangomakb.atlassian.net/wiki/spaces/PG/pages/22446252/PBX+GUI+-+Directory+Module</more-info>
 	<changelog>
+		*17.0.2* FREEI-2307 sanitization  check added for sql injection of directory delete 
 		*17.0.1.2* #584 Set the Default Directory Option to Include as the Default for New Extensions 
 		*17.0.1* 17.0 release
 	</changelog>
