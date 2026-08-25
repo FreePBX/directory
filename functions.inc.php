@@ -211,7 +211,7 @@ function directory_destinations() {
 		$row['dirname'] = $row['dirname'] ?: 'Directory ' . $row['id'];
 		$extens[]       = [ 'destination' => 'directory,' . $row['id'] . ',1', 'description' => $row['dirname'], 'category' => 'Directory' ];
 	}
-	return $extens ?? null;
+	return $extens ?? [];
 }
 
 function directory_draw_entries_table_header_directory() {
@@ -259,7 +259,7 @@ function directory_draw_entries($id) {
 		$newuser .= '<option value="' . $user[0] . '|' . $user[1] . '">(' . $user[0] . ') ' . $user[1] . "</option>\n";
 	}
 	$newuser .= '</select>';
-	$html .= '<tfoot><tr><td id="addbut"><a href="#" class="info"><i class="fa fa-plus" name="image" style="font-size: 20px;cursor:pointer;color:#0070a3;" /><span>' . _('Add new entry.') . '</span></a></td><td colspan="' . ((is_countable(directory_draw_entries_table_header_directory()) ? count(directory_draw_entries_table_header_directory()) : 0) - 1) . '"id="addrow" style="display: none;">' . $newuser . '</td></tr></tfoot>';
+	$html .= '<tfoot><tr><td id="addbut"><a href="#" class="info"><i class="fa fa-plus" name="image" style="font-size: 20px;cursor:pointer;color:#0070a3;" /><span>' . _('Add new entry.') . '</span></a></td><td colspan="' . ((is_countable(directory_draw_entries_table_header_directory()) ? count(directory_draw_entries_table_header_directory()) : 0) - 1) . '" id="addrow" style="display: none;">' . $newuser . '</td></tr></tfoot>';
 	$html .= '<tbody>';
 	$entries = directory_get_dir_entries($id);
 	$inuse   = [];
@@ -285,11 +285,11 @@ function directory_draw_entries($id) {
 function directory_draw_entries_tr($id, $realid, $name = '', $foreign_name = '', $audio = '', $num = '', $e_id = '', $reuse_audio = false, $dataname = null) {
 	$td = [];
 	global $amp_conf, $directory_draw_recordings_list, $audio_select;
-	if (!$directory_draw_recordings_list) {
+	if (empty($directory_draw_recordings_list)) {
 		$directory_draw_recordings_list = recordings_list();
 	}
-	$e_id = $e_id ?: directory_get_next_id($realid);
-	if (!$audio_select || !$reuse_audio) {
+	$e_id = $e_id ?: directory_get_next_id($id);
+	if (empty($audio_select) || !$reuse_audio) {
 		unset($audio_select);
 		$audio_select = '<select name="entries[' . $e_id . '][audio]" class="form-control">';
 		$audio_select .= '<option value="vm" ' . (($audio == 'vm') ? 'SELECTED' : '') . '>' . _('Voicemail Greeting') . '</option>';
@@ -314,10 +314,10 @@ function directory_draw_entries_tr($id, $realid, $name = '', $foreign_name = '',
 	$t1_class = $name == '' ? ' class = "dpt-title form-control" ' : 'class="form-control"';
 	$t2_class = $realid == 'custom' ? ' placeholder="Custom Dialstring" ' : ' placeholder="' . $realid . '" ';
 	if (trim((string) $num) == '') {
-		$t2_class .= '" class = "dpt-title form-control" ';
+		$t2_class .= 'class="dpt-title form-control" ';
 	}
 	else {
-		$t2_class .= '" class = "form-control"';
+		$t2_class .= 'class="form-control"';
 	}
 	$td[] = '<input type="hidden" readonly="readonly" name="entries[' . $e_id . '][foreign_id]" value="' . $realid . '" /><input type="text" name="entries[' . $e_id . '][name]" placeholder="' . $foreign_name . '"' . $t1_class . ' value="' . $name . '" />';
 	$td[] = $audio_select;
@@ -469,7 +469,7 @@ function directory_configprocess_exten() {
 	$extn                 = $_REQUEST['extension'] ?? null;
 	$in_default_directory = $_REQUEST['in_default_directory'] ?? false;
 
-	$extdisplay = ($ext === '') ? $extn : $ext;
+	$extdisplay = ($ext === '' || $ext === null) ? $extn : $ext;
 
 	if (($action == "add" || $action == "edit")) {
 		if (!isset($GLOBALS['abort']) || $GLOBALS['abort'] !== true) {
@@ -535,10 +535,10 @@ function directory_getdestinfo($dest) {
 	}
 }
 
-function directory_get_next_id($realid) {
+function directory_get_next_id($directoryId) {
 	global $db;
-	$res = sql('SELECT MAX(e_id) FROM directory_entries WHERE id = "' . $realid . '"', 'getOne');
-	return $res ?: 1;
+	$res = sql('SELECT MAX(e_id) FROM directory_entries WHERE id = "' . $directoryId . '"', 'getOne');
+	return is_numeric($res) ? (int)$res + 1 : 1;
 }
 
 function directory_recordings_usage($recording_id) {

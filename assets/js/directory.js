@@ -15,12 +15,15 @@ $(document).ready(function(){
 		});
 		return false;
 	});
-	$('form[name=frm_dirform]')[0].onsubmit = function() {
-		if($("#dirname").val() ==""){
-			return warnInvalid($("#dirname"),_("Directory Name Can not be Blank"));
-		}
-		if (dirnames.indexOf($("#dirname").val()) >= 0) {
-			return warnInvalid($("#dirname"),_("Directory Name Already Exist"));
+	var directoryForm = $('form[name=frm_dirform]')[0];
+	if (directoryForm) {
+		directoryForm.onsubmit = function() {
+			if($("#dirname").val() ==""){
+				return warnInvalid($("#dirname"),_("Directory Name Can not be Blank"));
+			}
+			if (dirnames.indexOf($("#dirname").val()) >= 0) {
+				return warnInvalid($("#dirname"),_("Directory Name Already Exist"));
+			}
 		}
 	}
 	//add row button
@@ -66,8 +69,9 @@ $(document).ready(function(){
     var $this = this;
 	$(this).parents('tr').fadeOut(500,
 		function(){
-      if($.inArray($($this).data("name"), inuse) > -1) {
-        delete(inuse[$.inArray($($this).data("name"), inuse)]);
+      var inuseIndex = $.inArray($($this).data("name"), inuse);
+      if(inuseIndex > -1) {
+        inuse.splice(inuseIndex, 1);
       }
       $(this).remove();
 		});
