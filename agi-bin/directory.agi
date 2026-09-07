@@ -45,7 +45,7 @@ while($loopcounter1 <= $dir->dir['repeat_loops']){
 	}
 	//hangup if we failed to receive anything meanigfull
 	if($loopcounter2 == $dir->dir['repeat_loops'] && !$matches){//seem like we ran out of tries...
-		$dir->$agi->exec('background',$dir->dir['invalid_recording']);
+		$dir->agi->exec('background',$dir->dir['invalid_recording']);
 		$dir->bail();
 		break;
 	}
@@ -92,34 +92,38 @@ while($loopcounter1 <= $dir->dir['repeat_loops']){
 		$matches=$dir->search($search);
 		foreach($matches as $idx => $match){
 			$ret = $dir->getKeypress('for',$validkeys,0);
-			if (trim($ret)) {
+			if (trim((string)$ret)) {
 				break;
 			}
 			$ret = $dir->readContact($matches[$idx],$validkeys,0);
-			if (trim($ret['result'])) {
+			if (trim((string)($ret['result'] ?? ''))) {
 				break;
 			}
 			$ret = $dir->getKeypress('press',$validkeys,0);
-			if (trim($ret)) {
+			if (trim((string)$ret)) {
 				break;
 			}
 			$ret = $dir->agi->say_digits($idx+1,$validkeys);
-			if (trim($ret['result'])) {
+			if (trim((string)($ret['result'] ?? ''))) {
 				$ret['result'] = chr($ret['result']);
 				break;
 			}
 
+		}
+
+		if (is_string($ret)) {
+			$ret = [ 'result' => $ret ];
 		}
 
 		//wait for a responce before restarting loop
 		if (!isset($ret) || !$ret || $ret['result'] == '0') {
 			$ret = $dir->agi->wait_for_digit(10000);
-			if (trim($ret['result'])) {
+			if (trim((string)($ret['result'] ?? ''))) {
 				$ret['result'] = chr($ret['result']);
 			}
 		}
 
-		if(trim($ret['result']) && strpos($validkeys, trim($ret['result'])) !== false){
+		if(trim((string)($ret['result'] ?? '')) && strpos($validkeys, trim((string)$ret['result'])) !== false){
 			call($matches[$ret['result']-1]);
 		}
 	} elseif($matches == 1) {

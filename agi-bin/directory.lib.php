@@ -41,8 +41,8 @@ class Dir {
 
 		foreach ($opts as $key => $value) { //get passed in vars
 			if (str_starts_with($key, 'arg_')) {
-				$expld           = explode('=', (string) $value);
-				$opts[$expld[0]] = $expld[1];
+				$expld           = explode('=', (string) $value, 2);
+				$opts[$expld[0]] = $expld[1] ?? '';
 				unset($opts[$key]);
 			}
 		}
@@ -66,7 +66,10 @@ class Dir {
 		$rec_file = [];
 		$sql      = 'SELECT * FROM directory_details WHERE ID = ?';
 		$row      = $this->db->getRow($sql, [ $this->directory ], DB_FETCHMODE_ASSOC);
-		//TODO: Error Checking
+		if (!is_array($row)) {
+			dbug('FATAL: directory ID ' . (string)$this->directory . ' not found', 1);
+			exit(1);
+		}
 
 		$this->default_annoucement = $row['announcement'] === '0' ? true : false;
 
@@ -138,7 +141,7 @@ class Dir {
 	}
 
 	public function readContact($con, $keys = '#') {
-		$ret = [];
+		$ret = [ 'result' => '' ];
 		switch ($con['audio']) {
 			case 'vm':
 				$vm_dir = $this->agi->database_get('AMPUSER', $con['dial'] . '/voicemail');
@@ -152,7 +155,7 @@ class Dir {
 					}
 
 					$dir = scandir($this->vmbasedir . $vm_dir . '/' . $con['dial']);
-					foreach ($dir as $file) {
+					foreach (($dir ?: []) as $file) {
 						dbug("looking for vm file $file using: " . basename((string) $file), 6);
 						if (str_starts_with((string) $file, 'greet') && is_file($this->vmbasedir . $vm_dir . '/' . $con['dial'] . '/' . $file)) {
 							$ret = $this->agi->stream_file($this->vmbasedir . $vm_dir . '/' . $con['dial'] . '/greet', $keys);
@@ -167,7 +170,10 @@ class Dir {
 			case 'tts':
 				// speak the name if possible, otherwise move on to spell it
 				$temporaryAudioFile = $this->agi_get_var('ASTSPOOLDIR') . '/tmp/directory-tts-' . time() . random_int(100, 999);
-				system('flite -t "' . escapeshellarg((string) $con['name']) . '" -o ' . $temporaryAudioFile . '.wav', $exitCode);
+				system(
+					'flite -t ' . escapeshellarg((string)$con['name']) . ' -o ' . escapeshellarg($temporaryAudioFile . '.wav'),
+					$exitCode
+				);
 				if (file_exists($temporaryAudioFile . '.wav') && $exitCode === 0) {
 					$ret           = $this->agi->stream_file($temporaryAudioFile, $keys);
 					$ret['result'] = isset($ret['result']) ? chr($ret['result']) : NULL;
@@ -193,7 +199,7 @@ class Dir {
 							$ret = $this->agi->wait_for_digit(750);
 							break;
 					}
-					if (trim((string) $ret['result'])) {
+					if (trim((string)($ret['result'] ?? ''))) {
 						$ret['result'] = chr($ret['result']);
 						break;
 					}
@@ -273,7 +279,6 @@ class Dir {
 	}
 
 	public function bail() {
-		$dir = [];
 		//do something if we are exiting due to to many tries
 		//
 		dbug("User pressed zero, passing back recording of {$this->dir['invalid_recording']}");
@@ -288,12 +293,12 @@ class Dir {
 			if (!empty($this->dir['rvolume'])) {
 				$this->agi->set_variable('RVOL', $this->dir['rvolume']);
 			}
-			if ($dir->dir['callid_prefix'] != '') {
+			if ($this->dir['callid_prefix'] != '') {
 				$callid_name = $this->agi->get_variable('CALLERID(name)');
 				$this->agi->set_variable('CALLERID(name)', $this->dir['callid_prefix'] . $callid_name['data']);
 			}
 
-			$dest = explode(',', (string) $this->dir['invalid_destination']);
+			$dest = array_pad(explode(',', (string) $this->dir['invalid_destination']), 3, '');
 			$this->agi->set_variable('DIR_INVALID_CONTEXT', $dest['0']);
 			$this->agi->set_variable('DIR_INVALID_EXTEN', $dest['1']);
 			$this->agi->set_variable('DIR_INVALID_PRI', $dest['2']);

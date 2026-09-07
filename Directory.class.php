@@ -32,24 +32,27 @@ class Directory extends FreePBX_Helpers implements BMO {
 			case 'directory':
 				//check for ajax request and process that immediately
 				if (isset($_REQUEST['ajaxgettr'])) { //got ajax request
-					$opts = $opts = explode('|', urldecode((string) $_REQUEST['ajaxgettr']));
-					if ($opts[0] == 'all') {
-						echo directory_draw_entries_all_users($opts[1]);
+					$opts = explode('|', urldecode((string) $_REQUEST['ajaxgettr']));
+					$entryId = $opts[0] ?? '';
+					$entryName = $opts[1] ?? '';
+					$entryIndex = $opts[2] ?? '';
+					if ($entryId == 'all') {
+						echo directory_draw_entries_all_users($entryName);
 					}
 					else {
-						if ($opts[0] != '') {
-							$real_id  = $opts[0];
+						if ($entryId != '') {
+							$real_id  = $entryId;
 							$name     = '';
-							$realname = $opts[1];
+							$realname = $entryName;
 							$audio    = 'vm';
 						}
 						else {
 							$real_id  = 'custom';
-							$name     = $opts[1];
+							$name     = $entryName;
 							$realname = 'Custom Entry';
 							$audio    = 'tts';
 						}
-						echo directory_draw_entries_tr($opts[0], $real_id, $name, $realname, $audio, '', $opts[2]);
+						echo directory_draw_entries_tr($entryId, $real_id, $name, $realname, $audio, '', $entryIndex);
 					}
 					exit;
 				}
@@ -210,7 +213,7 @@ class Directory extends FreePBX_Helpers implements BMO {
 			'rvolume'             => !empty($vals['rvolume']) ? $vals['rvolume'] : '',
 		];
 		$this->Database->prepare($sql)->execute($insert);
-		return $this->Database->lastinsertid('id');
+		return $this->Database->lastInsertId();
 	}
 
 	public function deleteEntriesById($id) {
@@ -249,7 +252,7 @@ class Directory extends FreePBX_Helpers implements BMO {
 
 	public function getActionBar($request) {
 		$buttons = [];
-		switch ($request['display']) {
+		switch ($request['display'] ?? '') {
 			case 'directory':
 				$buttons = [ 'delete' => [ 'name' => 'delete', 'id' => 'delete', 'value' => _('Delete') ], 'reset' => [ 'name' => 'reset', 'id' => 'reset', 'value' => _('Reset') ], 'submit' => [ 'name' => 'submit', 'id' => 'submit', 'value' => _('Submit') ] ];
 				if (empty($request['id'])) {
@@ -301,8 +304,8 @@ class Directory extends FreePBX_Helpers implements BMO {
 		};
 	}
 	public function ajaxHandler() {
-		return match ($_REQUEST['command']) {
-			'getJSON' => match ($_REQUEST['jdata']) {
+		return match ($_REQUEST['command'] ?? '') {
+			'getJSON' => match ($_REQUEST['jdata'] ?? '') {
 					'grid' => $this->getGrid(),
 					default => false,
 				},
