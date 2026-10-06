@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-26 05:53-0500\n"
+"POT-Creation-Date: 2026-10-06 06:40-0400\n"
 "PO-Revision-Date: 2016-02-04 23:09+0200\n"
 "Last-Translator: Nicolas Riendeau <freepbx@riendeau.org>\n"
 "Language-Team: French <http://weblate.freepbx.org/projects/freepbx/directory/"
@@ -47,7 +47,7 @@ msgstr "Info d'alerte"
 msgid "All Users"
 msgstr "Tous les utilisateurs"
 
-#: assets/js/directory.js:90
+#: assets/js/directory.js:94
 msgid "An Error occurred trying to contact the server adding a row, no reply."
 msgstr ""
 
@@ -91,7 +91,7 @@ msgstr "Répertoire par défaut"
 msgid "Default Group Inclusion"
 msgstr "Inclusion du groupe par défaut"
 
-#: Directory.class.php:254
+#: Directory.class.php:257
 msgid "Delete"
 msgstr "Supprimer"
 
@@ -134,11 +134,11 @@ msgstr "Options générales du répertoire"
 msgid "Directory Name"
 msgstr "Nom du répertoire"
 
-#: assets/js/directory.js:23
+#: assets/js/directory.js:25
 msgid "Directory Name Already Exist"
 msgstr ""
 
-#: assets/js/directory.js:20
+#: assets/js/directory.js:22
 msgid "Directory Name Can not be Blank"
 msgstr ""
 
@@ -160,7 +160,7 @@ msgstr "Répertoire : %s"
 msgid "Directory: %s "
 msgstr "Répertoire : %s "
 
-#: Directory.class.php:272
+#: Directory.class.php:275
 msgid "Disabled"
 msgstr "Désactivé"
 
@@ -178,7 +178,7 @@ msgstr "Éditer le répertoire"
 msgid "Edit Directory: %s"
 msgstr "Éditer le répertoire : %s"
 
-#: Directory.class.php:273
+#: Directory.class.php:276
 msgid "Enabled"
 msgstr "Activé"
 
@@ -268,7 +268,7 @@ msgid ""
 "prompting the caller to try again"
 msgstr ""
 
-#: Directory.class.php:254
+#: Directory.class.php:257
 msgid "Reset"
 msgstr "Réinitialiser"
 
@@ -280,7 +280,7 @@ msgstr "Retourner à l'IVR"
 msgid "Ringer Volume Override"
 msgstr ""
 
-#: assets/js/directory.js:110
+#: assets/js/directory.js:114
 msgid "Select"
 msgstr "Sélectionner"
 
@@ -288,7 +288,7 @@ msgstr "Sélectionner"
 msgid "Spell Name"
 msgstr "Épeler le nom"
 
-#: Directory.class.php:254
+#: Directory.class.php:257
 msgid "Submit"
 msgstr "Soumettre"
 
@@ -306,7 +306,7 @@ msgid ""
 "accessed by callers through modules like the IVR."
 msgstr ""
 
-#: assets/js/directory.js:31
+#: assets/js/directory.js:34
 msgid "This entry has already been added"
 msgstr "Cette entrée à déjà été ajoutée"
 

@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-26 05:53-0500\n"
+"POT-Creation-Date: 2026-10-06 06:40-0400\n"
 "PO-Revision-Date: 2014-07-22 15:33+0200\n"
 "Last-Translator: Chavdar <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://git.freepbx.org/projects/freepbx/directory/"
@@ -58,7 +58,7 @@ msgstr ""
 msgid "All Users"
 msgstr ""
 
-#: assets/js/directory.js:90
+#: assets/js/directory.js:94
 msgid "An Error occurred trying to contact the server adding a row, no reply."
 msgstr ""
 
@@ -102,7 +102,7 @@ msgstr ""
 msgid "Default Group Inclusion"
 msgstr ""
 
-#: Directory.class.php:254
+#: Directory.class.php:257
 msgid "Delete"
 msgstr ""
 
@@ -145,11 +145,11 @@ msgstr ""
 msgid "Directory Name"
 msgstr ""
 
-#: assets/js/directory.js:23
+#: assets/js/directory.js:25
 msgid "Directory Name Already Exist"
 msgstr ""
 
-#: assets/js/directory.js:20
+#: assets/js/directory.js:22
 msgid "Directory Name Can not be Blank"
 msgstr ""
 
@@ -171,7 +171,7 @@ msgstr ""
 msgid "Directory: %s "
 msgstr ""
 
-#: Directory.class.php:272
+#: Directory.class.php:275
 msgid "Disabled"
 msgstr ""
 
@@ -189,7 +189,7 @@ msgstr ""
 msgid "Edit Directory: %s"
 msgstr ""
 
-#: Directory.class.php:273
+#: Directory.class.php:276
 msgid "Enabled"
 msgstr ""
 
@@ -279,7 +279,7 @@ msgid ""
 "prompting the caller to try again"
 msgstr ""
 
-#: Directory.class.php:254
+#: Directory.class.php:257
 msgid "Reset"
 msgstr ""
 
@@ -291,7 +291,7 @@ msgstr ""
 msgid "Ringer Volume Override"
 msgstr ""
 
-#: assets/js/directory.js:110
+#: assets/js/directory.js:114
 msgid "Select"
 msgstr ""
 
@@ -299,7 +299,7 @@ msgstr ""
 msgid "Spell Name"
 msgstr ""
 
-#: Directory.class.php:254
+#: Directory.class.php:257
 msgid "Submit"
 msgstr ""
 
@@ -317,7 +317,7 @@ msgid ""
 "accessed by callers through modules like the IVR."
 msgstr ""
 
-#: assets/js/directory.js:31
+#: assets/js/directory.js:34
 msgid "This entry has already been added"
 msgstr ""
 

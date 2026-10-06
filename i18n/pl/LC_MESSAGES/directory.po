@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-26 05:53-0500\n"
+"POT-Creation-Date: 2026-10-06 06:40-0400\n"
 "PO-Revision-Date: 2023-11-19 10:05+0000\n"
 "Last-Translator: Szymon Wysokinski <szymon.wysokinski@sqspolska.pl>\n"
 "Language-Team: Polish <http://weblate.freepbx.org/projects/freepbx/directory/"
@@ -50,7 +50,7 @@ msgstr "Informacje o alertach"
 msgid "All Users"
 msgstr "Wszyscy użytkownicy"
 
-#: assets/js/directory.js:90
+#: assets/js/directory.js:94
 msgid "An Error occurred trying to contact the server adding a row, no reply."
 msgstr ""
 "Dodając wiersz wystąpił błąd podczas próby skontaktowania się z serwerem. "
@@ -96,7 +96,7 @@ msgstr "Katalog domyślny"
 msgid "Default Group Inclusion"
 msgstr "Domyślna integracja grupy"
 
-#: Directory.class.php:254
+#: Directory.class.php:257
 msgid "Delete"
 msgstr "Usuń"
 
@@ -141,11 +141,11 @@ msgstr "Opcje ogólne katalogu"
 msgid "Directory Name"
 msgstr "Nazwa katalogu"
 
-#: assets/js/directory.js:23
+#: assets/js/directory.js:25
 msgid "Directory Name Already Exist"
 msgstr "Nazwa katalogu już istnieje"
 
-#: assets/js/directory.js:20
+#: assets/js/directory.js:22
 msgid "Directory Name Can not be Blank"
 msgstr "Nazwa katalogu nie może być pusta"
 
@@ -167,7 +167,7 @@ msgstr "Książka adresowa: %s"
 msgid "Directory: %s "
 msgstr "Książka adresowa: %s "
 
-#: Directory.class.php:272
+#: Directory.class.php:275
 msgid "Disabled"
 msgstr "Wyłączony"
 
@@ -185,7 +185,7 @@ msgstr "Edytuj książkę adresową"
 msgid "Edit Directory: %s"
 msgstr "Edytuj książkę adresową: %s"
 
-#: Directory.class.php:273
+#: Directory.class.php:276
 msgid "Enabled"
 msgstr "Włączony"
 
@@ -283,7 +283,7 @@ msgstr ""
 "Zapowiedź odtworzona po odebraniu nieprawidłowej/niedopasowanej odpowiedzi, "
 "zanim poprosisz dzwoniącego o ponowną próbę"
 
-#: Directory.class.php:254
+#: Directory.class.php:257
 msgid "Reset"
 msgstr "Zresetuj"
 
@@ -295,7 +295,7 @@ msgstr "Zwróć do IVR"
 msgid "Ringer Volume Override"
 msgstr "Nadpisanie głośności dzwonka"
 
-#: assets/js/directory.js:110
+#: assets/js/directory.js:114
 msgid "Select"
 msgstr "Wybierz"
 
@@ -303,7 +303,7 @@ msgstr "Wybierz"
 msgid "Spell Name"
 msgstr "Wymowa nazwy"
 
-#: Directory.class.php:254
+#: Directory.class.php:257
 msgid "Submit"
 msgstr "Wyślij"
 
@@ -324,7 +324,7 @@ msgstr ""
 "do których dzwoniący mogą uzyskać dostęp za pośrednictwem modułów takich jak "
 "IVR."
 
-#: assets/js/directory.js:31
+#: assets/js/directory.js:34
 msgid "This entry has already been added"
 msgstr "Ten wpis został już dodany"
 

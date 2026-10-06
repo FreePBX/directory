@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-26 05:53-0500\n"
+"POT-Creation-Date: 2026-10-06 06:40-0400\n"
 "PO-Revision-Date: 2016-12-12 22:05+0200\n"
 "Last-Translator: Alexander <alexander.schley@paranagua.pr.gov.br>\n"
 "Language-Team: Portuguese (Brazil) <http://weblate.freepbx.org/projects/"
@@ -49,7 +49,7 @@ msgstr "Informação de Alerta"
 msgid "All Users"
 msgstr "Todos os Usuários"
 
-#: assets/js/directory.js:90
+#: assets/js/directory.js:94
 msgid "An Error occurred trying to contact the server adding a row, no reply."
 msgstr ""
 "Ocorreu um erro ao tentar entrar em contato com o servidor ao adicionar uma "
@@ -95,7 +95,7 @@ msgstr "Diretório Padrão"
 msgid "Default Group Inclusion"
 msgstr "Inclusão de Grupo Padrão"
 
-#: Directory.class.php:254
+#: Directory.class.php:257
 msgid "Delete"
 msgstr "Apagar"
 
@@ -139,11 +139,11 @@ msgstr "Opções Gerais do Diretório"
 msgid "Directory Name"
 msgstr "Nome do Diretório"
 
-#: assets/js/directory.js:23
+#: assets/js/directory.js:25
 msgid "Directory Name Already Exist"
 msgstr ""
 
-#: assets/js/directory.js:20
+#: assets/js/directory.js:22
 msgid "Directory Name Can not be Blank"
 msgstr ""
 
@@ -165,7 +165,7 @@ msgstr "Diretório: %s"
 msgid "Directory: %s "
 msgstr "Diretório: %s "
 
-#: Directory.class.php:272
+#: Directory.class.php:275
 msgid "Disabled"
 msgstr "Desabilitado"
 
@@ -183,7 +183,7 @@ msgstr "Editar Diretório"
 msgid "Edit Directory: %s"
 msgstr "Editar Diretório: %s"
 
-#: Directory.class.php:273
+#: Directory.class.php:276
 msgid "Enabled"
 msgstr "Habilitado"
 
@@ -283,7 +283,7 @@ msgstr ""
 "Aviso a ser reproduzido quando uma resposta inválida/incompatível for "
 "recebida, antes de solicitar que o usuário chamador tente novamente"
 
-#: Directory.class.php:254
+#: Directory.class.php:257
 msgid "Reset"
 msgstr "Reiniciar"
 
@@ -295,7 +295,7 @@ msgstr "Voltar para a URA"
 msgid "Ringer Volume Override"
 msgstr "Substituição do Volume do Toque"
 
-#: assets/js/directory.js:110
+#: assets/js/directory.js:114
 msgid "Select"
 msgstr "Selecionar"
 
@@ -303,7 +303,7 @@ msgstr "Selecionar"
 msgid "Spell Name"
 msgstr "Dizer Nome"
 
-#: Directory.class.php:254
+#: Directory.class.php:257
 msgid "Submit"
 msgstr "Enviar"
 
@@ -321,7 +321,7 @@ msgid ""
 "accessed by callers through modules like the IVR."
 msgstr ""
 
-#: assets/js/directory.js:31
+#: assets/js/directory.js:34
 msgid "This entry has already been added"
 msgstr "Este elemento já foi adicionado"
 

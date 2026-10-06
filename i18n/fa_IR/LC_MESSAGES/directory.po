@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-26 05:53-0500\n"
+"POT-Creation-Date: 2026-10-06 06:40-0400\n"
 "PO-Revision-Date: 2016-04-02 20:25+0200\n"
 "Last-Translator: Media <mousavi.media@gmail.com>\n"
 "Language-Team: Persian <http://weblate.freepbx.org/projects/freepbx/"
@@ -49,7 +49,7 @@ msgstr "اطلاعات هشدار"
 msgid "All Users"
 msgstr "تمام کاربران"
 
-#: assets/js/directory.js:90
+#: assets/js/directory.js:94
 msgid "An Error occurred trying to contact the server adding a row, no reply."
 msgstr "در هنگام افزودن ردیف به سرور خطایی رخ داد،بدون پاسخ."
 
@@ -93,7 +93,7 @@ msgstr "دایرکتوری پیشفرض"
 msgid "Default Group Inclusion"
 msgstr "گنجایش پیشفرض گروه"
 
-#: Directory.class.php:254
+#: Directory.class.php:257
 msgid "Delete"
 msgstr "حذف"
 
@@ -136,11 +136,11 @@ msgstr "گزینه های عمومی دایرکتوری"
 msgid "Directory Name"
 msgstr "نام دایرکتوری"
 
-#: assets/js/directory.js:23
+#: assets/js/directory.js:25
 msgid "Directory Name Already Exist"
 msgstr ""
 
-#: assets/js/directory.js:20
+#: assets/js/directory.js:22
 msgid "Directory Name Can not be Blank"
 msgstr ""
 
@@ -162,7 +162,7 @@ msgstr "دایرکتوری %s"
 msgid "Directory: %s "
 msgstr "دایرکتوری :%s "
 
-#: Directory.class.php:272
+#: Directory.class.php:275
 msgid "Disabled"
 msgstr "غیر فعال"
 
@@ -180,7 +180,7 @@ msgstr "ویرایش دایرکتوری"
 msgid "Edit Directory: %s"
 msgstr "ویرایش دایرکتوری :%s"
 
-#: Directory.class.php:273
+#: Directory.class.php:276
 msgid "Enabled"
 msgstr "فعال"
 
@@ -277,7 +277,7 @@ msgstr ""
 "Prompt to be played when an invalid/unmatched  response is received, before "
 "prompting the caller to try again"
 
-#: Directory.class.php:254
+#: Directory.class.php:257
 msgid "Reset"
 msgstr "بازنشانی"
 
@@ -289,7 +289,7 @@ msgstr "بازگشت به منو صوتی"
 msgid "Ringer Volume Override"
 msgstr ""
 
-#: assets/js/directory.js:110
+#: assets/js/directory.js:114
 msgid "Select"
 msgstr "انتخاب"
 
@@ -297,7 +297,7 @@ msgstr "انتخاب"
 msgid "Spell Name"
 msgstr "نهجی نام"
 
-#: Directory.class.php:254
+#: Directory.class.php:257
 msgid "Submit"
 msgstr "ارسال"
 
@@ -315,7 +315,7 @@ msgid ""
 "accessed by callers through modules like the IVR."
 msgstr ""
 
-#: assets/js/directory.js:31
+#: assets/js/directory.js:34
 msgid "This entry has already been added"
 msgstr "این ورودی اضافه شده"
 

@@ -2,7 +2,7 @@
 	<rawname>directory</rawname>
 	<repo>standard</repo>
 	<name>Directory</name>
-	<version>18.0.1</version>
+	<version>18.0.1.1</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>https://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -55,6 +55,7 @@
 	<description>The directory module allows you to create directories of users that can be accessed by callers through modules like the IVR.</description>
 	<more-info>https://sangomakb.atlassian.net/wiki/spaces/PG/pages/22446252/PBX+GUI+-+Directory+Module</more-info>
 	<changelog>
+		*18.0.1.1* Packaging of ver 18.0.1.1
 		*18.0.1* initial release
 	</changelog>
 	<supported>
