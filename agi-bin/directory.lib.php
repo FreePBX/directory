@@ -167,11 +167,14 @@ class Dir {
 			case 'tts':
 				// speak the name if possible, otherwise move on to spell it
 				$temporaryAudioFile = $this->agi_get_var('ASTSPOOLDIR') . '/tmp/directory-tts-' . time() . random_int(100, 999);
-				system('flite -t "' . escapeshellarg((string) $con['name']) . '" -o ' . $temporaryAudioFile . '.wav', $exitCode);
-				if (file_exists($temporaryAudioFile . '.wav') && $exitCode === 0) {
+				$wavFile            = $temporaryAudioFile . '.wav';
+				// Directory names are stored text. Run flite with an argument
+				// list so $(...) and backticks in the name are spoken, not executed.
+				$exitCode           = $this->fliteSpeak((string) $con['name'], $wavFile);
+				if (file_exists($wavFile) && $exitCode === 0) {
 					$ret           = $this->agi->stream_file($temporaryAudioFile, $keys);
 					$ret['result'] = isset($ret['result']) ? chr($ret['result']) : NULL;
-					unlink($temporaryAudioFile . '.wav');
+					unlink($wavFile);
 					break;
 				}
 				else {
@@ -225,6 +228,29 @@ class Dir {
 				break;
 		}
 		return $ret;
+	}
+
+	// Speak $text into $wavFile. proc_open() with an argument array does not
+	// invoke a shell, so metacharacters in $text cannot run commands.
+	private function fliteSpeak($text, $wavFile) {
+		$process = proc_open(
+			['flite', '-t', $text, '-o', $wavFile],
+			[
+				0 => ['pipe', 'r'],
+				1 => ['pipe', 'w'],
+				2 => ['pipe', 'w'],
+			],
+			$pipes
+		);
+		if (!is_resource($process)) {
+			return 1;
+		}
+		fclose($pipes[0]);
+		stream_get_contents($pipes[1]);
+		fclose($pipes[1]);
+		stream_get_contents($pipes[2]);
+		fclose($pipes[2]);
+		return proc_close($process);
 	}
 
 	public function search($key, $count = 0) {
